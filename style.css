@@ -242,18 +242,20 @@ main {
 
 .motto-badge {
     display: inline-block;
-    background: linear-gradient(135deg, rgba(212, 154, 42, 0.15), rgba(212, 154, 42, 0.05));
-    border: 1px solid rgba(212, 154, 42, 0.4);
-    color: var(--accent-color);
+    background: linear-gradient(135deg, rgba(212, 154, 42, 0.25), rgba(212, 154, 42, 0.08));
+    border: 1px solid rgba(212, 154, 42, 0.6);
+    color: #ffffff;
     font-family: 'Playfair Display', serif;
     font-style: italic;
-    font-size: 1rem;
-    padding: 0.5rem 1.2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0.75rem 1.8rem;
     border-radius: 50px;
     margin-bottom: 1.5rem;
     letter-spacing: 0.5px;
     backdrop-filter: blur(8px);
     animation: glow-pulse 3s ease-in-out infinite;
+    text-shadow: 0 0 20px rgba(212, 154, 42, 0.5);
 }
 
 @keyframes glow-pulse {
