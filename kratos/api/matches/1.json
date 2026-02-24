@@ -2,48 +2,23 @@
   "id": 1,
   "team1": {
     "id": 1,
-    "name": "FOLHA AMARELA",
-    "tag": "FOLHA "
+    "name": "GenOne",
+    "tag": "GenOne"
   },
   "team2": {
     "id": 2,
-    "name": "Isurus",
-    "tag": "Isurus"
+    "name": "Nexus",
+    "tag": "Nexus"
   },
   "team1_score": 0,
   "team2_score": 0,
   "status": "upcoming",
   "format": null,
   "stage": null,
-  "scheduled_at": "2026-02-24T22:25:48.159306",
+  "scheduled_at": "2026-02-24T22:58:52.547984",
   "tournament": {
     "id": 1,
-    "name": "CCT Season 3 South America Series 9"
+    "name": "Digital Crusade DraculaN Season 5"
   },
-  "maps": [
-    {
-      "id": 48,
-      "map_number": 1,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
-      "winner_id": null
-    },
-    {
-      "id": 49,
-      "map_number": 2,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
-      "winner_id": null
-    },
-    {
-      "id": 50,
-      "map_number": 3,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
-      "winner_id": null
-    }
-  ]
+  "maps": []
 }

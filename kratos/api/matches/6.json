@@ -1,40 +1,48 @@
 {
   "id": 6,
   "team1": {
-    "id": 10,
-    "name": "The Last Resort",
-    "tag": "The La"
+    "id": 11,
+    "name": "HAVU",
+    "tag": "HAVU"
   },
   "team2": {
-    "id": 11,
-    "name": "BUFF3D UP",
-    "tag": "BUFF3D"
+    "id": 12,
+    "name": "QWENTRY",
+    "tag": "QWENTR"
   },
   "team1_score": 0,
   "team2_score": 0,
   "status": "upcoming",
   "format": null,
   "stage": null,
-  "scheduled_at": "2026-02-24T22:29:21.001681",
+  "scheduled_at": "2026-02-24T23:00:06.502401",
   "tournament": {
     "id": 4,
-    "name": "UKIC Masters Spring 2026"
+    "name": "CCT Season 3 Europe Series 17 Closed Qualifier"
   },
   "maps": [
     {
-      "id": 62,
+      "id": 13,
       "map_number": 1,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Nuke",
+      "team1_score": 13,
+      "team2_score": 5,
       "winner_id": null
     },
     {
-      "id": 63,
+      "id": 14,
       "map_number": 2,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Overpass",
+      "team1_score": 5,
+      "team2_score": 13,
+      "winner_id": null
+    },
+    {
+      "id": 15,
+      "map_number": 3,
+      "map_name": "Dust2",
+      "team1_score": 10,
+      "team2_score": 13,
       "winner_id": null
     }
   ]

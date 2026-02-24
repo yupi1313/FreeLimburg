@@ -1,38 +1,46 @@
 {
   "id": 7,
   "team1": {
-    "id": 12,
-    "name": "HYPERSPIRIT",
-    "tag": "HYPERS"
+    "id": 13,
+    "name": "The Last Resort",
+    "tag": "The La"
   },
   "team2": {
-    "id": 13,
-    "name": "M1X KS",
-    "tag": "M1X KS"
+    "id": 14,
+    "name": "BUFF3D UP",
+    "tag": "BUFF3D"
   },
   "team1_score": 0,
   "team2_score": 0,
   "status": "upcoming",
   "format": null,
   "stage": null,
-  "scheduled_at": "2026-02-24T22:30:01.271781",
+  "scheduled_at": "2026-02-24T23:00:23.652201",
   "tournament": {
-    "id": 2,
-    "name": "Digital Crusade DraculaN Season 5"
+    "id": 5,
+    "name": "UKIC Masters Spring 2026"
   },
   "maps": [
     {
-      "id": 66,
+      "id": 16,
       "map_number": 1,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Mirage",
+      "team1_score": 13,
+      "team2_score": 8,
       "winner_id": null
     },
     {
-      "id": 67,
+      "id": 17,
       "map_number": 2,
-      "map_name": "Unknown",
+      "map_name": "Nuke",
+      "team1_score": 16,
+      "team2_score": 13,
+      "winner_id": null
+    },
+    {
+      "id": 18,
+      "map_number": 3,
+      "map_name": "Ancient",
       "team1_score": 0,
       "team2_score": 0,
       "winner_id": null

@@ -1,40 +1,48 @@
 {
   "id": 10,
   "team1": {
-    "id": 18,
-    "name": "los kogutos",
-    "tag": "los ko"
+    "id": 19,
+    "name": "Bad Luck",
+    "tag": "Bad Lu"
   },
   "team2": {
-    "id": 19,
-    "name": "CSDIILIT",
-    "tag": "CSDIIL"
+    "id": 20,
+    "name": "R2",
+    "tag": "R2"
   },
   "team1_score": 0,
   "team2_score": 0,
   "status": "upcoming",
   "format": null,
   "stage": null,
-  "scheduled_at": "2026-02-24T22:34:21.568850",
+  "scheduled_at": "2026-02-24T23:01:04.569921",
   "tournament": {
-    "id": 6,
-    "name": "JB Pro League Season 2"
+    "id": 2,
+    "name": "CCT Season 3 South America Series 9"
   },
   "maps": [
     {
-      "id": 64,
+      "id": 25,
       "map_number": 1,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Inferno",
+      "team1_score": 13,
+      "team2_score": 7,
       "winner_id": null
     },
     {
-      "id": 65,
+      "id": 26,
       "map_number": 2,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Overpass",
+      "team1_score": 5,
+      "team2_score": 13,
+      "winner_id": null
+    },
+    {
+      "id": 27,
+      "map_number": 3,
+      "map_name": "Nuke",
+      "team1_score": 4,
+      "team2_score": 13,
       "winner_id": null
     }
   ]

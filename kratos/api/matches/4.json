@@ -2,47 +2,47 @@
   "id": 4,
   "team1": {
     "id": 7,
-    "name": "mindshock",
-    "tag": "mindsh"
+    "name": "TDK",
+    "tag": "TDK"
   },
   "team2": {
-    "id": 4,
-    "name": "aimclub",
-    "tag": "aimclu"
+    "id": 8,
+    "name": "Alliance",
+    "tag": "Allian"
   },
   "team1_score": 0,
   "team2_score": 0,
   "status": "upcoming",
   "format": null,
   "stage": null,
-  "scheduled_at": "2026-02-24T22:28:05.454941",
+  "scheduled_at": "2026-02-24T22:59:31.831962",
   "tournament": {
-    "id": 2,
-    "name": "Digital Crusade DraculaN Season 5"
+    "id": 3,
+    "name": "ESL Challenger League Season 51 Europe Cup 1"
   },
   "maps": [
     {
-      "id": 68,
+      "id": 7,
       "map_number": 1,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Anubis",
+      "team1_score": 7,
+      "team2_score": 13,
       "winner_id": null
     },
     {
-      "id": 69,
+      "id": 8,
       "map_number": 2,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Inferno",
+      "team1_score": 13,
+      "team2_score": 8,
       "winner_id": null
     },
     {
-      "id": 70,
+      "id": 9,
       "map_number": 3,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Ancient",
+      "team1_score": 13,
+      "team2_score": 7,
       "winner_id": null
     }
   ]

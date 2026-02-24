@@ -1,48 +1,48 @@
 {
   "id": 5,
   "team1": {
-    "id": 8,
-    "name": "HAVU",
-    "tag": "HAVU"
+    "id": 9,
+    "name": "zajezdzacze",
+    "tag": "zajezd"
   },
   "team2": {
-    "id": 9,
-    "name": "QWENTRY",
-    "tag": "QWENTR"
+    "id": 10,
+    "name": "INFINITE",
+    "tag": "INFINI"
   },
   "team1_score": 0,
   "team2_score": 0,
   "status": "upcoming",
   "format": null,
   "stage": null,
-  "scheduled_at": "2026-02-24T22:28:47.375358",
+  "scheduled_at": "2026-02-24T22:59:49.049570",
   "tournament": {
-    "id": 3,
-    "name": "CCT Season 3 Europe Series 17 Closed Qualifier"
+    "id": 1,
+    "name": "Digital Crusade DraculaN Season 5"
   },
   "maps": [
     {
-      "id": 59,
+      "id": 10,
       "map_number": 1,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Dust2",
+      "team1_score": 4,
+      "team2_score": 13,
       "winner_id": null
     },
     {
-      "id": 60,
+      "id": 11,
       "map_number": 2,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Mirage",
+      "team1_score": 16,
+      "team2_score": 14,
       "winner_id": null
     },
     {
-      "id": 61,
+      "id": 12,
       "map_number": 3,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Ancient",
+      "team1_score": 10,
+      "team2_score": 13,
       "winner_id": null
     }
   ]

@@ -1,46 +1,46 @@
 {
   "id": 8,
   "team1": {
-    "id": 14,
-    "name": "TDK",
-    "tag": "TDK"
+    "id": 15,
+    "name": "los kogutos",
+    "tag": "los ko"
   },
   "team2": {
-    "id": 15,
-    "name": "Alliance",
-    "tag": "Allian"
+    "id": 16,
+    "name": "CSDIILIT",
+    "tag": "CSDIIL"
   },
   "team1_score": 0,
   "team2_score": 0,
   "status": "upcoming",
   "format": null,
   "stage": null,
-  "scheduled_at": "2026-02-24T22:32:19.208836",
+  "scheduled_at": "2026-02-24T23:00:37.362058",
   "tournament": {
-    "id": 5,
-    "name": "ESL Challenger League Season 51 Europe Cup 1"
+    "id": 6,
+    "name": "JB Pro League Season 2"
   },
   "maps": [
     {
-      "id": 53,
+      "id": 19,
       "map_number": 1,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Nuke",
+      "team1_score": 16,
+      "team2_score": 14,
       "winner_id": null
     },
     {
-      "id": 54,
+      "id": 20,
       "map_number": 2,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Ancient",
+      "team1_score": 16,
+      "team2_score": 13,
       "winner_id": null
     },
     {
-      "id": 55,
+      "id": 21,
       "map_number": 3,
-      "map_name": "Unknown",
+      "map_name": "Mirage",
       "team1_score": 0,
       "team2_score": 0,
       "winner_id": null

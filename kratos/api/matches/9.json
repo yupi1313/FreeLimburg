@@ -1,46 +1,46 @@
 {
   "id": 9,
   "team1": {
-    "id": 16,
-    "name": "zajezdzacze",
-    "tag": "zajezd"
+    "id": 17,
+    "name": "WW",
+    "tag": "WW"
   },
   "team2": {
-    "id": 17,
-    "name": "INFINITE",
-    "tag": "INFINI"
+    "id": 18,
+    "name": "Lazer Cats",
+    "tag": "Lazer "
   },
   "team1_score": 0,
   "team2_score": 0,
   "status": "upcoming",
   "format": null,
   "stage": null,
-  "scheduled_at": "2026-02-24T22:32:51.674630",
+  "scheduled_at": "2026-02-24T23:00:50.743847",
   "tournament": {
-    "id": 2,
-    "name": "Digital Crusade DraculaN Season 5"
+    "id": 7,
+    "name": "European Pro League Series 5"
   },
   "maps": [
     {
-      "id": 56,
+      "id": 22,
       "map_number": 1,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Inferno",
+      "team1_score": 16,
+      "team2_score": 14,
       "winner_id": null
     },
     {
-      "id": 57,
+      "id": 23,
       "map_number": 2,
-      "map_name": "Unknown",
-      "team1_score": 0,
-      "team2_score": 0,
+      "map_name": "Dust2",
+      "team1_score": 13,
+      "team2_score": 9,
       "winner_id": null
     },
     {
-      "id": 58,
+      "id": 24,
       "map_number": 3,
-      "map_name": "Unknown",
+      "map_name": "Mirage",
       "team1_score": 0,
       "team2_score": 0,
       "winner_id": null
