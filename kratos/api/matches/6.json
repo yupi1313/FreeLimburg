@@ -1,0 +1,41 @@
+{
+  "id": 6,
+  "team1": {
+    "id": 10,
+    "name": "The Last Resort",
+    "tag": "The La"
+  },
+  "team2": {
+    "id": 11,
+    "name": "BUFF3D UP",
+    "tag": "BUFF3D"
+  },
+  "team1_score": 0,
+  "team2_score": 0,
+  "status": "upcoming",
+  "format": null,
+  "stage": null,
+  "scheduled_at": "2026-02-24T22:29:21.001681",
+  "tournament": {
+    "id": 4,
+    "name": "UKIC Masters Spring 2026"
+  },
+  "maps": [
+    {
+      "id": 62,
+      "map_number": 1,
+      "map_name": "Unknown",
+      "team1_score": 0,
+      "team2_score": 0,
+      "winner_id": null
+    },
+    {
+      "id": 63,
+      "map_number": 2,
+      "map_name": "Unknown",
+      "team1_score": 0,
+      "team2_score": 0,
+      "winner_id": null
+    }
+  ]
+}

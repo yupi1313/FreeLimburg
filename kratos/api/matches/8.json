@@ -1,0 +1,49 @@
+{
+  "id": 8,
+  "team1": {
+    "id": 14,
+    "name": "TDK",
+    "tag": "TDK"
+  },
+  "team2": {
+    "id": 15,
+    "name": "Alliance",
+    "tag": "Allian"
+  },
+  "team1_score": 0,
+  "team2_score": 0,
+  "status": "upcoming",
+  "format": null,
+  "stage": null,
+  "scheduled_at": "2026-02-24T22:32:19.208836",
+  "tournament": {
+    "id": 5,
+    "name": "ESL Challenger League Season 51 Europe Cup 1"
+  },
+  "maps": [
+    {
+      "id": 53,
+      "map_number": 1,
+      "map_name": "Unknown",
+      "team1_score": 0,
+      "team2_score": 0,
+      "winner_id": null
+    },
+    {
+      "id": 54,
+      "map_number": 2,
+      "map_name": "Unknown",
+      "team1_score": 0,
+      "team2_score": 0,
+      "winner_id": null
+    },
+    {
+      "id": 55,
+      "map_number": 3,
+      "map_name": "Unknown",
+      "team1_score": 0,
+      "team2_score": 0,
+      "winner_id": null
+    }
+  ]
+}

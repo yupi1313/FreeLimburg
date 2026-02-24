@@ -1,0 +1,41 @@
+{
+  "id": 10,
+  "team1": {
+    "id": 18,
+    "name": "los kogutos",
+    "tag": "los ko"
+  },
+  "team2": {
+    "id": 19,
+    "name": "CSDIILIT",
+    "tag": "CSDIIL"
+  },
+  "team1_score": 0,
+  "team2_score": 0,
+  "status": "upcoming",
+  "format": null,
+  "stage": null,
+  "scheduled_at": "2026-02-24T22:34:21.568850",
+  "tournament": {
+    "id": 6,
+    "name": "JB Pro League Season 2"
+  },
+  "maps": [
+    {
+      "id": 64,
+      "map_number": 1,
+      "map_name": "Unknown",
+      "team1_score": 0,
+      "team2_score": 0,
+      "winner_id": null
+    },
+    {
+      "id": 65,
+      "map_number": 2,
+      "map_name": "Unknown",
+      "team1_score": 0,
+      "team2_score": 0,
+      "winner_id": null
+    }
+  ]
+}

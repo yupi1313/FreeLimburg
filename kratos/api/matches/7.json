@@ -1,0 +1,41 @@
+{
+  "id": 7,
+  "team1": {
+    "id": 12,
+    "name": "HYPERSPIRIT",
+    "tag": "HYPERS"
+  },
+  "team2": {
+    "id": 13,
+    "name": "M1X KS",
+    "tag": "M1X KS"
+  },
+  "team1_score": 0,
+  "team2_score": 0,
+  "status": "upcoming",
+  "format": null,
+  "stage": null,
+  "scheduled_at": "2026-02-24T22:30:01.271781",
+  "tournament": {
+    "id": 2,
+    "name": "Digital Crusade DraculaN Season 5"
+  },
+  "maps": [
+    {
+      "id": 66,
+      "map_number": 1,
+      "map_name": "Unknown",
+      "team1_score": 0,
+      "team2_score": 0,
+      "winner_id": null
+    },
+    {
+      "id": 67,
+      "map_number": 2,
+      "map_name": "Unknown",
+      "team1_score": 0,
+      "team2_score": 0,
+      "winner_id": null
+    }
+  ]
+}

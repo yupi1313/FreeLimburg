@@ -1,0 +1,49 @@
+{
+  "id": 5,
+  "team1": {
+    "id": 8,
+    "name": "HAVU",
+    "tag": "HAVU"
+  },
+  "team2": {
+    "id": 9,
+    "name": "QWENTRY",
+    "tag": "QWENTR"
+  },
+  "team1_score": 0,
+  "team2_score": 0,
+  "status": "upcoming",
+  "format": null,
+  "stage": null,
+  "scheduled_at": "2026-02-24T22:28:47.375358",
+  "tournament": {
+    "id": 3,
+    "name": "CCT Season 3 Europe Series 17 Closed Qualifier"
+  },
+  "maps": [
+    {
+      "id": 59,
+      "map_number": 1,
+      "map_name": "Unknown",
+      "team1_score": 0,
+      "team2_score": 0,
+      "winner_id": null
+    },
+    {
+      "id": 60,
+      "map_number": 2,
+      "map_name": "Unknown",
+      "team1_score": 0,
+      "team2_score": 0,
+      "winner_id": null
+    },
+    {
+      "id": 61,
+      "map_number": 3,
+      "map_name": "Unknown",
+      "team1_score": 0,
+      "team2_score": 0,
+      "winner_id": null
+    }
+  ]
+}

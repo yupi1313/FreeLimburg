@@ -1,0 +1,242 @@
+[
+  {
+    "id": 10,
+    "team1": {
+      "id": 18,
+      "name": "los kogutos",
+      "tag": "los ko"
+    },
+    "team2": {
+      "id": 19,
+      "name": "CSDIILIT",
+      "tag": "CSDIIL"
+    },
+    "team1_score": 0,
+    "team2_score": 0,
+    "status": "upcoming",
+    "format": null,
+    "stage": null,
+    "scheduled_at": "2026-02-24T22:34:21.568850",
+    "tournament": {
+      "id": 6,
+      "name": "JB Pro League Season 2"
+    },
+    "event_count": 0
+  },
+  {
+    "id": 9,
+    "team1": {
+      "id": 16,
+      "name": "zajezdzacze",
+      "tag": "zajezd"
+    },
+    "team2": {
+      "id": 17,
+      "name": "INFINITE",
+      "tag": "INFINI"
+    },
+    "team1_score": 0,
+    "team2_score": 0,
+    "status": "upcoming",
+    "format": null,
+    "stage": null,
+    "scheduled_at": "2026-02-24T22:32:51.674630",
+    "tournament": {
+      "id": 2,
+      "name": "Digital Crusade DraculaN Season 5"
+    },
+    "event_count": 0
+  },
+  {
+    "id": 8,
+    "team1": {
+      "id": 14,
+      "name": "TDK",
+      "tag": "TDK"
+    },
+    "team2": {
+      "id": 15,
+      "name": "Alliance",
+      "tag": "Allian"
+    },
+    "team1_score": 0,
+    "team2_score": 0,
+    "status": "upcoming",
+    "format": null,
+    "stage": null,
+    "scheduled_at": "2026-02-24T22:32:19.208836",
+    "tournament": {
+      "id": 5,
+      "name": "ESL Challenger League Season 51 Europe Cup 1"
+    },
+    "event_count": 0
+  },
+  {
+    "id": 7,
+    "team1": {
+      "id": 12,
+      "name": "HYPERSPIRIT",
+      "tag": "HYPERS"
+    },
+    "team2": {
+      "id": 13,
+      "name": "M1X KS",
+      "tag": "M1X KS"
+    },
+    "team1_score": 0,
+    "team2_score": 0,
+    "status": "upcoming",
+    "format": null,
+    "stage": null,
+    "scheduled_at": "2026-02-24T22:30:01.271781",
+    "tournament": {
+      "id": 2,
+      "name": "Digital Crusade DraculaN Season 5"
+    },
+    "event_count": 0
+  },
+  {
+    "id": 6,
+    "team1": {
+      "id": 10,
+      "name": "The Last Resort",
+      "tag": "The La"
+    },
+    "team2": {
+      "id": 11,
+      "name": "BUFF3D UP",
+      "tag": "BUFF3D"
+    },
+    "team1_score": 0,
+    "team2_score": 0,
+    "status": "upcoming",
+    "format": null,
+    "stage": null,
+    "scheduled_at": "2026-02-24T22:29:21.001681",
+    "tournament": {
+      "id": 4,
+      "name": "UKIC Masters Spring 2026"
+    },
+    "event_count": 0
+  },
+  {
+    "id": 5,
+    "team1": {
+      "id": 8,
+      "name": "HAVU",
+      "tag": "HAVU"
+    },
+    "team2": {
+      "id": 9,
+      "name": "QWENTRY",
+      "tag": "QWENTR"
+    },
+    "team1_score": 0,
+    "team2_score": 0,
+    "status": "upcoming",
+    "format": null,
+    "stage": null,
+    "scheduled_at": "2026-02-24T22:28:47.375358",
+    "tournament": {
+      "id": 3,
+      "name": "CCT Season 3 Europe Series 17 Closed Qualifier"
+    },
+    "event_count": 0
+  },
+  {
+    "id": 4,
+    "team1": {
+      "id": 7,
+      "name": "mindshock",
+      "tag": "mindsh"
+    },
+    "team2": {
+      "id": 4,
+      "name": "aimclub",
+      "tag": "aimclu"
+    },
+    "team1_score": 0,
+    "team2_score": 0,
+    "status": "upcoming",
+    "format": null,
+    "stage": null,
+    "scheduled_at": "2026-02-24T22:28:05.454941",
+    "tournament": {
+      "id": 2,
+      "name": "Digital Crusade DraculaN Season 5"
+    },
+    "event_count": 0
+  },
+  {
+    "id": 3,
+    "team1": {
+      "id": 5,
+      "name": "BRUTE",
+      "tag": "BRUTE"
+    },
+    "team2": {
+      "id": 6,
+      "name": "MANA",
+      "tag": "MANA"
+    },
+    "team1_score": 0,
+    "team2_score": 0,
+    "status": "upcoming",
+    "format": null,
+    "stage": null,
+    "scheduled_at": "2026-02-24T22:26:58.040900",
+    "tournament": {
+      "id": 2,
+      "name": "Digital Crusade DraculaN Season 5"
+    },
+    "event_count": 0
+  },
+  {
+    "id": 2,
+    "team1": {
+      "id": 3,
+      "name": "Diamant",
+      "tag": "Diaman"
+    },
+    "team2": {
+      "id": 4,
+      "name": "aimclub",
+      "tag": "aimclu"
+    },
+    "team1_score": 0,
+    "team2_score": 0,
+    "status": "upcoming",
+    "format": null,
+    "stage": null,
+    "scheduled_at": "2026-02-24T22:26:20.178670",
+    "tournament": {
+      "id": 2,
+      "name": "Digital Crusade DraculaN Season 5"
+    },
+    "event_count": 0
+  },
+  {
+    "id": 1,
+    "team1": {
+      "id": 1,
+      "name": "FOLHA AMARELA",
+      "tag": "FOLHA "
+    },
+    "team2": {
+      "id": 2,
+      "name": "Isurus",
+      "tag": "Isurus"
+    },
+    "team1_score": 0,
+    "team2_score": 0,
+    "status": "upcoming",
+    "format": null,
+    "stage": null,
+    "scheduled_at": "2026-02-24T22:25:48.159306",
+    "tournament": {
+      "id": 1,
+      "name": "CCT Season 3 South America Series 9"
+    },
+    "event_count": 0
+  }
+]
