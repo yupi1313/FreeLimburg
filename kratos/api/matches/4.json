@@ -10,8 +10,8 @@
     "name": "Alliance",
     "tag": "Allian"
   },
-  "team1_score": 0,
-  "team2_score": 0,
+  "team1_score": 2,
+  "team2_score": 1,
   "status": "upcoming",
   "format": null,
   "stage": null,

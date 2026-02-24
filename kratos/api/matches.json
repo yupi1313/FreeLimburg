@@ -11,8 +11,8 @@
       "name": "R2",
       "tag": "R2"
     },
-    "team1_score": 0,
-    "team2_score": 0,
+    "team1_score": 1,
+    "team2_score": 2,
     "status": "upcoming",
     "format": null,
     "stage": null,
@@ -35,7 +35,7 @@
       "name": "Lazer Cats",
       "tag": "Lazer "
     },
-    "team1_score": 0,
+    "team1_score": 2,
     "team2_score": 0,
     "status": "upcoming",
     "format": null,
@@ -59,7 +59,7 @@
       "name": "CSDIILIT",
       "tag": "CSDIIL"
     },
-    "team1_score": 0,
+    "team1_score": 2,
     "team2_score": 0,
     "status": "upcoming",
     "format": null,
@@ -83,7 +83,7 @@
       "name": "BUFF3D UP",
       "tag": "BUFF3D"
     },
-    "team1_score": 0,
+    "team1_score": 2,
     "team2_score": 0,
     "status": "upcoming",
     "format": null,
@@ -107,8 +107,8 @@
       "name": "QWENTRY",
       "tag": "QWENTR"
     },
-    "team1_score": 0,
-    "team2_score": 0,
+    "team1_score": 1,
+    "team2_score": 2,
     "status": "upcoming",
     "format": null,
     "stage": null,
@@ -131,8 +131,8 @@
       "name": "INFINITE",
       "tag": "INFINI"
     },
-    "team1_score": 0,
-    "team2_score": 0,
+    "team1_score": 1,
+    "team2_score": 2,
     "status": "upcoming",
     "format": null,
     "stage": null,
@@ -155,8 +155,8 @@
       "name": "Alliance",
       "tag": "Allian"
     },
-    "team1_score": 0,
-    "team2_score": 0,
+    "team1_score": 2,
+    "team2_score": 1,
     "status": "upcoming",
     "format": null,
     "stage": null,
@@ -179,8 +179,8 @@
       "name": "Isurus",
       "tag": "Isurus"
     },
-    "team1_score": 0,
-    "team2_score": 0,
+    "team1_score": 2,
+    "team2_score": 1,
     "status": "upcoming",
     "format": null,
     "stage": null,
@@ -203,8 +203,8 @@
       "name": "MANA",
       "tag": "MANA"
     },
-    "team1_score": 0,
-    "team2_score": 0,
+    "team1_score": 1,
+    "team2_score": 2,
     "status": "upcoming",
     "format": null,
     "stage": null,

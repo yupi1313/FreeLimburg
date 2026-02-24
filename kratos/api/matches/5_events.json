@@ -1,2603 +1,2627 @@
-{
-  "match_id": 5,
-  "rounds": [
-    {
-      "round_number": 0,
-      "events": [
-        {
-          "id": 470,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 31,
-            "nickname": "swiz"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 471,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 32,
-            "nickname": "Melavi"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 472,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 33,
-            "nickname": "chudy"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 473,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 34,
-            "nickname": "darchevile"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 474,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 35,
-            "nickname": "tomiko"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 475,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 31,
-            "nickname": "swiz"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 476,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 32,
-            "nickname": "Melavi"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 477,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 33,
-            "nickname": "chudy"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 478,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 34,
-            "nickname": "darchevile"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 479,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 35,
-            "nickname": "tomiko"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 480,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 35,
-            "nickname": "tomiko"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 481,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 33,
-            "nickname": "chudy"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 482,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 31,
-            "nickname": "swiz"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 483,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 34,
-            "nickname": "darchevile"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 484,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 32,
-            "nickname": "Melavi"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 485,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 36,
-            "nickname": "RQBY"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 486,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 37,
-            "nickname": "adeX"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 487,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 38,
-            "nickname": "mhN1"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 488,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 39,
-            "nickname": "LkS"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 489,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 40,
-            "nickname": "DaciaBlue3"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 490,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 36,
-            "nickname": "RQBY"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 491,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 39,
-            "nickname": "LkS"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 492,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 38,
-            "nickname": "mhN1"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 493,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 37,
-            "nickname": "adeX"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 494,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 40,
-            "nickname": "DaciaBlue3"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 495,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 37,
-            "nickname": "adeX"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 496,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 38,
-            "nickname": "mhN1"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 497,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 39,
-            "nickname": "LkS"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 498,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 36,
-            "nickname": "RQBY"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 499,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 40,
-            "nickname": "DaciaBlue3"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 525,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 33,
-            "nickname": "chudy"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 526,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 32,
-            "nickname": "Melavi"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 527,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 31,
-            "nickname": "swiz"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 528,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 35,
-            "nickname": "tomiko"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 529,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 34,
-            "nickname": "darchevile"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 530,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 32,
-            "nickname": "Melavi"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 531,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 31,
-            "nickname": "swiz"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 532,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 33,
-            "nickname": "chudy"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 533,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 35,
-            "nickname": "tomiko"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 534,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 34,
-            "nickname": "darchevile"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 535,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 33,
-            "nickname": "chudy"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 536,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 32,
-            "nickname": "Melavi"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 537,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 31,
-            "nickname": "swiz"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 538,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 35,
-            "nickname": "tomiko"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 539,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 34,
-            "nickname": "darchevile"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 540,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 37,
-            "nickname": "adeX"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 541,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 39,
-            "nickname": "LkS"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 542,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 38,
-            "nickname": "mhN1"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 543,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 40,
-            "nickname": "DaciaBlue3"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 544,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 36,
-            "nickname": "RQBY"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 545,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 38,
-            "nickname": "mhN1"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 546,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 37,
-            "nickname": "adeX"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 547,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 39,
-            "nickname": "LkS"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 548,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 40,
-            "nickname": "DaciaBlue3"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 549,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 36,
-            "nickname": "RQBY"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 550,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 36,
-            "nickname": "RQBY"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 551,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 40,
-            "nickname": "DaciaBlue3"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 552,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 37,
-            "nickname": "adeX"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 553,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 39,
-            "nickname": "LkS"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 554,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 38,
-            "nickname": "mhN1"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 579,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 32,
-            "nickname": "Melavi"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 580,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 31,
-            "nickname": "swiz"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 581,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 34,
-            "nickname": "darchevile"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 582,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 35,
-            "nickname": "tomiko"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 583,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 33,
-            "nickname": "chudy"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 584,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 31,
-            "nickname": "swiz"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 585,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 35,
-            "nickname": "tomiko"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 586,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 32,
-            "nickname": "Melavi"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 587,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 33,
-            "nickname": "chudy"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 588,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 34,
-            "nickname": "darchevile"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 589,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 32,
-            "nickname": "Melavi"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 590,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 34,
-            "nickname": "darchevile"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 591,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 31,
-            "nickname": "swiz"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 592,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 33,
-            "nickname": "chudy"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 593,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 35,
-            "nickname": "tomiko"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 594,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 37,
-            "nickname": "adeX"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 595,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 36,
-            "nickname": "RQBY"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 596,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 39,
-            "nickname": "LkS"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 597,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 38,
-            "nickname": "mhN1"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 598,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 40,
-            "nickname": "DaciaBlue3"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 599,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 37,
-            "nickname": "adeX"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 600,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 36,
-            "nickname": "RQBY"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 601,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 39,
-            "nickname": "LkS"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 602,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 38,
-            "nickname": "mhN1"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 603,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 40,
-            "nickname": "DaciaBlue3"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 604,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 37,
-            "nickname": "adeX"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 605,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 36,
-            "nickname": "RQBY"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 606,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 39,
-            "nickname": "LkS"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 607,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 38,
-            "nickname": "mhN1"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 608,
-          "event_type": "player_stats",
-          "round_number": 0,
-          "actor": {
-            "id": 40,
-            "nickname": "DaciaBlue3"
-          },
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+[
+  {
+    "id": 452,
+    "event_type": "elimination",
+    "round_number": 1,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 453,
+    "event_type": "elimination",
+    "round_number": 2,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 454,
+    "event_type": "elimination",
+    "round_number": 3,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 455,
+    "event_type": "elimination",
+    "round_number": 4,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 456,
+    "event_type": "elimination",
+    "round_number": 5,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 457,
+    "event_type": "elimination",
+    "round_number": 6,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 458,
+    "event_type": "elimination",
+    "round_number": 7,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 459,
+    "event_type": "elimination",
+    "round_number": 8,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 460,
+    "event_type": "elimination",
+    "round_number": 9,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 461,
+    "event_type": "elimination",
+    "round_number": 10,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 462,
+    "event_type": "elimination",
+    "round_number": 11,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 463,
+    "event_type": "elimination",
+    "round_number": 12,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 464,
+    "event_type": "elimination",
+    "round_number": 13,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 465,
+    "event_type": "elimination",
+    "round_number": 14,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 466,
+    "event_type": "elimination",
+    "round_number": 15,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 467,
+    "event_type": "elimination",
+    "round_number": 16,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 468,
+    "event_type": "elimination",
+    "round_number": 17,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 469,
+    "event_type": "elimination",
+    "round_number": 18,
+    "map_result_id": 10,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 470,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 31,
+      "nickname": "swiz"
     },
-    {
-      "round_number": 1,
-      "events": [
-        {
-          "id": 452,
-          "event_type": "elimination",
-          "round_number": 1,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 500,
-          "event_type": "elimination",
-          "round_number": 1,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 555,
-          "event_type": "elimination",
-          "round_number": 1,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 471,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 32,
+      "nickname": "Melavi"
     },
-    {
-      "round_number": 2,
-      "events": [
-        {
-          "id": 453,
-          "event_type": "elimination",
-          "round_number": 2,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 501,
-          "event_type": "elimination",
-          "round_number": 2,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 556,
-          "event_type": "elimination",
-          "round_number": 2,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 472,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 33,
+      "nickname": "chudy"
     },
-    {
-      "round_number": 3,
-      "events": [
-        {
-          "id": 454,
-          "event_type": "elimination",
-          "round_number": 3,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 502,
-          "event_type": "elimination",
-          "round_number": 3,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 557,
-          "event_type": "elimination",
-          "round_number": 3,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 473,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 34,
+      "nickname": "darchevile"
     },
-    {
-      "round_number": 4,
-      "events": [
-        {
-          "id": 455,
-          "event_type": "elimination",
-          "round_number": 4,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 503,
-          "event_type": "elimination",
-          "round_number": 4,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 558,
-          "event_type": "elimination",
-          "round_number": 4,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 474,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 35,
+      "nickname": "tomiko"
     },
-    {
-      "round_number": 5,
-      "events": [
-        {
-          "id": 456,
-          "event_type": "elimination",
-          "round_number": 5,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 504,
-          "event_type": "elimination",
-          "round_number": 5,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 559,
-          "event_type": "elimination",
-          "round_number": 5,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 475,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 31,
+      "nickname": "swiz"
     },
-    {
-      "round_number": 6,
-      "events": [
-        {
-          "id": 457,
-          "event_type": "elimination",
-          "round_number": 6,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 505,
-          "event_type": "elimination",
-          "round_number": 6,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 560,
-          "event_type": "elimination",
-          "round_number": 6,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 476,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 32,
+      "nickname": "Melavi"
     },
-    {
-      "round_number": 7,
-      "events": [
-        {
-          "id": 458,
-          "event_type": "elimination",
-          "round_number": 7,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 506,
-          "event_type": "elimination",
-          "round_number": 7,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 561,
-          "event_type": "elimination",
-          "round_number": 7,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 477,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 33,
+      "nickname": "chudy"
     },
-    {
-      "round_number": 8,
-      "events": [
-        {
-          "id": 459,
-          "event_type": "elimination",
-          "round_number": 8,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 507,
-          "event_type": "elimination",
-          "round_number": 8,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 562,
-          "event_type": "elimination",
-          "round_number": 8,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 478,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 34,
+      "nickname": "darchevile"
     },
-    {
-      "round_number": 9,
-      "events": [
-        {
-          "id": 460,
-          "event_type": "elimination",
-          "round_number": 9,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 508,
-          "event_type": "elimination",
-          "round_number": 9,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 563,
-          "event_type": "elimination",
-          "round_number": 9,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 479,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 35,
+      "nickname": "tomiko"
     },
-    {
-      "round_number": 10,
-      "events": [
-        {
-          "id": 461,
-          "event_type": "elimination",
-          "round_number": 10,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 509,
-          "event_type": "elimination",
-          "round_number": 10,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 564,
-          "event_type": "elimination",
-          "round_number": 10,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 480,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 35,
+      "nickname": "tomiko"
     },
-    {
-      "round_number": 11,
-      "events": [
-        {
-          "id": 462,
-          "event_type": "elimination",
-          "round_number": 11,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 510,
-          "event_type": "elimination",
-          "round_number": 11,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 565,
-          "event_type": "elimination",
-          "round_number": 11,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 481,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 33,
+      "nickname": "chudy"
     },
-    {
-      "round_number": 12,
-      "events": [
-        {
-          "id": 463,
-          "event_type": "elimination",
-          "round_number": 12,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 511,
-          "event_type": "elimination",
-          "round_number": 12,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 566,
-          "event_type": "elimination",
-          "round_number": 12,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 482,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 31,
+      "nickname": "swiz"
     },
-    {
-      "round_number": 13,
-      "events": [
-        {
-          "id": 464,
-          "event_type": "elimination",
-          "round_number": 13,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 512,
-          "event_type": "elimination",
-          "round_number": 13,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 567,
-          "event_type": "elimination",
-          "round_number": 13,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 483,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 34,
+      "nickname": "darchevile"
     },
-    {
-      "round_number": 14,
-      "events": [
-        {
-          "id": 465,
-          "event_type": "elimination",
-          "round_number": 14,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 513,
-          "event_type": "elimination",
-          "round_number": 14,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 568,
-          "event_type": "elimination",
-          "round_number": 14,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 484,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 32,
+      "nickname": "Melavi"
     },
-    {
-      "round_number": 15,
-      "events": [
-        {
-          "id": 466,
-          "event_type": "elimination",
-          "round_number": 15,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 514,
-          "event_type": "elimination",
-          "round_number": 15,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 569,
-          "event_type": "elimination",
-          "round_number": 15,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 485,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 36,
+      "nickname": "RQBY"
     },
-    {
-      "round_number": 16,
-      "events": [
-        {
-          "id": 467,
-          "event_type": "elimination",
-          "round_number": 16,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 515,
-          "event_type": "elimination",
-          "round_number": 16,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 570,
-          "event_type": "elimination",
-          "round_number": 16,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 486,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 37,
+      "nickname": "adeX"
     },
-    {
-      "round_number": 17,
-      "events": [
-        {
-          "id": 468,
-          "event_type": "elimination",
-          "round_number": 17,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 516,
-          "event_type": "elimination",
-          "round_number": 17,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 571,
-          "event_type": "elimination",
-          "round_number": 17,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 487,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 38,
+      "nickname": "mhN1"
     },
-    {
-      "round_number": 18,
-      "events": [
-        {
-          "id": 469,
-          "event_type": "elimination",
-          "round_number": 18,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 517,
-          "event_type": "elimination",
-          "round_number": 18,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 572,
-          "event_type": "elimination",
-          "round_number": 18,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 488,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 39,
+      "nickname": "LkS"
     },
-    {
-      "round_number": 19,
-      "events": [
-        {
-          "id": 518,
-          "event_type": "elimination",
-          "round_number": 19,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 573,
-          "event_type": "elimination",
-          "round_number": 19,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 489,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 40,
+      "nickname": "DaciaBlue3"
     },
-    {
-      "round_number": 20,
-      "events": [
-        {
-          "id": 519,
-          "event_type": "elimination",
-          "round_number": 20,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 574,
-          "event_type": "elimination",
-          "round_number": 20,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 490,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 36,
+      "nickname": "RQBY"
     },
-    {
-      "round_number": 21,
-      "events": [
-        {
-          "id": 520,
-          "event_type": "elimination",
-          "round_number": 21,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 575,
-          "event_type": "elimination",
-          "round_number": 21,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 491,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 39,
+      "nickname": "LkS"
     },
-    {
-      "round_number": 22,
-      "events": [
-        {
-          "id": 521,
-          "event_type": "elimination",
-          "round_number": 22,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 576,
-          "event_type": "elimination",
-          "round_number": 22,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 492,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 38,
+      "nickname": "mhN1"
     },
-    {
-      "round_number": 23,
-      "events": [
-        {
-          "id": 522,
-          "event_type": "elimination",
-          "round_number": 23,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 577,
-          "event_type": "elimination",
-          "round_number": 23,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 493,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 37,
+      "nickname": "adeX"
     },
-    {
-      "round_number": 24,
-      "events": [
-        {
-          "id": 523,
-          "event_type": "elimination",
-          "round_number": 24,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        },
-        {
-          "id": 578,
-          "event_type": "elimination",
-          "round_number": 24,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": false,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 494,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 40,
+      "nickname": "DaciaBlue3"
     },
-    {
-      "round_number": 25,
-      "events": [
-        {
-          "id": 524,
-          "event_type": "elimination",
-          "round_number": 25,
-          "actor": null,
-          "target": null,
-          "weapon": null,
-          "headshot": true,
-          "through_smoke": false,
-          "wallbang": false,
-          "noscope": false,
-          "assist": null,
-          "flash_assist": null
-        }
-      ]
-    }
-  ]
-}
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 495,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 37,
+      "nickname": "adeX"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 496,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 38,
+      "nickname": "mhN1"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 497,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 39,
+      "nickname": "LkS"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 498,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 36,
+      "nickname": "RQBY"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 499,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 10,
+    "actor": {
+      "id": 40,
+      "nickname": "DaciaBlue3"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 500,
+    "event_type": "elimination",
+    "round_number": 1,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 501,
+    "event_type": "elimination",
+    "round_number": 2,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 502,
+    "event_type": "elimination",
+    "round_number": 3,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 503,
+    "event_type": "elimination",
+    "round_number": 4,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 504,
+    "event_type": "elimination",
+    "round_number": 5,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 505,
+    "event_type": "elimination",
+    "round_number": 6,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 506,
+    "event_type": "elimination",
+    "round_number": 7,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 507,
+    "event_type": "elimination",
+    "round_number": 8,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 508,
+    "event_type": "elimination",
+    "round_number": 9,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 509,
+    "event_type": "elimination",
+    "round_number": 10,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 510,
+    "event_type": "elimination",
+    "round_number": 11,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 511,
+    "event_type": "elimination",
+    "round_number": 12,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 512,
+    "event_type": "elimination",
+    "round_number": 13,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 513,
+    "event_type": "elimination",
+    "round_number": 14,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 514,
+    "event_type": "elimination",
+    "round_number": 15,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 515,
+    "event_type": "elimination",
+    "round_number": 16,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 516,
+    "event_type": "elimination",
+    "round_number": 17,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 517,
+    "event_type": "elimination",
+    "round_number": 18,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 518,
+    "event_type": "elimination",
+    "round_number": 19,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 519,
+    "event_type": "elimination",
+    "round_number": 20,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 520,
+    "event_type": "elimination",
+    "round_number": 21,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 521,
+    "event_type": "elimination",
+    "round_number": 22,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 522,
+    "event_type": "elimination",
+    "round_number": 23,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 523,
+    "event_type": "elimination",
+    "round_number": 24,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 524,
+    "event_type": "elimination",
+    "round_number": 25,
+    "map_result_id": 11,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 525,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 33,
+      "nickname": "chudy"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 526,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 32,
+      "nickname": "Melavi"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 527,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 31,
+      "nickname": "swiz"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 528,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 35,
+      "nickname": "tomiko"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 529,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 34,
+      "nickname": "darchevile"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 530,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 32,
+      "nickname": "Melavi"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 531,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 31,
+      "nickname": "swiz"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 532,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 33,
+      "nickname": "chudy"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 533,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 35,
+      "nickname": "tomiko"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 534,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 34,
+      "nickname": "darchevile"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 535,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 33,
+      "nickname": "chudy"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 536,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 32,
+      "nickname": "Melavi"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 537,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 31,
+      "nickname": "swiz"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 538,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 35,
+      "nickname": "tomiko"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 539,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 34,
+      "nickname": "darchevile"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 540,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 37,
+      "nickname": "adeX"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 541,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 39,
+      "nickname": "LkS"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 542,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 38,
+      "nickname": "mhN1"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 543,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 40,
+      "nickname": "DaciaBlue3"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 544,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 36,
+      "nickname": "RQBY"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 545,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 38,
+      "nickname": "mhN1"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 546,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 37,
+      "nickname": "adeX"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 547,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 39,
+      "nickname": "LkS"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 548,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 40,
+      "nickname": "DaciaBlue3"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 549,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 36,
+      "nickname": "RQBY"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 550,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 36,
+      "nickname": "RQBY"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 551,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 40,
+      "nickname": "DaciaBlue3"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 552,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 37,
+      "nickname": "adeX"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 553,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 39,
+      "nickname": "LkS"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 554,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 11,
+    "actor": {
+      "id": 38,
+      "nickname": "mhN1"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 555,
+    "event_type": "elimination",
+    "round_number": 1,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 556,
+    "event_type": "elimination",
+    "round_number": 2,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 557,
+    "event_type": "elimination",
+    "round_number": 3,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 558,
+    "event_type": "elimination",
+    "round_number": 4,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 559,
+    "event_type": "elimination",
+    "round_number": 5,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 560,
+    "event_type": "elimination",
+    "round_number": 6,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 561,
+    "event_type": "elimination",
+    "round_number": 7,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 562,
+    "event_type": "elimination",
+    "round_number": 8,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 563,
+    "event_type": "elimination",
+    "round_number": 9,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 564,
+    "event_type": "elimination",
+    "round_number": 10,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 565,
+    "event_type": "elimination",
+    "round_number": 11,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 566,
+    "event_type": "elimination",
+    "round_number": 12,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 567,
+    "event_type": "elimination",
+    "round_number": 13,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 568,
+    "event_type": "elimination",
+    "round_number": 14,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 569,
+    "event_type": "elimination",
+    "round_number": 15,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 570,
+    "event_type": "elimination",
+    "round_number": 16,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 571,
+    "event_type": "elimination",
+    "round_number": 17,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 572,
+    "event_type": "elimination",
+    "round_number": 18,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 573,
+    "event_type": "elimination",
+    "round_number": 19,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": true,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 574,
+    "event_type": "elimination",
+    "round_number": 20,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 575,
+    "event_type": "elimination",
+    "round_number": 21,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 576,
+    "event_type": "elimination",
+    "round_number": 22,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 577,
+    "event_type": "elimination",
+    "round_number": 23,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 578,
+    "event_type": "elimination",
+    "round_number": 24,
+    "map_result_id": 12,
+    "actor": null,
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 579,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 32,
+      "nickname": "Melavi"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 580,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 31,
+      "nickname": "swiz"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 581,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 34,
+      "nickname": "darchevile"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 582,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 35,
+      "nickname": "tomiko"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 583,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 33,
+      "nickname": "chudy"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 584,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 31,
+      "nickname": "swiz"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 585,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 35,
+      "nickname": "tomiko"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 586,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 32,
+      "nickname": "Melavi"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 587,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 33,
+      "nickname": "chudy"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 588,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 34,
+      "nickname": "darchevile"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 589,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 32,
+      "nickname": "Melavi"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 590,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 34,
+      "nickname": "darchevile"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 591,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 31,
+      "nickname": "swiz"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 592,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 33,
+      "nickname": "chudy"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 593,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 35,
+      "nickname": "tomiko"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 594,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 37,
+      "nickname": "adeX"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 595,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 36,
+      "nickname": "RQBY"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 596,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 39,
+      "nickname": "LkS"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 597,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 38,
+      "nickname": "mhN1"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 598,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 40,
+      "nickname": "DaciaBlue3"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 599,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 37,
+      "nickname": "adeX"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 600,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 36,
+      "nickname": "RQBY"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 601,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 39,
+      "nickname": "LkS"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 602,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 38,
+      "nickname": "mhN1"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 603,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 40,
+      "nickname": "DaciaBlue3"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 604,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 37,
+      "nickname": "adeX"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 605,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 36,
+      "nickname": "RQBY"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 606,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 39,
+      "nickname": "LkS"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 607,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 38,
+      "nickname": "mhN1"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  },
+  {
+    "id": 608,
+    "event_type": "player_stats",
+    "round_number": 0,
+    "map_result_id": 12,
+    "actor": {
+      "id": 40,
+      "nickname": "DaciaBlue3"
+    },
+    "target": null,
+    "weapon": null,
+    "headshot": false,
+    "through_smoke": false,
+    "wallbang": false,
+    "noscope": false,
+    "assist": null,
+    "flash_assist": null
+  }
+]
