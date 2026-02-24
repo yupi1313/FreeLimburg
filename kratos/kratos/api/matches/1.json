@@ -1,0 +1,49 @@
+{
+  "id": 1,
+  "team1": {
+    "id": 1,
+    "name": "Natus Vincere",
+    "tag": "NaVi"
+  },
+  "team2": {
+    "id": 2,
+    "name": "FaZe Clan",
+    "tag": "FaZe"
+  },
+  "team1_score": 2,
+  "team2_score": 1,
+  "status": "finished",
+  "format": "bo3",
+  "stage": "semifinal",
+  "scheduled_at": "2024-03-29T18:00:00",
+  "tournament": {
+    "id": 1,
+    "name": "PGL Major Copenhagen 2024"
+  },
+  "maps": [
+    {
+      "id": 1,
+      "map_number": 1,
+      "map_name": "Mirage",
+      "team1_score": 16,
+      "team2_score": 12,
+      "winner_id": 1
+    },
+    {
+      "id": 2,
+      "map_number": 2,
+      "map_name": "Inferno",
+      "team1_score": 10,
+      "team2_score": 16,
+      "winner_id": 2
+    },
+    {
+      "id": 3,
+      "map_number": 3,
+      "map_name": "Anubis",
+      "team1_score": 16,
+      "team2_score": 14,
+      "winner_id": 1
+    }
+  ]
+}

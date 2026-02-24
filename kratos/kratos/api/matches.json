@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "team1": {
+      "id": 1,
+      "name": "Natus Vincere",
+      "tag": "NaVi"
+    },
+    "team2": {
+      "id": 2,
+      "name": "FaZe Clan",
+      "tag": "FaZe"
+    },
+    "team1_score": 2,
+    "team2_score": 1,
+    "status": "finished",
+    "format": "bo3",
+    "stage": "semifinal",
+    "scheduled_at": "2024-03-29T18:00:00",
+    "tournament": {
+      "id": 1,
+      "name": "PGL Major Copenhagen 2024"
+    },
+    "event_count": 14
+  }
+]
