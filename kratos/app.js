@@ -261,6 +261,17 @@ function renderDetail() {
         ? `<div class="live-indicator"><span class="live-dot"></span><span>LIVE</span></div>`
         : `<span>FINISHED</span>`;
 
+    // Compute score display for detail header
+    const mapScores = m.mapScores || [];
+    const latestMap = mapScores.length > 0 ? mapScores[mapScores.length - 1] : null;
+    const detailScoreHtml = latestMap
+        ? `<span class="score-num">${latestMap.score1}</span><span class="detail-score__sep">:</span><span class="score-num">${latestMap.score2}</span>`
+        : `<span class="detail-score__sep" style="font-size: 24px;">VS</span>`;
+
+    const detailMapPills = mapScores.map(ms =>
+        `<span class="map-pill">M${ms.map}: ${ms.score1}-${ms.score2}</span>`
+    ).join('');
+
     detailView.innerHTML = `
         <button class="back-btn" onclick="goBack()">← Back to matches</button>
 
@@ -273,12 +284,13 @@ function renderDetail() {
                     <div class="detail-team__name">${escHtml(m.team1 || 'Team 1')}</div>
                 </div>
                 <div class="detail-score">
-                    <span class="detail-score__sep" style="font-size: 24px;">VS</span>
+                    ${detailScoreHtml}
                 </div>
                 <div class="detail-team">
                     <div class="detail-team__name">${escHtml(m.team2 || 'Team 2')}</div>
                 </div>
             </div>
+            ${detailMapPills ? `<div class="map-pills" style="justify-content:center;margin-top:12px;">${detailMapPills}</div>` : ''}
         </div>
 
         ${maps.length > 0 ? `
