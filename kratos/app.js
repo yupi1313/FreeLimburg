@@ -5,6 +5,9 @@ const isDev = window.location.hostname === 'localhost' || window.location.hostna
 const STATIC_API = isDev ? 'http://localhost:3000/api' : '/kratos/api';
 let LIVE_API = null; // Will be loaded from config.json
 
+// Headers for localtunnel bypass
+const TUNNEL_HEADERS = { 'Bypass-Tunnel-Reminder': 'true' };
+
 // ── State ───────────────────────────────────────────
 let matches = [];
 let currentMatch = null;
@@ -41,7 +44,10 @@ async function init() {
         // Try live API first
         if (LIVE_API) {
             try {
-                const liveRes = await fetch(`${LIVE_API}/matches`, { signal: AbortSignal.timeout(5000) });
+                const liveRes = await fetch(`${LIVE_API}/matches`, {
+                    signal: AbortSignal.timeout(5000),
+                    headers: TUNNEL_HEADERS
+                });
                 if (liveRes.ok) {
                     loadedMatches = await liveRes.json();
                     console.log(`[Live] Loaded ${loadedMatches.length} matches from live API`);
@@ -143,8 +149,8 @@ async function openMatch(id) {
         if (LIVE_API) {
             try {
                 const [matchRes, eventsRes] = await Promise.all([
-                    fetch(`${LIVE_API}/matches/${id}`, { signal: AbortSignal.timeout(5000) }),
-                    fetch(`${LIVE_API}/matches/${id}/events`, { signal: AbortSignal.timeout(5000) })
+                    fetch(`${LIVE_API}/matches/${id}`, { signal: AbortSignal.timeout(5000), headers: TUNNEL_HEADERS }),
+                    fetch(`${LIVE_API}/matches/${id}/events`, { signal: AbortSignal.timeout(5000), headers: TUNNEL_HEADERS })
                 ]);
                 if (matchRes.ok) matchData = await matchRes.json();
                 if (eventsRes.ok) eventsData = await eventsRes.json();
