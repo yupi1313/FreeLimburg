@@ -1,14 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/kratos/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kratos Match Viewer</title>
-    <script type="module" crossorigin src="/kratos/assets/index-DcUEZ8Kl.js"></script>
-    <link rel="stylesheet" crossorigin href="/kratos/assets/index-OrL15KDv.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kratos — CS2 Match Tracker</title>
+    <meta name="description" content="Live CS2 match tracking with detailed event logs, stats, and round-by-round breakdowns.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ambient-bg"></div>
+
+    <header class="page-header">
+        <div class="header-inner">
+            <a class="logo" onclick="goBack()">
+                <span class="logo-icon">⚔️</span>
+                <span class="logo-text">KRATOS</span>
+            </a>
+            <div class="header-meta">
+                <div class="live-indicator">
+                    <span class="live-dot"></span>
+                    <span>CS2 Match Tracker</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <!-- Match List View -->
+        <div id="list-view">
+            <div class="section-header">
+                <h2 class="section-title">Recorded Matches</h2>
+                <span class="match-count" id="match-count">Loading...</span>
+            </div>
+            <div class="match-grid" id="match-grid">
+                <div class="loading-state" style="grid-column:1/-1;">
+                    <div class="loading-spinner"></div>
+                    <p>Loading matches...</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Match Detail View -->
+        <div id="detail-view" class="detail-view"></div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
 </html>
