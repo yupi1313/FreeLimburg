@@ -382,13 +382,13 @@ function renderEventsRows(events) {
         return `<tr><td colspan="6" style="text-align:center;padding:40px;color:var(--text-muted);">No events</td></tr>`;
     }
 
-    // Sort by roundNumber ascending, round_end events last within each round
+    // Sort by roundNumber descending (newest rounds first), round_end events first within each round
     const sorted = [...events].sort((a, b) => {
         const ra = a.roundNumber || 0;
         const rb = b.roundNumber || 0;
-        if (ra !== rb) return ra - rb;
-        if (a.eventType === 'round_end' && b.eventType !== 'round_end') return 1;
-        if (b.eventType === 'round_end' && a.eventType !== 'round_end') return -1;
+        if (ra !== rb) return rb - ra;  // descending
+        if (a.eventType === 'round_end' && b.eventType !== 'round_end') return -1;
+        if (b.eventType === 'round_end' && a.eventType !== 'round_end') return 1;
         return 0;
     });
 
