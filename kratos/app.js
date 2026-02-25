@@ -1,6 +1,9 @@
 // ── Kratos CS2 Match Viewer ──────────────────────────
+// Hybrid mode: static JSON for historical data + live tunnel for real-time
+
 const isDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-const API_BASE = isDev ? 'http://localhost:3000/api' : '/kratos/api';
+const STATIC_API = isDev ? 'http://localhost:3000/api' : '/kratos/api';
+let LIVE_API = null; // Will be loaded from config.json
 
 // ── State ───────────────────────────────────────────
 let matches = [];
@@ -19,14 +22,61 @@ const matchCountEl = document.getElementById('match-count');
 document.addEventListener('DOMContentLoaded', init);
 
 async function init() {
+    // 1. Load config for live API URL
     try {
-        const res = await fetch(`${API_BASE}/matches.json`);
-        matches = await res.json();
+        const cfgRes = await fetch('/kratos/config.json');
+        const cfg = await cfgRes.json();
+        if (cfg.liveApiUrl) LIVE_API = cfg.liveApiUrl;
+    } catch (e) {
+        console.warn('[Config] No config.json found, live mode disabled');
+    }
+
+    // In dev mode, always use the local server as live
+    if (isDev) LIVE_API = 'http://localhost:3000/api';
+
+    // 2. Load matches (try live first, fall back to static)
+    try {
+        let loadedMatches = [];
+
+        // Try live API first
+        if (LIVE_API) {
+            try {
+                const liveRes = await fetch(`${LIVE_API}/matches`, { signal: AbortSignal.timeout(5000) });
+                if (liveRes.ok) {
+                    loadedMatches = await liveRes.json();
+                    console.log(`[Live] Loaded ${loadedMatches.length} matches from live API`);
+                }
+            } catch (e) {
+                console.warn('[Live] Live API unavailable, falling back to static');
+            }
+        }
+
+        // Also load static data for finished matches that may not be in live DB anymore
+        if (!isDev) {
+            try {
+                const staticRes = await fetch(`${STATIC_API}/matches.json`);
+                if (staticRes.ok) {
+                    const staticMatches = await staticRes.json();
+                    // Merge: live takes priority, append static ones not in live
+                    const liveIds = new Set(loadedMatches.map(m => String(m.id)));
+                    for (const sm of staticMatches) {
+                        if (!liveIds.has(String(sm.id))) {
+                            loadedMatches.push(sm);
+                        }
+                    }
+                    console.log(`[Static] Merged static data, total: ${loadedMatches.length} matches`);
+                }
+            } catch (e) {
+                console.warn('[Static] Failed to load static matches');
+            }
+        }
+
+        matches = loadedMatches;
         renderMatchList();
     } catch (err) {
         matchGrid.innerHTML = `
             <div class="empty-state" style="grid-column: 1/-1;">
-                <p>⚠️ Failed to load matches. Make sure the API server is running on port 3000.</p>
+                <p>⚠️ Failed to load matches.</p>
             </div>`;
         console.error('Failed to load matches:', err);
     }
@@ -86,13 +136,43 @@ async function openMatch(id) {
         </div>`;
 
     try {
-        const [matchRes, eventsRes] = await Promise.all([
-            fetch(`${API_BASE}/matches/${id}.json`),
-            fetch(`${API_BASE}/matches/${id}_events.json`)
-        ]);
+        let matchData = null;
+        let eventsData = [];
 
-        currentMatch = await matchRes.json();
-        currentEvents = await eventsRes.json();
+        // Try live API first (for real-time data)
+        if (LIVE_API) {
+            try {
+                const [matchRes, eventsRes] = await Promise.all([
+                    fetch(`${LIVE_API}/matches/${id}`, { signal: AbortSignal.timeout(5000) }),
+                    fetch(`${LIVE_API}/matches/${id}/events`, { signal: AbortSignal.timeout(5000) })
+                ]);
+                if (matchRes.ok) matchData = await matchRes.json();
+                if (eventsRes.ok) eventsData = await eventsRes.json();
+                if (matchData) console.log(`[Live] Loaded match ${id} with ${eventsData.length} events`);
+            } catch (e) {
+                console.warn(`[Live] Failed to fetch match ${id} from live API`);
+            }
+        }
+
+        // Fall back to static if live failed
+        if (!matchData && !isDev) {
+            try {
+                const [matchRes, eventsRes] = await Promise.all([
+                    fetch(`${STATIC_API}/matches/${id}.json`),
+                    fetch(`${STATIC_API}/matches/${id}_events.json`)
+                ]);
+                if (matchRes.ok) matchData = await matchRes.json();
+                if (eventsRes.ok) eventsData = await eventsRes.json();
+                console.log(`[Static] Loaded match ${id} from static files`);
+            } catch (e) {
+                console.warn(`[Static] Failed to fetch match ${id} from static files`);
+            }
+        }
+
+        if (!matchData) throw new Error('Match not found');
+
+        currentMatch = matchData;
+        currentEvents = eventsData;
 
         // Find available map numbers
         const maps = [...new Set(currentEvents.map(e => e.mapNumber))].sort((a, b) => a - b);
@@ -260,10 +340,7 @@ function renderEventsRows(events) {
     let html = '';
     let lastRound = -1;
 
-    // Events usually arrive from DB desc (newest first). Let's sort them ascending by timestamp for the log
-    // The scraper might just use timestamp of scraping. We have roundNumber.
-    // Let's sort by round ascending, then ID or something to keep order.
-    // We'll reverse the array since Prisma orderBy: { timestamp: 'desc' }
+    // Reverse since events arrive newest-first from the API
     const sorted = [...events].reverse();
 
     for (const ev of sorted) {
