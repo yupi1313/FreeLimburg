@@ -1,5 +1,53 @@
 [
   {
+    "id": "2390870",
+    "team1": "UNO MILLE",
+    "team2": "ELITES",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390870/uno-mille-vs-elites-cct-season-3-south-america-series-9",
+    "createdAt": "2026-02-25T16:01:10.048Z",
+    "updatedAt": "2026-02-25T16:01:10.048Z",
+    "maps": 0,
+    "currentMap": 0,
+    "mapScores": []
+  },
+  {
+    "id": "2390441",
+    "team1": "Marsborne",
+    "team2": "Fluxo",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390441/marsborne-vs-fluxo-betboom-rush-b-summit-season-2",
+    "createdAt": "2026-02-25T16:01:03.036Z",
+    "updatedAt": "2026-02-25T16:01:03.036Z",
+    "maps": 1,
+    "currentMap": 1,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 1,
+        "score2": 12
+      }
+    ]
+  },
+  {
+    "id": "2390066",
+    "team1": "Nemesis",
+    "team2": "WW",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390066/nemesis-vs-ww-cct-season-3-europe-series-16",
+    "createdAt": "2026-02-25T15:41:02.940Z",
+    "updatedAt": "2026-02-25T15:41:02.940Z",
+    "maps": 1,
+    "currentMap": 1,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 0,
+        "score2": 0
+      }
+    ]
+  },
+  {
     "id": "2390922",
     "team1": "Pigeons",
     "team2": "8Sins",
@@ -13,7 +61,7 @@
       {
         "map": 1,
         "score1": 5,
-        "score2": 8
+        "score2": 13
       }
     ]
   },
@@ -30,8 +78,8 @@
     "mapScores": [
       {
         "map": 1,
-        "score1": 9,
-        "score2": 3
+        "score1": 21,
+        "score2": 20
       }
     ]
   },
@@ -53,8 +101,8 @@
       },
       {
         "map": 2,
-        "score1": 2,
-        "score2": 5
+        "score1": 13,
+        "score2": 4
       }
     ]
   },
@@ -71,8 +119,8 @@
     "mapScores": [
       {
         "map": 1,
-        "score1": 11,
-        "score2": 8
+        "score1": 16,
+        "score2": 12
       }
     ]
   },
@@ -89,8 +137,8 @@
     "mapScores": [
       {
         "map": 1,
-        "score1": 12,
-        "score2": 5
+        "score1": 13,
+        "score2": 6
       }
     ]
   },
