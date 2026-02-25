@@ -5,14 +5,14 @@
   "status": "Live",
   "url": "https://www.hltv.org/matches/2390443/oddik-vs-9z-betboom-rush-b-summit-season-2",
   "createdAt": "2026-02-25T22:31:07.743Z",
-  "updatedAt": "2026-02-25T23:34:16.061Z",
+  "updatedAt": "2026-02-25T23:39:45.060Z",
   "maps": 3,
   "currentMap": 3,
   "mapScores": [
     {
       "map": 1,
-      "score1": 10,
-      "score2": 7,
+      "score1": 11,
+      "score2": 8,
       "mapWinner": null
     },
     {

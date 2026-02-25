@@ -280,26 +280,6 @@
     "timestamp": "2026-02-25T19:16:24.796Z"
   },
   {
-    "id": "9ed3ba54-6278-488b-afa2-95c0aed96380",
-    "matchId": "2390762",
-    "logText": "AntyVirus committed suicide",
-    "killerName": "AntyVirus",
-    "victimName": "AntyVirus",
-    "assistName": null,
-    "weapon": null,
-    "isHeadshot": false,
-    "isWallbang": false,
-    "isThroughSmoke": false,
-    "isBlindKill": false,
-    "isNoScope": false,
-    "isSuicide": true,
-    "eventType": "suicide",
-    "mapNumber": 2,
-    "roundNumber": 3,
-    "eventHash": "5e0acbcb62e25285c64dc8ebe1562d6d",
-    "timestamp": "2026-02-25T19:17:36.912Z"
-  },
-  {
     "id": "eca35795-db3b-424b-aebf-512fbbf81c6d",
     "matchId": "2390762",
     "logText": "suonko cass1n",
@@ -418,26 +398,6 @@
     "roundNumber": 4,
     "eventHash": "c2576432c78e241385ad54d6446e2412",
     "timestamp": "2026-02-25T19:18:30.990Z"
-  },
-  {
-    "id": "2d708915-fa50-4fe1-bc36-b263ee6728b1",
-    "matchId": "2390762",
-    "logText": "Frontsiderr committed suicide",
-    "killerName": "Frontsiderr",
-    "victimName": "Frontsiderr",
-    "assistName": null,
-    "weapon": null,
-    "isHeadshot": false,
-    "isWallbang": false,
-    "isThroughSmoke": false,
-    "isBlindKill": false,
-    "isNoScope": false,
-    "isSuicide": true,
-    "eventType": "suicide",
-    "mapNumber": 2,
-    "roundNumber": 4,
-    "eventHash": "b4d5257f483856e99aedde6ddc729847",
-    "timestamp": "2026-02-25T19:18:37.009Z"
   },
   {
     "id": "b8f23f67-b06a-47af-96b8-06bca726ec4b",

@@ -3040,26 +3040,6 @@
     "timestamp": "2026-02-25T19:48:30.652Z"
   },
   {
-    "id": "f6027065-44da-4212-86a4-97db7faed2ed",
-    "matchId": "2390871",
-    "logText": "divine committed suicide",
-    "killerName": "divine",
-    "victimName": "divine",
-    "assistName": null,
-    "weapon": null,
-    "isHeadshot": false,
-    "isWallbang": false,
-    "isThroughSmoke": false,
-    "isBlindKill": false,
-    "isNoScope": false,
-    "isSuicide": true,
-    "eventType": "suicide",
-    "mapNumber": 1,
-    "roundNumber": 22,
-    "eventHash": "364d4faf6c21f56894a4184a1d94ac06",
-    "timestamp": "2026-02-25T19:48:33.645Z"
-  },
-  {
     "id": "175c6a08-5e34-454e-8dd7-0fbf7e6a48ec",
     "matchId": "2390871",
     "logText": "Dunn zmb",
@@ -3198,26 +3178,6 @@
     "roundNumber": 1,
     "eventHash": "ea9f12e983876ac5544ee0677df8730a",
     "timestamp": "2026-02-25T19:56:19.568Z"
-  },
-  {
-    "id": "d3a202bc-7ada-4fe4-9315-5838938be5ca",
-    "matchId": "2390871",
-    "logText": "happ committed suicide",
-    "killerName": "happ",
-    "victimName": "happ",
-    "assistName": null,
-    "weapon": null,
-    "isHeadshot": false,
-    "isWallbang": false,
-    "isThroughSmoke": false,
-    "isBlindKill": false,
-    "isNoScope": false,
-    "isSuicide": true,
-    "eventType": "suicide",
-    "mapNumber": 2,
-    "roundNumber": 1,
-    "eventHash": "bad02c1486b48f586764b40c2ed8bbf9",
-    "timestamp": "2026-02-25T19:56:55.696Z"
   },
   {
     "id": "ba75301b-e103-494a-acc8-899ba6ff621e",

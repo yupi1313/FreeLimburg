@@ -2178,25 +2178,5 @@
     "roundNumber": 18,
     "eventHash": "b1388a6e391559f570d7fe5225860eef",
     "timestamp": "2026-02-25T19:38:48.623Z"
-  },
-  {
-    "id": "4a185e5a-ca6e-42af-b616-decbfe2497c8",
-    "matchId": "2390761",
-    "logText": "Ag1l committed suicide",
-    "killerName": "Ag1l",
-    "victimName": "Ag1l",
-    "assistName": null,
-    "weapon": null,
-    "isHeadshot": false,
-    "isWallbang": false,
-    "isThroughSmoke": false,
-    "isBlindKill": false,
-    "isNoScope": false,
-    "isSuicide": true,
-    "eventType": "suicide",
-    "mapNumber": 2,
-    "roundNumber": 19,
-    "eventHash": "6e4d5f158fe5639e364c5e4b9a8e1c80",
-    "timestamp": "2026-02-25T19:38:51.613Z"
   }
 ]
