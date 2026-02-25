@@ -381,11 +381,11 @@ function renderEventsRows(events) {
         if (!weaponName) weaponName = '—';
 
         const mods = [];
-        if (ev.isHeadshot) mods.push('<span class="mod-icon mod-icon--hs" title="Headshot">HS</span>');
-        if (ev.isWallbang) mods.push('<span class="mod-icon mod-icon--wb" title="Wallbang">WB</span>');
-        if (ev.isThroughSmoke) mods.push('<span class="mod-icon mod-icon--smoke" title="Through smoke">S</span>');
-        if (ev.isNoScope) mods.push('<span class="mod-icon mod-icon--noscope" title="No scope">NS</span>');
-        if (ev.isBlindKill) mods.push('<span class="mod-icon mod-icon--flash" title="Blind Kill">F</span>');
+        if (ev.isHeadshot) mods.push('<span class="mod-icon mod-icon--hs" data-tooltip="Headshot">HS</span>');
+        if (ev.isWallbang) mods.push('<span class="mod-icon mod-icon--wb" data-tooltip="Wallbang">WB</span>');
+        if (ev.isThroughSmoke) mods.push('<span class="mod-icon mod-icon--smoke" data-tooltip="Through Smoke">S</span>');
+        if (ev.isNoScope) mods.push('<span class="mod-icon mod-icon--noscope" data-tooltip="No Scope">NS</span>');
+        if (ev.isBlindKill) mods.push('<span class="mod-icon mod-icon--flash" data-tooltip="Blind Kill">F</span>');
 
         html += `
         <tr>
