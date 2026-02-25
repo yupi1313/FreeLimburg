@@ -2,17 +2,23 @@
   "id": "2390923",
   "team1": "Rebels",
   "team2": "Ursa",
-  "status": "Live",
+  "status": "Finished",
   "url": "https://www.hltv.org/matches/2390923/rebels-vs-ursa-cct-season-3-europe-series-17-closed-qualifier",
   "createdAt": "2026-02-25T19:09:29.869Z",
-  "updatedAt": "2026-02-25T19:09:29.869Z",
-  "maps": 1,
-  "currentMap": 2,
+  "updatedAt": "2026-02-25T20:18:10.833Z",
+  "maps": 2,
+  "currentMap": 3,
   "mapScores": [
     {
       "map": 2,
-      "score1": 7,
-      "score2": 10,
+      "score1": 12,
+      "score2": 11,
+      "mapWinner": null
+    },
+    {
+      "map": 3,
+      "score1": 0,
+      "score2": 0,
       "mapWinner": null
     }
   ],

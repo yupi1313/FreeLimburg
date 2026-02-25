@@ -1,5 +1,185 @@
 [
   {
+    "id": "2390067",
+    "team1": "SINNERS",
+    "team2": "los kogutos",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390067/sinners-vs-los-kogutos-cct-season-3-europe-series-16",
+    "createdAt": "2026-02-25T19:09:00.688Z",
+    "updatedAt": "2026-02-25T20:53:57.425Z",
+    "maps": 3,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 13,
+        "score2": 16,
+        "mapWinner": "team2"
+      },
+      {
+        "map": 2,
+        "score1": 8,
+        "score2": 5,
+        "mapWinner": null
+      },
+      {
+        "map": 3,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      }
+    ],
+    "seriesScore1": 0,
+    "seriesScore2": 1
+  },
+  {
+    "id": "2390442",
+    "team1": "RED Canids",
+    "team2": "Fake do Biru",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390442/red-canids-vs-fake-do-biru-betboom-rush-b-summit-season-2",
+    "createdAt": "2026-02-25T19:20:51.169Z",
+    "updatedAt": "2026-02-25T20:53:47.607Z",
+    "maps": 3,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 8,
+        "score2": 13,
+        "mapWinner": "team2"
+      },
+      {
+        "map": 2,
+        "score1": 0,
+        "score2": 2,
+        "mapWinner": null
+      },
+      {
+        "map": 3,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      }
+    ],
+    "seriesScore1": 0,
+    "seriesScore2": 1
+  },
+  {
+    "id": "2390871",
+    "team1": "LP",
+    "team2": "Damajuana",
+    "status": "Finished",
+    "url": "https://www.hltv.org/matches/2390871/lp-vs-damajuana-cct-season-3-south-america-series-9",
+    "createdAt": "2026-02-25T19:09:38.135Z",
+    "updatedAt": "2026-02-25T20:36:19.039Z",
+    "maps": 3,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 13,
+        "score2": 6,
+        "mapWinner": "team1"
+      },
+      {
+        "map": 2,
+        "score1": 3,
+        "score2": 13,
+        "mapWinner": "team2"
+      },
+      {
+        "map": 3,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      }
+    ],
+    "seriesScore1": 1,
+    "seriesScore2": 1
+  },
+  {
+    "id": "2390923",
+    "team1": "Rebels",
+    "team2": "Ursa",
+    "status": "Finished",
+    "url": "https://www.hltv.org/matches/2390923/rebels-vs-ursa-cct-season-3-europe-series-17-closed-qualifier",
+    "createdAt": "2026-02-25T19:09:29.869Z",
+    "updatedAt": "2026-02-25T20:18:10.833Z",
+    "maps": 2,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 2,
+        "score1": 12,
+        "score2": 11,
+        "mapWinner": null
+      },
+      {
+        "map": 3,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      }
+    ],
+    "seriesScore1": 0,
+    "seriesScore2": 0
+  },
+  {
+    "id": "2390267",
+    "team1": "ASTRAL",
+    "team2": "SPARTA",
+    "status": "Finished",
+    "url": "https://www.hltv.org/matches/2390267/astral-vs-sparta-nodwin-clutch-series-5",
+    "createdAt": "2026-02-25T19:09:23.965Z",
+    "updatedAt": "2026-02-25T20:15:02.058Z",
+    "maps": 2,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 2,
+        "score1": 10,
+        "score2": 13,
+        "mapWinner": "team2"
+      },
+      {
+        "map": 3,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      }
+    ],
+    "seriesScore1": 0,
+    "seriesScore2": 1
+  },
+  {
+    "id": "2390762",
+    "team1": "Oramond",
+    "team2": "BESTIA",
+    "status": "Finished",
+    "url": "https://www.hltv.org/matches/2390762/oramond-vs-bestia-digital-crusade-draculan-season-5",
+    "createdAt": "2026-02-25T19:09:17.967Z",
+    "updatedAt": "2026-02-25T20:11:56.061Z",
+    "maps": 2,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 2,
+        "score1": 13,
+        "score2": 9,
+        "mapWinner": "team1"
+      },
+      {
+        "map": 3,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      }
+    ],
+    "seriesScore1": 1,
+    "seriesScore2": 0
+  },
+  {
     "id": "2390760",
     "team1": "Betclic",
     "team2": "INFINITE",
@@ -40,137 +220,5 @@
     ],
     "seriesScore1": 0,
     "seriesScore2": 1
-  },
-  {
-    "id": "2390442",
-    "team1": "RED Canids",
-    "team2": "Fake do Biru",
-    "status": "Live",
-    "url": "https://www.hltv.org/matches/2390442/red-canids-vs-fake-do-biru-betboom-rush-b-summit-season-2",
-    "createdAt": "2026-02-25T19:20:51.169Z",
-    "updatedAt": "2026-02-25T19:20:51.169Z",
-    "maps": 1,
-    "currentMap": 1,
-    "mapScores": [
-      {
-        "map": 1,
-        "score1": 9,
-        "score2": 3,
-        "mapWinner": null
-      }
-    ],
-    "seriesScore1": 0,
-    "seriesScore2": 0
-  },
-  {
-    "id": "2390871",
-    "team1": "LP",
-    "team2": "Damajuana",
-    "status": "Live",
-    "url": "https://www.hltv.org/matches/2390871/lp-vs-damajuana-cct-season-3-south-america-series-9",
-    "createdAt": "2026-02-25T19:09:38.135Z",
-    "updatedAt": "2026-02-25T19:09:38.135Z",
-    "maps": 2,
-    "currentMap": 2,
-    "mapScores": [
-      {
-        "map": 1,
-        "score1": 13,
-        "score2": 6,
-        "mapWinner": "team1"
-      },
-      {
-        "map": 2,
-        "score1": 0,
-        "score2": 0,
-        "mapWinner": null
-      }
-    ],
-    "seriesScore1": 1,
-    "seriesScore2": 0
-  },
-  {
-    "id": "2390923",
-    "team1": "Rebels",
-    "team2": "Ursa",
-    "status": "Live",
-    "url": "https://www.hltv.org/matches/2390923/rebels-vs-ursa-cct-season-3-europe-series-17-closed-qualifier",
-    "createdAt": "2026-02-25T19:09:29.869Z",
-    "updatedAt": "2026-02-25T19:09:29.869Z",
-    "maps": 1,
-    "currentMap": 2,
-    "mapScores": [
-      {
-        "map": 2,
-        "score1": 7,
-        "score2": 10,
-        "mapWinner": null
-      }
-    ],
-    "seriesScore1": 0,
-    "seriesScore2": 0
-  },
-  {
-    "id": "2390267",
-    "team1": "ASTRAL",
-    "team2": "SPARTA",
-    "status": "Live",
-    "url": "https://www.hltv.org/matches/2390267/astral-vs-sparta-nodwin-clutch-series-5",
-    "createdAt": "2026-02-25T19:09:23.965Z",
-    "updatedAt": "2026-02-25T19:09:23.965Z",
-    "maps": 1,
-    "currentMap": 2,
-    "mapScores": [
-      {
-        "map": 2,
-        "score1": 8,
-        "score2": 10,
-        "mapWinner": null
-      }
-    ],
-    "seriesScore1": 0,
-    "seriesScore2": 0
-  },
-  {
-    "id": "2390762",
-    "team1": "Oramond",
-    "team2": "BESTIA",
-    "status": "Live",
-    "url": "https://www.hltv.org/matches/2390762/oramond-vs-bestia-digital-crusade-draculan-season-5",
-    "createdAt": "2026-02-25T19:09:17.967Z",
-    "updatedAt": "2026-02-25T19:09:17.967Z",
-    "maps": 1,
-    "currentMap": 2,
-    "mapScores": [
-      {
-        "map": 2,
-        "score1": 13,
-        "score2": 9,
-        "mapWinner": "team1"
-      }
-    ],
-    "seriesScore1": 1,
-    "seriesScore2": 0
-  },
-  {
-    "id": "2390067",
-    "team1": "SINNERS",
-    "team2": "los kogutos",
-    "status": "Live",
-    "url": "https://www.hltv.org/matches/2390067/sinners-vs-los-kogutos-cct-season-3-europe-series-16",
-    "createdAt": "2026-02-25T19:09:00.688Z",
-    "updatedAt": "2026-02-25T19:09:00.688Z",
-    "maps": 1,
-    "currentMap": 1,
-    "mapScores": [
-      {
-        "map": 1,
-        "score1": 13,
-        "score2": 13,
-        "mapWinner": null
-      }
-    ],
-    "seriesScore1": 0,
-    "seriesScore2": 0
   }
 ]

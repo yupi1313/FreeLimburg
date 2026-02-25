@@ -2,18 +2,24 @@
   "id": "2390762",
   "team1": "Oramond",
   "team2": "BESTIA",
-  "status": "Live",
+  "status": "Finished",
   "url": "https://www.hltv.org/matches/2390762/oramond-vs-bestia-digital-crusade-draculan-season-5",
   "createdAt": "2026-02-25T19:09:17.967Z",
-  "updatedAt": "2026-02-25T19:09:17.967Z",
-  "maps": 1,
-  "currentMap": 2,
+  "updatedAt": "2026-02-25T20:11:56.061Z",
+  "maps": 2,
+  "currentMap": 3,
   "mapScores": [
     {
       "map": 2,
       "score1": 13,
       "score2": 9,
       "mapWinner": "team1"
+    },
+    {
+      "map": 3,
+      "score1": 0,
+      "score2": 0,
+      "mapWinner": null
     }
   ],
   "seriesScore1": 1,
