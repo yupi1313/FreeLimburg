@@ -247,9 +247,8 @@ function renderDetail() {
     // Compute stats
     const kills = mapEvents.filter(e => e.eventType === 'kill');
     const headshots = kills.filter(e => e.isHeadshot);
-    // Compute rounds played from round_end events (count of round_end = rounds completed)
-    const roundEnds = mapEvents.filter(e => e.eventType === 'round_end');
-    const maxRound = roundEnds.length;
+    // Compute rounds played from max roundNumber in events
+    const maxRound = mapEvents.reduce((max, e) => Math.max(max, e.roundNumber || 0), 0);
 
     // Event type counts for filter buttons
     const typeCounts = {};
@@ -360,77 +359,27 @@ function setFilter(filter) {
 }
 
 // ── Event Rows ──────────────────────────────────────
-
-// Compute round numbers from round_end events (not relying on DB roundNumber)
-function computeEventRounds(events) {
-    // Events come newest-first from API. We reverse to go oldest-first.
-    const sorted = [...events].reverse();
-
-    // First pass: find round_end events and extract round numbers from logText.
-    // "Round over - Winner: T (13 - 5) - ..." => round = 13 + 5 = 18
-    const roundEndIndices = [];
-    for (let i = 0; i < sorted.length; i++) {
-        if (sorted[i].eventType === 'round_end') {
-            const scoreMatch = (sorted[i].logText || '').match(/\((\d+)\s*-\s*(\d+)\)/);
-            const roundNum = scoreMatch
-                ? parseInt(scoreMatch[1]) + parseInt(scoreMatch[2])
-                : null;
-            roundEndIndices.push({ index: i, round: roundNum });
-        }
-    }
-
-    // Second pass: assign round numbers to all events.
-    // Events before the first round_end belong to that round.
-    // Events after a round_end and before the next belong to the next round.
-    const roundMap = new Array(sorted.length).fill(null);
-
-    if (roundEndIndices.length > 0) {
-        // From oldest round_end backwards to start
-        for (let i = 0; i < roundEndIndices.length; i++) {
-            const { index, round } = roundEndIndices[i];
-            const prevIndex = i > 0 ? roundEndIndices[i - 1].index + 1 : 0;
-            // All events from prevIndex to index belong to this round
-            for (let j = prevIndex; j <= index; j++) {
-                roundMap[j] = round;
-            }
-        }
-        // Events after the last round_end belong to the next round
-        const lastRE = roundEndIndices[roundEndIndices.length - 1];
-        const nextRound = (lastRE.round || 0) + 1;
-        for (let j = lastRE.index + 1; j < sorted.length; j++) {
-            roundMap[j] = nextRound;
-        }
-    } else {
-        // No round_end events — all events are in round 1
-        roundMap.fill(1);
-    }
-
-    return sorted.map((ev, i) => ({ ...ev, computedRound: roundMap[i] }))
-        .sort((a, b) => {
-            // Sort by round ascending
-            if (a.computedRound !== b.computedRound) return (a.computedRound || 0) - (b.computedRound || 0);
-            // Within same round: put round_end last
-            if (a.eventType === 'round_end' && b.eventType !== 'round_end') return 1;
-            if (b.eventType === 'round_end' && a.eventType !== 'round_end') return -1;
-            return 0;
-        });
-}
-
 function renderEventsRows(events) {
     if (events.length === 0) {
         return `<tr><td colspan="6" style="text-align:center;padding:40px;color:var(--text-muted);">No events</td></tr>`;
     }
 
-    // Compute correct round numbers
-    const eventsWithRounds = computeEventRounds(events);
+    // Sort by roundNumber ascending, round_end events last within each round
+    const sorted = [...events].sort((a, b) => {
+        const ra = a.roundNumber || 0;
+        const rb = b.roundNumber || 0;
+        if (ra !== rb) return ra - rb;
+        if (a.eventType === 'round_end' && b.eventType !== 'round_end') return 1;
+        if (b.eventType === 'round_end' && a.eventType !== 'round_end') return -1;
+        return 0;
+    });
 
     let html = '';
     let lastRound = -1;
 
-    for (const ev of eventsWithRounds) {
-        const round = ev.computedRound || 0;
+    for (const ev of sorted) {
+        const round = ev.roundNumber || 0;
 
-        // Round separator
         if (round !== lastRound && round > 0) {
             html += `<tr class="round-row"><td colspan="6">Round ${round}</td></tr>`;
             lastRound = round;
@@ -440,7 +389,6 @@ function renderEventsRows(events) {
         let targetName = ev.victimName || '';
         let weaponName = ev.weapon || '';
 
-        // If it's a non-kill event, the scraper sometimes puts data in logText
         if (!actorName && !targetName && !weaponName && ev.logText) {
             weaponName = ev.logText;
         }
