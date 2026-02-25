@@ -109,6 +109,18 @@ function renderMatchList() {
             ? `<div class="live-indicator"><span class="live-dot"></span><span>LIVE</span></div>`
             : `<span>FINISHED</span>`;
 
+        // Build score display from mapScores
+        const mapScores = m.mapScores || [];
+        const latestMap = mapScores.length > 0 ? mapScores[mapScores.length - 1] : null;
+        const scoreDisplay = latestMap
+            ? `<span class="score-num">${latestMap.score1}</span><span class="score-sep">:</span><span class="score-num">${latestMap.score2}</span>`
+            : `<span class="score-sep" style="font-size: 14px;">VS</span>`;
+
+        // Map pills showing per-map scores
+        const mapPillsHtml = mapScores.map(ms =>
+            `<span class="map-pill">M${ms.map}: ${ms.score1}-${ms.score2}</span>`
+        ).join('');
+
         return `
         <div class="match-card" data-id="${m.id}" onclick="openMatch('${m.id}')">
             <div class="match-card__tournament">
@@ -119,15 +131,14 @@ function renderMatchList() {
                     <span class="team__name">${escHtml(m.team1 || 'Team 1')}</span>
                 </div>
                 <div class="score-block">
-                    <span class="score-sep" style="font-size: 14px;">VS</span>
+                    ${scoreDisplay}
                 </div>
                 <div class="team">
                     <span class="team__name">${escHtml(m.team2 || 'Team 2')}</span>
                 </div>
             </div>
             <div class="match-card__footer">
-                <span class="event-count" style="font-size: 11px;">ID: ${m.id}</span>
-                <div class="map-pills"></div>
+                <div class="map-pills">${mapPillsHtml || '<span class="map-pill map-pill--empty">No maps</span>'}</div>
             </div>
         </div>`;
     }).join('');

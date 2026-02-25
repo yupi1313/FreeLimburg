@@ -1,12 +1,45 @@
 [
   {
+    "id": "2390757",
+    "team1": "BESTIA",
+    "team2": "MANA",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390757/bestia-vs-mana-digital-crusade-draculan-season-5",
+    "createdAt": "2026-02-25T14:30:28.267Z",
+    "updatedAt": "2026-02-25T14:30:28.267Z",
+    "maps": 0,
+    "currentMap": 0,
+    "mapScores": []
+  },
+  {
+    "id": "2390759",
+    "team1": "ENCE",
+    "team2": "100 Thieves",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390759/ence-vs-100-thieves-digital-crusade-draculan-season-5",
+    "createdAt": "2026-02-25T14:16:29.293Z",
+    "updatedAt": "2026-02-25T14:16:29.293Z",
+    "maps": 0,
+    "currentMap": 0,
+    "mapScores": []
+  },
+  {
     "id": "2390756",
     "team1": "Oramond",
     "team2": "Eternal Fire",
     "status": "Live",
     "url": "https://www.hltv.org/matches/2390756/oramond-vs-eternal-fire-digital-crusade-draculan-season-5",
     "createdAt": "2026-02-25T14:01:26.042Z",
-    "updatedAt": "2026-02-25T14:01:26.042Z"
+    "updatedAt": "2026-02-25T14:01:26.042Z",
+    "maps": 1,
+    "currentMap": 1,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 0,
+        "score2": 0
+      }
+    ]
   },
   {
     "id": "2390921",
@@ -15,7 +48,16 @@
     "status": "Live",
     "url": "https://www.hltv.org/matches/2390921/csdiilit-vs-masonic-cct-season-3-europe-series-17-closed-qualifier",
     "createdAt": "2026-02-25T13:55:12.950Z",
-    "updatedAt": "2026-02-25T13:55:12.950Z"
+    "updatedAt": "2026-02-25T13:55:12.950Z",
+    "maps": 1,
+    "currentMap": 2,
+    "mapScores": [
+      {
+        "map": 2,
+        "score1": 13,
+        "score2": 5
+      }
+    ]
   },
   {
     "id": "2390065",
@@ -24,6 +66,15 @@
     "status": "Live",
     "url": "https://www.hltv.org/matches/2390065/nuclear-tigeres-vs-mouz-nxt-cct-season-3-europe-series-16",
     "createdAt": "2026-02-25T13:55:06.932Z",
-    "updatedAt": "2026-02-25T13:55:06.932Z"
+    "updatedAt": "2026-02-25T13:55:06.932Z",
+    "maps": 1,
+    "currentMap": 2,
+    "mapScores": [
+      {
+        "map": 2,
+        "score1": 12,
+        "score2": 6
+      }
+    ]
   }
 ]
