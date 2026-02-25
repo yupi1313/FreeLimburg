@@ -9,7 +9,9 @@
     "updatedAt": "2026-02-25T16:01:10.048Z",
     "maps": 0,
     "currentMap": 0,
-    "mapScores": []
+    "mapScores": [],
+    "seriesScore1": 0,
+    "seriesScore2": 0
   },
   {
     "id": "2390441",
@@ -25,9 +27,12 @@
       {
         "map": 1,
         "score1": 1,
-        "score2": 12
+        "score2": 12,
+        "mapWinner": null
       }
-    ]
+    ],
+    "seriesScore1": 0,
+    "seriesScore2": 0
   },
   {
     "id": "2390066",
@@ -43,9 +48,12 @@
       {
         "map": 1,
         "score1": 0,
-        "score2": 0
+        "score2": 0,
+        "mapWinner": null
       }
-    ]
+    ],
+    "seriesScore1": 0,
+    "seriesScore2": 0
   },
   {
     "id": "2390922",
@@ -61,9 +69,12 @@
       {
         "map": 1,
         "score1": 5,
-        "score2": 13
+        "score2": 13,
+        "mapWinner": "team2"
       }
-    ]
+    ],
+    "seriesScore1": 0,
+    "seriesScore2": 1
   },
   {
     "id": "2390266",
@@ -78,10 +89,13 @@
     "mapScores": [
       {
         "map": 1,
-        "score1": 21,
-        "score2": 20
+        "score1": 25,
+        "score2": 22,
+        "mapWinner": "team1"
       }
-    ]
+    ],
+    "seriesScore1": 1,
+    "seriesScore2": 0
   },
   {
     "id": "2390756",
@@ -97,14 +111,18 @@
       {
         "map": 1,
         "score1": 0,
-        "score2": 0
+        "score2": 0,
+        "mapWinner": null
       },
       {
         "map": 2,
         "score1": 13,
-        "score2": 4
+        "score2": 4,
+        "mapWinner": "team1"
       }
-    ]
+    ],
+    "seriesScore1": 1,
+    "seriesScore2": 0
   },
   {
     "id": "2390757",
@@ -120,9 +138,12 @@
       {
         "map": 1,
         "score1": 16,
-        "score2": 12
+        "score2": 12,
+        "mapWinner": "team1"
       }
-    ]
+    ],
+    "seriesScore1": 1,
+    "seriesScore2": 0
   },
   {
     "id": "2390759",
@@ -138,9 +159,12 @@
       {
         "map": 1,
         "score1": 13,
-        "score2": 6
+        "score2": 8,
+        "mapWinner": "team1"
       }
-    ]
+    ],
+    "seriesScore1": 1,
+    "seriesScore2": 0
   },
   {
     "id": "2390921",
@@ -156,9 +180,12 @@
       {
         "map": 2,
         "score1": 13,
-        "score2": 5
+        "score2": 5,
+        "mapWinner": "team1"
       }
-    ]
+    ],
+    "seriesScore1": 1,
+    "seriesScore2": 0
   },
   {
     "id": "2390065",
@@ -174,8 +201,11 @@
       {
         "map": 2,
         "score1": 12,
-        "score2": 6
+        "score2": 6,
+        "mapWinner": null
       }
-    ]
+    ],
+    "seriesScore1": 0,
+    "seriesScore2": 0
   }
 ]

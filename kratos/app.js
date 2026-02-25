@@ -109,17 +109,20 @@ function renderMatchList() {
             ? `<div class="live-indicator"><span class="live-dot"></span><span>LIVE</span></div>`
             : `<span>FINISHED</span>`;
 
-        // Build score display from mapScores
+        // Series score (maps won by each team)
         const mapScores = m.mapScores || [];
-        const latestMap = mapScores.length > 0 ? mapScores[mapScores.length - 1] : null;
-        const scoreDisplay = latestMap
-            ? `<span class="score-num">${latestMap.score1}</span><span class="score-sep">:</span><span class="score-num">${latestMap.score2}</span>`
+        const s1 = m.seriesScore1 ?? 0;
+        const s2 = m.seriesScore2 ?? 0;
+        const hasData = mapScores.length > 0 && mapScores.some(ms => ms.score1 > 0 || ms.score2 > 0);
+        const scoreDisplay = hasData
+            ? `<span class="score-num">${s1}</span><span class="score-sep">:</span><span class="score-num">${s2}</span>`
             : `<span class="score-sep" style="font-size: 14px;">VS</span>`;
 
-        // Map pills showing per-map scores
-        const mapPillsHtml = mapScores.map(ms =>
-            `<span class="map-pill">M${ms.map}: ${ms.score1}-${ms.score2}</span>`
-        ).join('');
+        // Map pills showing per-map round scores
+        const mapPillsHtml = mapScores.map(ms => {
+            const winClass = ms.mapWinner === 'team1' ? ' map-pill--win1' : ms.mapWinner === 'team2' ? ' map-pill--win2' : '';
+            return `<span class="map-pill${winClass}">M${ms.map}: ${ms.score1}-${ms.score2}</span>`;
+        }).join('');
 
         return `
         <div class="match-card" data-id="${m.id}" onclick="openMatch('${m.id}')">
@@ -263,14 +266,17 @@ function renderDetail() {
 
     // Compute score display for detail header
     const mapScores = m.mapScores || [];
-    const latestMap = mapScores.length > 0 ? mapScores[mapScores.length - 1] : null;
-    const detailScoreHtml = latestMap
-        ? `<span class="score-num">${latestMap.score1}</span><span class="detail-score__sep">:</span><span class="score-num">${latestMap.score2}</span>`
+    const s1 = m.seriesScore1 ?? 0;
+    const s2 = m.seriesScore2 ?? 0;
+    const hasData = mapScores.length > 0 && mapScores.some(ms => ms.score1 > 0 || ms.score2 > 0);
+    const detailScoreHtml = hasData
+        ? `<span class="score-num">${s1}</span><span class="detail-score__sep">:</span><span class="score-num">${s2}</span>`
         : `<span class="detail-score__sep" style="font-size: 24px;">VS</span>`;
 
-    const detailMapPills = mapScores.map(ms =>
-        `<span class="map-pill">M${ms.map}: ${ms.score1}-${ms.score2}</span>`
-    ).join('');
+    const detailMapPills = mapScores.map(ms => {
+        const winClass = ms.mapWinner === 'team1' ? ' map-pill--win1' : ms.mapWinner === 'team2' ? ' map-pill--win2' : '';
+        return `<span class="map-pill${winClass}">M${ms.map}: ${ms.score1}-${ms.score2}</span>`;
+    }).join('');
 
     detailView.innerHTML = `
         <button class="back-btn" onclick="goBack()">← Back to matches</button>

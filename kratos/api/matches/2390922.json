@@ -12,7 +12,10 @@
     {
       "map": 1,
       "score1": 5,
-      "score2": 13
+      "score2": 13,
+      "mapWinner": "team2"
     }
-  ]
+  ],
+  "seriesScore1": 0,
+  "seriesScore2": 1
 }

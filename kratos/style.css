@@ -399,6 +399,18 @@ body {
   font-weight: 400;
 }
 
+.map-pill--win1 {
+  background: rgba(46, 160, 67, 0.15);
+  color: #3fb950;
+  border: 1px solid rgba(46, 160, 67, 0.25);
+}
+
+.map-pill--win2 {
+  background: rgba(248, 81, 73, 0.15);
+  color: #f85149;
+  border: 1px solid rgba(248, 81, 73, 0.25);
+}
+
 /* ── Detail View ─────────────────────────────────────── */
 .detail-view {
   display: none;
