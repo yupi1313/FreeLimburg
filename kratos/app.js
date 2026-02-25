@@ -405,7 +405,15 @@ function computeEventRounds(events) {
         roundMap.fill(1);
     }
 
-    return sorted.map((ev, i) => ({ ...ev, computedRound: roundMap[i] }));
+    return sorted.map((ev, i) => ({ ...ev, computedRound: roundMap[i] }))
+        .sort((a, b) => {
+            // Sort by round ascending
+            if (a.computedRound !== b.computedRound) return (a.computedRound || 0) - (b.computedRound || 0);
+            // Within same round: put round_end last
+            if (a.eventType === 'round_end' && b.eventType !== 'round_end') return 1;
+            if (b.eventType === 'round_end' && a.eventType !== 'round_end') return -1;
+            return 0;
+        });
 }
 
 function renderEventsRows(events) {
