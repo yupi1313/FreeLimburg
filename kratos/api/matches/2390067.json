@@ -2,10 +2,10 @@
   "id": "2390067",
   "team1": "SINNERS",
   "team2": "los kogutos",
-  "status": "Live",
+  "status": "Finished",
   "url": "https://www.hltv.org/matches/2390067/sinners-vs-los-kogutos-cct-season-3-europe-series-16",
   "createdAt": "2026-02-25T19:09:00.688Z",
-  "updatedAt": "2026-02-25T20:53:57.425Z",
+  "updatedAt": "2026-02-25T21:14:59.665Z",
   "maps": 3,
   "currentMap": 3,
   "mapScores": [
@@ -17,9 +17,9 @@
     },
     {
       "map": 2,
-      "score1": 8,
-      "score2": 5,
-      "mapWinner": null
+      "score1": 9,
+      "score2": 13,
+      "mapWinner": "team2"
     },
     {
       "map": 3,
@@ -29,5 +29,5 @@
     }
   ],
   "seriesScore1": 0,
-  "seriesScore2": 1
+  "seriesScore2": 2
 }
