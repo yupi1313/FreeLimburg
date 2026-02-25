@@ -1,5 +1,6 @@
 // ── Kratos CS2 Match Viewer ──────────────────────────
-const API_BASE = 'http://localhost:3000/api';
+const isDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+const API_BASE = isDev ? 'http://localhost:3000/api' : '/kratos/api';
 
 // ── State ───────────────────────────────────────────
 let matches = [];
@@ -19,7 +20,7 @@ document.addEventListener('DOMContentLoaded', init);
 
 async function init() {
     try {
-        const res = await fetch(`${API_BASE}/matches`);
+        const res = await fetch(`${API_BASE}/matches.json`);
         matches = await res.json();
         renderMatchList();
     } catch (err) {
@@ -86,8 +87,8 @@ async function openMatch(id) {
 
     try {
         const [matchRes, eventsRes] = await Promise.all([
-            fetch(`${API_BASE}/matches/${id}`),
-            fetch(`${API_BASE}/matches/${id}/events`)
+            fetch(`${API_BASE}/matches/${id}.json`),
+            fetch(`${API_BASE}/matches/${id}_events.json`)
         ]);
 
         currentMatch = await matchRes.json();

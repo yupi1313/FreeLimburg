@@ -1,242 +1,29 @@
 [
   {
-    "id": 10,
-    "team1": {
-      "id": 19,
-      "name": "Bad Luck",
-      "tag": "Bad Lu"
-    },
-    "team2": {
-      "id": 20,
-      "name": "R2",
-      "tag": "R2"
-    },
-    "team1_score": 1,
-    "team2_score": 2,
-    "status": "upcoming",
-    "format": null,
-    "stage": null,
-    "scheduled_at": "2026-02-24T23:01:04.569921",
-    "tournament": {
-      "id": 2,
-      "name": "CCT Season 3 South America Series 9"
-    },
-    "event_count": 148
+    "id": "2390756",
+    "team1": "Oramond",
+    "team2": "Eternal Fire",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390756/oramond-vs-eternal-fire-digital-crusade-draculan-season-5",
+    "createdAt": "2026-02-25T14:01:26.042Z",
+    "updatedAt": "2026-02-25T14:01:26.042Z"
   },
   {
-    "id": 9,
-    "team1": {
-      "id": 17,
-      "name": "WW",
-      "tag": "WW"
-    },
-    "team2": {
-      "id": 18,
-      "name": "Lazer Cats",
-      "tag": "Lazer "
-    },
-    "team1_score": 2,
-    "team2_score": 0,
-    "status": "upcoming",
-    "format": null,
-    "stage": null,
-    "scheduled_at": "2026-02-24T23:00:50.743847",
-    "tournament": {
-      "id": 7,
-      "name": "European Pro League Series 5"
-    },
-    "event_count": 108
+    "id": "2390921",
+    "team1": "CSDIILIT",
+    "team2": "MASONIC",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390921/csdiilit-vs-masonic-cct-season-3-europe-series-17-closed-qualifier",
+    "createdAt": "2026-02-25T13:55:12.950Z",
+    "updatedAt": "2026-02-25T13:55:12.950Z"
   },
   {
-    "id": 8,
-    "team1": {
-      "id": 15,
-      "name": "los kogutos",
-      "tag": "los ko"
-    },
-    "team2": {
-      "id": 16,
-      "name": "CSDIILIT",
-      "tag": "CSDIIL"
-    },
-    "team1_score": 2,
-    "team2_score": 0,
-    "status": "upcoming",
-    "format": null,
-    "stage": null,
-    "scheduled_at": "2026-02-24T23:00:37.362058",
-    "tournament": {
-      "id": 6,
-      "name": "JB Pro League Season 2"
-    },
-    "event_count": 110
-  },
-  {
-    "id": 7,
-    "team1": {
-      "id": 13,
-      "name": "The Last Resort",
-      "tag": "The La"
-    },
-    "team2": {
-      "id": 14,
-      "name": "BUFF3D UP",
-      "tag": "BUFF3D"
-    },
-    "team1_score": 2,
-    "team2_score": 0,
-    "status": "upcoming",
-    "format": null,
-    "stage": null,
-    "scheduled_at": "2026-02-24T23:00:23.652201",
-    "tournament": {
-      "id": 5,
-      "name": "UKIC Masters Spring 2026"
-    },
-    "event_count": 107
-  },
-  {
-    "id": 6,
-    "team1": {
-      "id": 11,
-      "name": "HAVU",
-      "tag": "HAVU"
-    },
-    "team2": {
-      "id": 12,
-      "name": "QWENTRY",
-      "tag": "QWENTR"
-    },
-    "team1_score": 1,
-    "team2_score": 2,
-    "status": "upcoming",
-    "format": null,
-    "stage": null,
-    "scheduled_at": "2026-02-24T23:00:06.502401",
-    "tournament": {
-      "id": 4,
-      "name": "CCT Season 3 Europe Series 17 Closed Qualifier"
-    },
-    "event_count": 152
-  },
-  {
-    "id": 5,
-    "team1": {
-      "id": 9,
-      "name": "zajezdzacze",
-      "tag": "zajezd"
-    },
-    "team2": {
-      "id": 10,
-      "name": "INFINITE",
-      "tag": "INFINI"
-    },
-    "team1_score": 1,
-    "team2_score": 2,
-    "status": "upcoming",
-    "format": null,
-    "stage": null,
-    "scheduled_at": "2026-02-24T22:59:49.049570",
-    "tournament": {
-      "id": 1,
-      "name": "Digital Crusade DraculaN Season 5"
-    },
-    "event_count": 157
-  },
-  {
-    "id": 4,
-    "team1": {
-      "id": 7,
-      "name": "TDK",
-      "tag": "TDK"
-    },
-    "team2": {
-      "id": 8,
-      "name": "Alliance",
-      "tag": "Allian"
-    },
-    "team1_score": 2,
-    "team2_score": 1,
-    "status": "upcoming",
-    "format": null,
-    "stage": null,
-    "scheduled_at": "2026-02-24T22:59:31.831962",
-    "tournament": {
-      "id": 3,
-      "name": "ESL Challenger League Season 51 Europe Cup 1"
-    },
-    "event_count": 154
-  },
-  {
-    "id": 3,
-    "team1": {
-      "id": 5,
-      "name": "FOLHA AMARELA",
-      "tag": "FOLHA "
-    },
-    "team2": {
-      "id": 6,
-      "name": "Isurus",
-      "tag": "Isurus"
-    },
-    "team1_score": 2,
-    "team2_score": 1,
-    "status": "upcoming",
-    "format": null,
-    "stage": null,
-    "scheduled_at": "2026-02-24T22:59:14.392323",
-    "tournament": {
-      "id": 2,
-      "name": "CCT Season 3 South America Series 9"
-    },
-    "event_count": 154
-  },
-  {
-    "id": 2,
-    "team1": {
-      "id": 3,
-      "name": "BRUTE",
-      "tag": "BRUTE"
-    },
-    "team2": {
-      "id": 4,
-      "name": "MANA",
-      "tag": "MANA"
-    },
-    "team1_score": 1,
-    "team2_score": 2,
-    "status": "upcoming",
-    "format": null,
-    "stage": null,
-    "scheduled_at": "2026-02-24T22:58:57.652244",
-    "tournament": {
-      "id": 1,
-      "name": "Digital Crusade DraculaN Season 5"
-    },
-    "event_count": 143
-  },
-  {
-    "id": 1,
-    "team1": {
-      "id": 1,
-      "name": "GenOne",
-      "tag": "GenOne"
-    },
-    "team2": {
-      "id": 2,
-      "name": "Nexus",
-      "tag": "Nexus"
-    },
-    "team1_score": 0,
-    "team2_score": 0,
-    "status": "upcoming",
-    "format": null,
-    "stage": null,
-    "scheduled_at": "2026-02-24T22:58:52.547984",
-    "tournament": {
-      "id": 1,
-      "name": "Digital Crusade DraculaN Season 5"
-    },
-    "event_count": 0
+    "id": "2390065",
+    "team1": "Nuclear TigeRES",
+    "team2": "MOUZ NXT",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390065/nuclear-tigeres-vs-mouz-nxt-cct-season-3-europe-series-16",
+    "createdAt": "2026-02-25T13:55:06.932Z",
+    "updatedAt": "2026-02-25T13:55:06.932Z"
   }
 ]
