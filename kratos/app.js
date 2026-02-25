@@ -5,9 +5,6 @@ const isDev = window.location.hostname === 'localhost' || window.location.hostna
 const STATIC_API = isDev ? 'http://localhost:3000/api' : '/kratos/api';
 let LIVE_API = null; // Will be loaded from config.json
 
-// Headers for localtunnel bypass
-const TUNNEL_HEADERS = { 'Bypass-Tunnel-Reminder': 'true' };
-
 // ── State ───────────────────────────────────────────
 let matches = [];
 let currentMatch = null;
@@ -21,70 +18,76 @@ const detailView = document.getElementById('detail-view');
 const matchGrid = document.getElementById('match-grid');
 const matchCountEl = document.getElementById('match-count');
 
+// ── Helper: fetch with timeout ──────────────────────
+function fetchWithTimeout(url, timeoutMs = 5000) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeoutMs);
+    return fetch(url, { signal: controller.signal, mode: 'cors' })
+        .finally(() => clearTimeout(timer));
+}
+
 // ── Init ────────────────────────────────────────────
 document.addEventListener('DOMContentLoaded', init);
 
 async function init() {
     // 1. Load config for live API URL
-    try {
-        const cfgRes = await fetch('/kratos/config.json');
-        const cfg = await cfgRes.json();
-        if (cfg.liveApiUrl) LIVE_API = cfg.liveApiUrl;
-    } catch (e) {
-        console.warn('[Config] No config.json found, live mode disabled');
+    if (!isDev) {
+        try {
+            const cfgRes = await fetch('/kratos/config.json');
+            if (cfgRes.ok) {
+                const cfg = await cfgRes.json();
+                if (cfg.liveApiUrl) LIVE_API = cfg.liveApiUrl;
+            }
+        } catch (e) {
+            console.warn('[Config] No config.json found, live mode disabled');
+        }
+    } else {
+        LIVE_API = 'http://localhost:3000/api';
     }
 
-    // In dev mode, always use the local server as live
-    if (isDev) LIVE_API = 'http://localhost:3000/api';
-
-    // 2. Load matches (try live first, fall back to static)
+    // 2. Load static data first (always works on production)
+    let loadedMatches = [];
     try {
-        let loadedMatches = [];
-
-        // Try live API first
-        if (LIVE_API) {
-            try {
-                const liveRes = await fetch(`${LIVE_API}/matches`, {
-                    signal: AbortSignal.timeout(5000),
-                    headers: TUNNEL_HEADERS
-                });
-                if (liveRes.ok) {
-                    loadedMatches = await liveRes.json();
-                    console.log(`[Live] Loaded ${loadedMatches.length} matches from live API`);
-                }
-            } catch (e) {
-                console.warn('[Live] Live API unavailable, falling back to static');
-            }
+        const staticRes = await fetch(`${STATIC_API}/matches.json`);
+        if (staticRes.ok) {
+            loadedMatches = await staticRes.json();
+            console.log(`[Static] Loaded ${loadedMatches.length} matches from static files`);
         }
+    } catch (e) {
+        console.warn('[Static] Failed to load static matches:', e);
+    }
 
-        // Also load static data for finished matches that may not be in live DB anymore
-        if (!isDev) {
-            try {
-                const staticRes = await fetch(`${STATIC_API}/matches.json`);
-                if (staticRes.ok) {
-                    const staticMatches = await staticRes.json();
-                    // Merge: live takes priority, append static ones not in live
-                    const liveIds = new Set(loadedMatches.map(m => String(m.id)));
-                    for (const sm of staticMatches) {
-                        if (!liveIds.has(String(sm.id))) {
-                            loadedMatches.push(sm);
-                        }
-                    }
-                    console.log(`[Static] Merged static data, total: ${loadedMatches.length} matches`);
+    // 3. Try live API to get fresh data (best-effort, don't block on failure)
+    if (LIVE_API) {
+        try {
+            const liveRes = await fetchWithTimeout(`${LIVE_API}/matches`, 5000);
+            if (liveRes.ok) {
+                const contentType = liveRes.headers.get('content-type') || '';
+                if (contentType.includes('application/json')) {
+                    const liveMatches = await liveRes.json();
+                    console.log(`[Live] Loaded ${liveMatches.length} matches from live API`);
+                    // Merge: live data takes priority over static
+                    const liveIds = new Set(liveMatches.map(m => String(m.id)));
+                    // Keep static matches not present in live
+                    const staticOnly = loadedMatches.filter(m => !liveIds.has(String(m.id)));
+                    loadedMatches = [...liveMatches, ...staticOnly];
+                } else {
+                    console.warn('[Live] Response was not JSON (probably tunnel interstitial)');
                 }
-            } catch (e) {
-                console.warn('[Static] Failed to load static matches');
             }
+        } catch (e) {
+            console.warn('[Live] Live API unavailable:', e.message);
         }
+    }
 
-        matches = loadedMatches;
-        renderMatchList();
-    } catch (err) {
+    matches = loadedMatches;
+    renderMatchList();
+
+    if (matches.length === 0) {
         matchGrid.innerHTML = `
             <div class="empty-state" style="grid-column: 1/-1;">
-                <p>⚠️ Failed to load matches.</p>
+                <p>No matches found. Make sure the API is running or static data is exported.</p>
             </div>`;
-        console.error('Failed to load matches:', err);
     }
 }
 
@@ -149,14 +152,20 @@ async function openMatch(id) {
         if (LIVE_API) {
             try {
                 const [matchRes, eventsRes] = await Promise.all([
-                    fetch(`${LIVE_API}/matches/${id}`, { signal: AbortSignal.timeout(5000), headers: TUNNEL_HEADERS }),
-                    fetch(`${LIVE_API}/matches/${id}/events`, { signal: AbortSignal.timeout(5000), headers: TUNNEL_HEADERS })
+                    fetchWithTimeout(`${LIVE_API}/matches/${id}`, 5000),
+                    fetchWithTimeout(`${LIVE_API}/matches/${id}/events`, 5000)
                 ]);
-                if (matchRes.ok) matchData = await matchRes.json();
-                if (eventsRes.ok) eventsData = await eventsRes.json();
+                const matchCt = matchRes.headers.get('content-type') || '';
+                const eventsCt = eventsRes.headers.get('content-type') || '';
+                if (matchRes.ok && matchCt.includes('application/json')) {
+                    matchData = await matchRes.json();
+                }
+                if (eventsRes.ok && eventsCt.includes('application/json')) {
+                    eventsData = await eventsRes.json();
+                }
                 if (matchData) console.log(`[Live] Loaded match ${id} with ${eventsData.length} events`);
             } catch (e) {
-                console.warn(`[Live] Failed to fetch match ${id} from live API`);
+                console.warn(`[Live] Failed to fetch match ${id} from live API:`, e.message);
             }
         }
 
