@@ -6,16 +6,22 @@
   "url": "https://www.hltv.org/matches/2390871/lp-vs-damajuana-cct-season-3-south-america-series-9",
   "createdAt": "2026-02-25T19:09:38.135Z",
   "updatedAt": "2026-02-25T19:09:38.135Z",
-  "maps": 1,
-  "currentMap": 1,
+  "maps": 2,
+  "currentMap": 2,
   "mapScores": [
     {
       "map": 1,
+      "score1": 13,
+      "score2": 6,
+      "mapWinner": "team1"
+    },
+    {
+      "map": 2,
       "score1": 0,
-      "score2": 2,
+      "score2": 0,
       "mapWinner": null
     }
   ],
-  "seriesScore1": 0,
+  "seriesScore1": 1,
   "seriesScore2": 0
 }

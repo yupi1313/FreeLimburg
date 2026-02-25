@@ -234,8 +234,16 @@ function goBack() {
 function renderDetail() {
     const m = currentMatch;
 
-    // Available maps
-    const maps = [...new Set(currentEvents.map(e => e.mapNumber))].sort((a, b) => a - b);
+    // Available maps from both events AND mapScores data
+    const eventMaps = [...new Set(currentEvents.map(e => e.mapNumber))];
+    const scoreMaps = (m.mapScores || []).map(ms => ms.map);
+    const maps = [...new Set([...eventMaps, ...scoreMaps])].sort((a, b) => a - b);
+
+    // Default to latest map with events, or first map
+    if (currentMapNumber === null || !maps.includes(currentMapNumber)) {
+        const mapsWithEvents = maps.filter(mn => currentEvents.some(e => e.mapNumber === mn));
+        currentMapNumber = mapsWithEvents.length > 0 ? mapsWithEvents[mapsWithEvents.length - 1] : (maps[0] || null);
+    }
 
     // Filter events for current map
     const mapEvents = currentMapNumber !== null
@@ -301,12 +309,17 @@ function renderDetail() {
 
         ${maps.length > 0 ? `
         <div class="map-tabs" id="map-tabs">
-            ${maps.map(mapNum => `
+            ${maps.map(mapNum => {
+        const ms = (m.mapScores || []).find(s => s.map === mapNum);
+        const scoreLabel = ms ? ` (${ms.score1}-${ms.score2})` : '';
+        const hasEvents = currentEvents.some(e => e.mapNumber === mapNum);
+        return `
                 <button class="map-tab ${mapNum === currentMapNumber ? 'active' : ''}"
-                        onclick="switchMap(${mapNum})">
-                    <span class="map-tab__name">Map ${mapNum}</span>
-                </button>
-            `).join('')}
+                        onclick="switchMap(${mapNum})"
+                        ${!hasEvents ? 'style="opacity:0.6"' : ''}>
+                    <span class="map-tab__name">Map ${mapNum}${scoreLabel}</span>
+                </button>`;
+    }).join('')}
             <button class="map-tab ${currentMapNumber === null ? 'active' : ''}"
                     onclick="switchMap(null)">
                 <span class="map-tab__name">All Maps</span>
