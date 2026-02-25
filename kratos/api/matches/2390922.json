@@ -1,0 +1,18 @@
+{
+  "id": "2390922",
+  "team1": "Pigeons",
+  "team2": "8Sins",
+  "status": "Live",
+  "url": "https://www.hltv.org/matches/2390922/pigeons-vs-8sins-cct-season-3-europe-series-17-closed-qualifier",
+  "createdAt": "2026-02-25T15:00:40.287Z",
+  "updatedAt": "2026-02-25T15:26:47.996Z",
+  "maps": 1,
+  "currentMap": 1,
+  "mapScores": [
+    {
+      "map": 1,
+      "score1": 5,
+      "score2": 8
+    }
+  ]
+}

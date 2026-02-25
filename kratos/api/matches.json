@@ -1,27 +1,39 @@
 [
   {
-    "id": "2390757",
-    "team1": "BESTIA",
-    "team2": "MANA",
+    "id": "2390922",
+    "team1": "Pigeons",
+    "team2": "8Sins",
     "status": "Live",
-    "url": "https://www.hltv.org/matches/2390757/bestia-vs-mana-digital-crusade-draculan-season-5",
-    "createdAt": "2026-02-25T14:30:28.267Z",
-    "updatedAt": "2026-02-25T14:30:28.267Z",
-    "maps": 0,
-    "currentMap": 0,
-    "mapScores": []
+    "url": "https://www.hltv.org/matches/2390922/pigeons-vs-8sins-cct-season-3-europe-series-17-closed-qualifier",
+    "createdAt": "2026-02-25T15:00:40.287Z",
+    "updatedAt": "2026-02-25T15:26:47.996Z",
+    "maps": 1,
+    "currentMap": 1,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 5,
+        "score2": 8
+      }
+    ]
   },
   {
-    "id": "2390759",
-    "team1": "ENCE",
-    "team2": "100 Thieves",
+    "id": "2390266",
+    "team1": "BASEMENT BOYS",
+    "team2": "CSDIILIT",
     "status": "Live",
-    "url": "https://www.hltv.org/matches/2390759/ence-vs-100-thieves-digital-crusade-draculan-season-5",
-    "createdAt": "2026-02-25T14:16:29.293Z",
-    "updatedAt": "2026-02-25T14:16:29.293Z",
-    "maps": 0,
-    "currentMap": 0,
-    "mapScores": []
+    "url": "https://www.hltv.org/matches/2390266/basement-boys-vs-csdiilit-nodwin-clutch-series-5",
+    "createdAt": "2026-02-25T15:00:31.534Z",
+    "updatedAt": "2026-02-25T15:26:41.454Z",
+    "maps": 1,
+    "currentMap": 1,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 9,
+        "score2": 3
+      }
+    ]
   },
   {
     "id": "2390756",
@@ -30,14 +42,55 @@
     "status": "Live",
     "url": "https://www.hltv.org/matches/2390756/oramond-vs-eternal-fire-digital-crusade-draculan-season-5",
     "createdAt": "2026-02-25T14:01:26.042Z",
-    "updatedAt": "2026-02-25T14:01:26.042Z",
-    "maps": 1,
-    "currentMap": 1,
+    "updatedAt": "2026-02-25T15:26:35.333Z",
+    "maps": 2,
+    "currentMap": 2,
     "mapScores": [
       {
         "map": 1,
         "score1": 0,
         "score2": 0
+      },
+      {
+        "map": 2,
+        "score1": 2,
+        "score2": 5
+      }
+    ]
+  },
+  {
+    "id": "2390757",
+    "team1": "BESTIA",
+    "team2": "MANA",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390757/bestia-vs-mana-digital-crusade-draculan-season-5",
+    "createdAt": "2026-02-25T14:30:28.267Z",
+    "updatedAt": "2026-02-25T15:26:29.227Z",
+    "maps": 1,
+    "currentMap": 1,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 11,
+        "score2": 8
+      }
+    ]
+  },
+  {
+    "id": "2390759",
+    "team1": "ENCE",
+    "team2": "100 Thieves",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390759/ence-vs-100-thieves-digital-crusade-draculan-season-5",
+    "createdAt": "2026-02-25T14:16:29.293Z",
+    "updatedAt": "2026-02-25T15:26:23.308Z",
+    "maps": 1,
+    "currentMap": 1,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 12,
+        "score2": 5
       }
     ]
   },

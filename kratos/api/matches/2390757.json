@@ -5,8 +5,14 @@
   "status": "Live",
   "url": "https://www.hltv.org/matches/2390757/bestia-vs-mana-digital-crusade-draculan-season-5",
   "createdAt": "2026-02-25T14:30:28.267Z",
-  "updatedAt": "2026-02-25T14:30:28.267Z",
-  "maps": 0,
-  "currentMap": 0,
-  "mapScores": []
+  "updatedAt": "2026-02-25T15:26:29.227Z",
+  "maps": 1,
+  "currentMap": 1,
+  "mapScores": [
+    {
+      "map": 1,
+      "score1": 11,
+      "score2": 8
+    }
+  ]
 }
