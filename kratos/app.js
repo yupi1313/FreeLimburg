@@ -420,7 +420,10 @@ function renderEventsRows(events) {
         let targetName = ev.victimName || '';
         let weaponName = ev.weapon || '';
 
-        if (!actorName && !targetName && !weaponName && ev.logText) {
+        // Parse round_end logText for bomb info
+        if (ev.eventType === 'round_end' && ev.logText) {
+            weaponName = ev.logText;
+        } else if (!actorName && !targetName && !weaponName && ev.logText) {
             weaponName = ev.logText;
         }
 

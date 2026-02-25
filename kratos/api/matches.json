@@ -1,12 +1,45 @@
 [
   {
+    "id": "2390443",
+    "team1": "ODDIK",
+    "team2": "9z",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390443/oddik-vs-9z-betboom-rush-b-summit-season-2",
+    "createdAt": "2026-02-25T22:31:07.743Z",
+    "updatedAt": "2026-02-25T23:49:15.851Z",
+    "maps": 3,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 13,
+        "score2": 9,
+        "mapWinner": "team1"
+      },
+      {
+        "map": 2,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      },
+      {
+        "map": 3,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      }
+    ],
+    "seriesScore1": 1,
+    "seriesScore2": 0
+  },
+  {
     "id": "2390872",
     "team1": "Players",
     "team2": "Isurus",
     "status": "Live",
     "url": "https://www.hltv.org/matches/2390872/players-vs-isurus-cct-season-3-south-america-series-9",
     "createdAt": "2026-02-25T22:01:09.868Z",
-    "updatedAt": "2026-02-25T23:39:50.590Z",
+    "updatedAt": "2026-02-25T23:48:51.354Z",
     "maps": 3,
     "currentMap": 3,
     "mapScores": [
@@ -18,8 +51,8 @@
       },
       {
         "map": 2,
-        "score1": 5,
-        "score2": 8,
+        "score1": 7,
+        "score2": 10,
         "mapWinner": null
       },
       {
@@ -31,39 +64,6 @@
     ],
     "seriesScore1": 0,
     "seriesScore2": 1
-  },
-  {
-    "id": "2390443",
-    "team1": "ODDIK",
-    "team2": "9z",
-    "status": "Live",
-    "url": "https://www.hltv.org/matches/2390443/oddik-vs-9z-betboom-rush-b-summit-season-2",
-    "createdAt": "2026-02-25T22:31:07.743Z",
-    "updatedAt": "2026-02-25T23:39:45.060Z",
-    "maps": 3,
-    "currentMap": 3,
-    "mapScores": [
-      {
-        "map": 1,
-        "score1": 11,
-        "score2": 8,
-        "mapWinner": null
-      },
-      {
-        "map": 2,
-        "score1": 0,
-        "score2": 0,
-        "mapWinner": null
-      },
-      {
-        "map": 3,
-        "score1": 0,
-        "score2": 0,
-        "mapWinner": null
-      }
-    ],
-    "seriesScore1": 0,
-    "seriesScore2": 0
   },
   {
     "id": "2390442",
