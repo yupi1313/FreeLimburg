@@ -1,0 +1,27 @@
+{
+  "id": "2390068",
+  "team1": "Oramond",
+  "team2": "TDK",
+  "status": "Live",
+  "url": "https://www.hltv.org/matches/2390068/oramond-vs-tdk-cct-season-3-europe-series-16",
+  "createdAt": "2026-02-26T10:11:03.718Z",
+  "updatedAt": "2026-02-26T10:21:07.798Z",
+  "maps": 2,
+  "currentMap": 3,
+  "mapScores": [
+    {
+      "map": 2,
+      "score1": 3,
+      "score2": 8,
+      "mapWinner": null
+    },
+    {
+      "map": 3,
+      "score1": 0,
+      "score2": 0,
+      "mapWinner": null
+    }
+  ],
+  "seriesScore1": 0,
+  "seriesScore2": 0
+}

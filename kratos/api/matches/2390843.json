@@ -1,0 +1,33 @@
+{
+  "id": "2390843",
+  "team1": "The Huns",
+  "team2": "Chinggis Warriors",
+  "status": "Live",
+  "url": "https://www.hltv.org/matches/2390843/the-huns-vs-chinggis-warriors-pgl-bucharest-2026-east-asia-closed-qualifier",
+  "createdAt": "2026-02-26T10:11:16.859Z",
+  "updatedAt": "2026-02-26T10:20:50.796Z",
+  "maps": 3,
+  "currentMap": 3,
+  "mapScores": [
+    {
+      "map": 1,
+      "score1": 13,
+      "score2": 16,
+      "mapWinner": "team2"
+    },
+    {
+      "map": 2,
+      "score1": 0,
+      "score2": 0,
+      "mapWinner": null
+    },
+    {
+      "map": 3,
+      "score1": 0,
+      "score2": 0,
+      "mapWinner": null
+    }
+  ],
+  "seriesScore1": 0,
+  "seriesScore2": 1
+}

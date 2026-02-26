@@ -1,0 +1,27 @@
+{
+  "id": "2391006",
+  "team1": "NEXVOID",
+  "team2": "BMZ",
+  "status": "Finished",
+  "url": "https://www.hltv.org/matches/2391006/nexvoid-vs-bmz-mesa-pro-series-winter-2026",
+  "createdAt": "2026-02-26T10:11:11.081Z",
+  "updatedAt": "2026-02-26T10:17:14.630Z",
+  "maps": 2,
+  "currentMap": 3,
+  "mapScores": [
+    {
+      "map": 2,
+      "score1": 4,
+      "score2": 13,
+      "mapWinner": "team2"
+    },
+    {
+      "map": 3,
+      "score1": 0,
+      "score2": 0,
+      "mapWinner": null
+    }
+  ],
+  "seriesScore1": 0,
+  "seriesScore2": 1
+}
