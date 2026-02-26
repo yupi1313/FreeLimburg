@@ -2,18 +2,18 @@
   "id": "2390782",
   "team1": "9INE",
   "team2": "Tricked",
-  "status": "Live",
+  "status": "Finished",
   "url": "https://www.hltv.org/matches/2390782/9ine-vs-tricked-pgl-bucharest-2026-europe-closed-qualifier",
   "createdAt": "2026-02-26T10:11:45.578Z",
-  "updatedAt": "2026-02-26T10:20:49.599Z",
+  "updatedAt": "2026-02-26T11:11:55.341Z",
   "maps": 2,
   "currentMap": 3,
   "mapScores": [
     {
       "map": 2,
-      "score1": 0,
-      "score2": 0,
-      "mapWinner": null
+      "score1": 11,
+      "score2": 13,
+      "mapWinner": "team2"
     },
     {
       "map": 3,
@@ -23,5 +23,5 @@
     }
   ],
   "seriesScore1": 0,
-  "seriesScore2": 0
+  "seriesScore2": 1
 }

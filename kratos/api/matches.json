@@ -1,19 +1,112 @@
 [
   {
+    "id": "2390649",
+    "team1": "Phantom",
+    "team2": "Lazer Cats",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390649/phantom-vs-lazer-cats-jb-pro-league-season-2",
+    "createdAt": "2026-02-26T10:11:58.177Z",
+    "updatedAt": "2026-02-26T11:29:00.296Z",
+    "maps": 2,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 2,
+        "score1": 16,
+        "score2": 13,
+        "mapWinner": "team1"
+      },
+      {
+        "map": 3,
+        "score1": 16,
+        "score2": 13,
+        "mapWinner": "team1"
+      }
+    ],
+    "seriesScore1": 2,
+    "seriesScore2": 0
+  },
+  {
+    "id": "2390804",
+    "team1": "Sangal",
+    "team2": "Omega",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390804/sangal-vs-omega-myskill-pro-league-series-2",
+    "createdAt": "2026-02-26T10:16:18.869Z",
+    "updatedAt": "2026-02-26T11:28:54.704Z",
+    "maps": 3,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 13,
+        "score2": 3,
+        "mapWinner": "team1"
+      },
+      {
+        "map": 2,
+        "score1": 13,
+        "score2": 3,
+        "mapWinner": "team1"
+      },
+      {
+        "map": 3,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      }
+    ],
+    "seriesScore1": 2,
+    "seriesScore2": 0
+  },
+  {
     "id": "2390803",
     "team1": "HOTU",
     "team2": "ALTAY",
     "status": "Live",
     "url": "https://www.hltv.org/matches/2390803/hotu-vs-altay-myskill-pro-league-series-2",
     "createdAt": "2026-02-26T10:11:38.032Z",
-    "updatedAt": "2026-02-26T10:21:11.923Z",
+    "updatedAt": "2026-02-26T11:28:48.569Z",
     "maps": 3,
     "currentMap": 3,
     "mapScores": [
       {
         "map": 1,
-        "score1": 1,
+        "score1": 13,
+        "score2": 2,
+        "mapWinner": "team1"
+      },
+      {
+        "map": 2,
+        "score1": 11,
         "score2": 5,
+        "mapWinner": null
+      },
+      {
+        "map": 3,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      }
+    ],
+    "seriesScore1": 1,
+    "seriesScore2": 0
+  },
+  {
+    "id": "2390844",
+    "team1": "Rare Atom",
+    "team2": "Lynn Vision",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390844/rare-atom-vs-lynn-vision-pgl-bucharest-2026-east-asia-closed-qualifier",
+    "createdAt": "2026-02-26T11:01:17.612Z",
+    "updatedAt": "2026-02-26T11:28:43.028Z",
+    "maps": 3,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 0,
+        "score2": 0,
         "mapWinner": null
       },
       {
@@ -33,20 +126,173 @@
     "seriesScore2": 0
   },
   {
-    "id": "2390924",
-    "team1": "ENCE Academy",
-    "team2": "CSDIILIT",
+    "id": "2390847",
+    "team1": "THE UNIT",
+    "team2": "Biryani",
     "status": "Live",
-    "url": "https://www.hltv.org/matches/2390924/ence-academy-vs-csdiilit-cct-season-3-europe-series-17-closed-qualifier",
-    "createdAt": "2026-02-26T10:12:04.444Z",
-    "updatedAt": "2026-02-26T10:21:10.364Z",
+    "url": "https://www.hltv.org/matches/2390847/the-unit-vs-biryani-pgl-bucharest-2026-west-asia-closed-qualifier",
+    "createdAt": "2026-02-26T10:31:18.533Z",
+    "updatedAt": "2026-02-26T11:28:37.082Z",
+    "maps": 3,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 12,
+        "score2": 2,
+        "mapWinner": null
+      },
+      {
+        "map": 2,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      },
+      {
+        "map": 3,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      }
+    ],
+    "seriesScore1": 0,
+    "seriesScore2": 0
+  },
+  {
+    "id": "2390618",
+    "team1": "Underground",
+    "team2": "Abyssal",
+    "status": "Live",
+    "url": "https://www.hltv.org/matches/2390618/underground-vs-abyssal-cct-season-3-oceania-series-4",
+    "createdAt": "2026-02-26T10:31:30.004Z",
+    "updatedAt": "2026-02-26T11:26:39.160Z",
+    "maps": 3,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 13,
+        "score2": 13,
+        "mapWinner": null
+      },
+      {
+        "map": 2,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      },
+      {
+        "map": 3,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      }
+    ],
+    "seriesScore1": 0,
+    "seriesScore2": 0
+  },
+  {
+    "id": "2390782",
+    "team1": "9INE",
+    "team2": "Tricked",
+    "status": "Finished",
+    "url": "https://www.hltv.org/matches/2390782/9ine-vs-tricked-pgl-bucharest-2026-europe-closed-qualifier",
+    "createdAt": "2026-02-26T10:11:45.578Z",
+    "updatedAt": "2026-02-26T11:11:55.341Z",
     "maps": 2,
     "currentMap": 3,
     "mapScores": [
       {
         "map": 2,
-        "score1": 1,
-        "score2": 7,
+        "score1": 11,
+        "score2": 13,
+        "mapWinner": "team2"
+      },
+      {
+        "map": 3,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      }
+    ],
+    "seriesScore1": 0,
+    "seriesScore2": 1
+  },
+  {
+    "id": "2390843",
+    "team1": "The Huns",
+    "team2": "Chinggis Warriors",
+    "status": "Finished",
+    "url": "https://www.hltv.org/matches/2390843/the-huns-vs-chinggis-warriors-pgl-bucharest-2026-east-asia-closed-qualifier",
+    "createdAt": "2026-02-26T10:11:16.859Z",
+    "updatedAt": "2026-02-26T11:11:26.705Z",
+    "maps": 3,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 1,
+        "score1": 13,
+        "score2": 16,
+        "mapWinner": "team2"
+      },
+      {
+        "map": 2,
+        "score1": 13,
+        "score2": 16,
+        "mapWinner": "team2"
+      },
+      {
+        "map": 3,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      }
+    ],
+    "seriesScore1": 0,
+    "seriesScore2": 2
+  },
+  {
+    "id": "2390924",
+    "team1": "ENCE Academy",
+    "team2": "CSDIILIT",
+    "status": "Finished",
+    "url": "https://www.hltv.org/matches/2390924/ence-academy-vs-csdiilit-cct-season-3-europe-series-17-closed-qualifier",
+    "createdAt": "2026-02-26T10:12:04.444Z",
+    "updatedAt": "2026-02-26T10:57:12.638Z",
+    "maps": 2,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 2,
+        "score1": 13,
+        "score2": 10,
+        "mapWinner": "team1"
+      },
+      {
+        "map": 3,
+        "score1": 0,
+        "score2": 0,
+        "mapWinner": null
+      }
+    ],
+    "seriesScore1": 1,
+    "seriesScore2": 0
+  },
+  {
+    "id": "2390268",
+    "team1": "MOUZ NXT",
+    "team2": "kONO",
+    "status": "Finished",
+    "url": "https://www.hltv.org/matches/2390268/mouz-nxt-vs-kono-nodwin-clutch-series-5",
+    "createdAt": "2026-02-26T10:11:52.520Z",
+    "updatedAt": "2026-02-26T10:41:58.873Z",
+    "maps": 2,
+    "currentMap": 3,
+    "mapScores": [
+      {
+        "map": 2,
+        "score1": 8,
+        "score2": 4,
         "mapWinner": null
       },
       {
@@ -63,138 +309,18 @@
     "id": "2390068",
     "team1": "Oramond",
     "team2": "TDK",
-    "status": "Live",
+    "status": "Finished",
     "url": "https://www.hltv.org/matches/2390068/oramond-vs-tdk-cct-season-3-europe-series-16",
     "createdAt": "2026-02-26T10:11:03.718Z",
-    "updatedAt": "2026-02-26T10:21:07.798Z",
+    "updatedAt": "2026-02-26T10:35:09.249Z",
     "maps": 2,
     "currentMap": 3,
     "mapScores": [
       {
         "map": 2,
-        "score1": 3,
-        "score2": 8,
-        "mapWinner": null
-      },
-      {
-        "map": 3,
-        "score1": 0,
-        "score2": 0,
-        "mapWinner": null
-      }
-    ],
-    "seriesScore1": 0,
-    "seriesScore2": 0
-  },
-  {
-    "id": "2390649",
-    "team1": "Phantom",
-    "team2": "Lazer Cats",
-    "status": "Live",
-    "url": "https://www.hltv.org/matches/2390649/phantom-vs-lazer-cats-jb-pro-league-season-2",
-    "createdAt": "2026-02-26T10:11:58.177Z",
-    "updatedAt": "2026-02-26T10:21:04.457Z",
-    "maps": 2,
-    "currentMap": 3,
-    "mapScores": [
-      {
-        "map": 2,
-        "score1": 2,
-        "score2": 5,
-        "mapWinner": null
-      },
-      {
-        "map": 3,
-        "score1": 0,
-        "score2": 0,
-        "mapWinner": null
-      }
-    ],
-    "seriesScore1": 0,
-    "seriesScore2": 0
-  },
-  {
-    "id": "2390268",
-    "team1": "MOUZ NXT",
-    "team2": "kONO",
-    "status": "Live",
-    "url": "https://www.hltv.org/matches/2390268/mouz-nxt-vs-kono-nodwin-clutch-series-5",
-    "createdAt": "2026-02-26T10:11:52.520Z",
-    "updatedAt": "2026-02-26T10:20:58.739Z",
-    "maps": 2,
-    "currentMap": 3,
-    "mapScores": [
-      {
-        "map": 2,
-        "score1": 6,
-        "score2": 2,
-        "mapWinner": null
-      },
-      {
-        "map": 3,
-        "score1": 0,
-        "score2": 0,
-        "mapWinner": null
-      }
-    ],
-    "seriesScore1": 0,
-    "seriesScore2": 0
-  },
-  {
-    "id": "2390804",
-    "team1": "Sangal",
-    "team2": "Omega",
-    "status": "Live",
-    "url": "https://www.hltv.org/matches/2390804/sangal-vs-omega-myskill-pro-league-series-2",
-    "createdAt": "2026-02-26T10:16:18.869Z",
-    "updatedAt": "2026-02-26T10:20:52.498Z",
-    "maps": 3,
-    "currentMap": 3,
-    "mapScores": [
-      {
-        "map": 1,
-        "score1": 1,
-        "score2": 0,
-        "mapWinner": null
-      },
-      {
-        "map": 2,
-        "score1": 0,
-        "score2": 0,
-        "mapWinner": null
-      },
-      {
-        "map": 3,
-        "score1": 0,
-        "score2": 0,
-        "mapWinner": null
-      }
-    ],
-    "seriesScore1": 0,
-    "seriesScore2": 0
-  },
-  {
-    "id": "2390843",
-    "team1": "The Huns",
-    "team2": "Chinggis Warriors",
-    "status": "Live",
-    "url": "https://www.hltv.org/matches/2390843/the-huns-vs-chinggis-warriors-pgl-bucharest-2026-east-asia-closed-qualifier",
-    "createdAt": "2026-02-26T10:11:16.859Z",
-    "updatedAt": "2026-02-26T10:20:50.796Z",
-    "maps": 3,
-    "currentMap": 3,
-    "mapScores": [
-      {
-        "map": 1,
         "score1": 13,
-        "score2": 16,
-        "mapWinner": "team2"
-      },
-      {
-        "map": 2,
-        "score1": 0,
-        "score2": 0,
-        "mapWinner": null
+        "score2": 5,
+        "mapWinner": "team1"
       },
       {
         "map": 3,
@@ -203,34 +329,7 @@
         "mapWinner": null
       }
     ],
-    "seriesScore1": 0,
-    "seriesScore2": 1
-  },
-  {
-    "id": "2390782",
-    "team1": "9INE",
-    "team2": "Tricked",
-    "status": "Live",
-    "url": "https://www.hltv.org/matches/2390782/9ine-vs-tricked-pgl-bucharest-2026-europe-closed-qualifier",
-    "createdAt": "2026-02-26T10:11:45.578Z",
-    "updatedAt": "2026-02-26T10:20:49.599Z",
-    "maps": 2,
-    "currentMap": 3,
-    "mapScores": [
-      {
-        "map": 2,
-        "score1": 0,
-        "score2": 0,
-        "mapWinner": null
-      },
-      {
-        "map": 3,
-        "score1": 0,
-        "score2": 0,
-        "mapWinner": null
-      }
-    ],
-    "seriesScore1": 0,
+    "seriesScore1": 1,
     "seriesScore2": 0
   },
   {

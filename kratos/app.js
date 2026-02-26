@@ -362,6 +362,7 @@ function renderDetail() {
                     <thead>
                         <tr>
                             <th class="col-round">Round</th>
+                            <th class="col-timer">Timer</th>
                             <th>Type</th>
                             <th>Player</th>
                             <th>Target</th>
@@ -392,7 +393,7 @@ function setFilter(filter) {
 // ── Event Rows ──────────────────────────────────────
 function renderEventsRows(events) {
     if (events.length === 0) {
-        return `<tr><td colspan="6" style="text-align:center;padding:40px;color:var(--text-muted);">No events</td></tr>`;
+        return `<tr><td colspan="7" style="text-align:center;padding:40px;color:var(--text-muted);">No events</td></tr>`;
     }
 
     // Sort by roundNumber descending (newest rounds first), round_end events first within each round
@@ -412,7 +413,7 @@ function renderEventsRows(events) {
         const round = ev.roundNumber || 0;
 
         if (round !== lastRound && round > 0) {
-            html += `<tr class="round-row"><td colspan="6">Round ${round}</td></tr>`;
+            html += `<tr class="round-row"><td colspan="7">Round ${round}</td></tr>`;
             lastRound = round;
         }
 
@@ -438,9 +439,12 @@ function renderEventsRows(events) {
         if (ev.isNoScope) mods.push('<span class="mod-icon mod-icon--noscope" data-tooltip="No Scope">NS</span>');
         if (ev.isBlindKill) mods.push('<span class="mod-icon mod-icon--flash" data-tooltip="Blind Kill">F</span>');
 
+        const timer = ev.roundTimer || '0:00';
+
         html += `
         <tr>
             <td class="col-round" style="font-family:var(--font-mono);color:var(--text-muted)">${round || '—'}</td>
+            <td class="col-timer" style="font-family:var(--font-mono);color:var(--text-muted);font-size:12px">${timer}</td>
             <td><span class="event-badge event-badge--${ev.eventType}">${formatEventType(ev.eventType)}</span></td>
             <td><span class="player-name player-name--actor">${escHtml(actorName)}</span></td>
             <td><span class="player-name player-name--target">${escHtml(targetName)}</span></td>

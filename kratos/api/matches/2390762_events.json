@@ -16,6 +16,7 @@
     "eventType": "round_end",
     "mapNumber": 2,
     "roundNumber": 35,
+    "roundTimer": "0:00",
     "eventHash": "69eac9e6a78e79e2b7d7b7580f887182",
     "timestamp": "2026-02-25T19:09:20.981Z"
   },
@@ -36,6 +37,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 35,
+    "roundTimer": "0:00",
     "eventHash": "55916f1bc3c329dac6bd653ec14abae2",
     "timestamp": "2026-02-25T19:09:20.990Z"
   },
@@ -56,6 +58,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 35,
+    "roundTimer": "0:00",
     "eventHash": "7a0bab051741b042440ad02548eeb918",
     "timestamp": "2026-02-25T19:09:20.998Z"
   },
@@ -76,6 +79,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 35,
+    "roundTimer": "0:00",
     "eventHash": "f39d1c5eb547661ef7631bbd67a6ea6d",
     "timestamp": "2026-02-25T19:09:21.006Z"
   },
@@ -96,6 +100,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 1,
+    "roundTimer": "0:00",
     "eventHash": "0f1a8375ea58dc0b5e41cfc41afef9a6",
     "timestamp": "2026-02-25T19:15:27.713Z"
   },
@@ -116,6 +121,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 1,
+    "roundTimer": "0:00",
     "eventHash": "6f7f0a655a881622eb39ac9bc2f31c83",
     "timestamp": "2026-02-25T19:15:27.722Z"
   },
@@ -136,6 +142,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 1,
+    "roundTimer": "0:00",
     "eventHash": "cdc6d9d0a05849c4584bc016cd1a5534",
     "timestamp": "2026-02-25T19:15:27.730Z"
   },
@@ -156,6 +163,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 1,
+    "roundTimer": "0:00",
     "eventHash": "e1a8ac891efd0d41a3c78f4fc3cae0e5",
     "timestamp": "2026-02-25T19:15:27.739Z"
   },
@@ -176,6 +184,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 1,
+    "roundTimer": "0:00",
     "eventHash": "bd755148957040259afe6275ff61a686",
     "timestamp": "2026-02-25T19:15:30.676Z"
   },
@@ -196,6 +205,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 2,
+    "roundTimer": "0:00",
     "eventHash": "f05fd96be6e09bfe668edd9916c818ea",
     "timestamp": "2026-02-25T19:16:21.768Z"
   },
@@ -216,6 +226,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 2,
+    "roundTimer": "0:00",
     "eventHash": "43c72622fb4201fdddb706123b60c741",
     "timestamp": "2026-02-25T19:16:24.771Z"
   },
@@ -236,6 +247,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 2,
+    "roundTimer": "0:00",
     "eventHash": "638e8a715f6d4f5dd8808587aa53925d",
     "timestamp": "2026-02-25T19:16:24.780Z"
   },
@@ -256,6 +268,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 2,
+    "roundTimer": "0:00",
     "eventHash": "dbc1c8df28f93cccb11d6ecbb5bea62a",
     "timestamp": "2026-02-25T19:16:24.788Z"
   },
@@ -276,6 +289,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 2,
+    "roundTimer": "0:00",
     "eventHash": "1b672d6af4842ea90ee541fb3d71384e",
     "timestamp": "2026-02-25T19:16:24.796Z"
   },
@@ -296,6 +310,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 3,
+    "roundTimer": "0:00",
     "eventHash": "efc7aac94d0dacba2cef365b3f8335b9",
     "timestamp": "2026-02-25T19:18:09.956Z"
   },
@@ -316,6 +331,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 3,
+    "roundTimer": "0:00",
     "eventHash": "7e84ee8c4635b51fb01bb4ef41558713",
     "timestamp": "2026-02-25T19:18:09.984Z"
   },
@@ -336,6 +352,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 3,
+    "roundTimer": "0:00",
     "eventHash": "8d1448fc66caa959fb6bca0b2648bdd6",
     "timestamp": "2026-02-25T19:18:09.993Z"
   },
@@ -356,6 +373,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 3,
+    "roundTimer": "0:00",
     "eventHash": "6380e2125e7c1e3fb52519ff2b73d303",
     "timestamp": "2026-02-25T19:18:10.002Z"
   },
@@ -376,6 +394,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 4,
+    "roundTimer": "0:00",
     "eventHash": "897b384987af76b34e809281717169e4",
     "timestamp": "2026-02-25T19:18:12.967Z"
   },
@@ -396,6 +415,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 4,
+    "roundTimer": "0:00",
     "eventHash": "c2576432c78e241385ad54d6446e2412",
     "timestamp": "2026-02-25T19:18:30.990Z"
   },
@@ -416,6 +436,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 4,
+    "roundTimer": "0:00",
     "eventHash": "3685590261d096262cdf5154cfbb1d8f",
     "timestamp": "2026-02-25T19:19:07.069Z"
   },
@@ -436,6 +457,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 4,
+    "roundTimer": "0:00",
     "eventHash": "a553a6ebaab9b1dd3731cec59f625e08",
     "timestamp": "2026-02-25T19:19:13.078Z"
   },
@@ -456,6 +478,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 5,
+    "roundTimer": "0:00",
     "eventHash": "49b860b484738bfa7270a082e36116a5",
     "timestamp": "2026-02-25T19:19:13.088Z"
   },
@@ -476,6 +499,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 5,
+    "roundTimer": "0:00",
     "eventHash": "4922078105e81215c83c6d5f1e486807",
     "timestamp": "2026-02-25T19:19:13.097Z"
   },
@@ -496,6 +520,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 5,
+    "roundTimer": "0:00",
     "eventHash": "f685b028449b03b2c5ec1bc0692d961c",
     "timestamp": "2026-02-25T19:19:16.076Z"
   },
@@ -516,6 +541,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 5,
+    "roundTimer": "0:00",
     "eventHash": "be4628eb7b2a9693c7dbd4c633392eb1",
     "timestamp": "2026-02-25T19:19:16.086Z"
   },
@@ -536,6 +562,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 5,
+    "roundTimer": "0:00",
     "eventHash": "06d7508c48e07172196a9bfd0fef883a",
     "timestamp": "2026-02-25T19:19:22.087Z"
   },
@@ -556,6 +583,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 6,
+    "roundTimer": "0:00",
     "eventHash": "fe9020306791b1484e4f2a9831c9cba0",
     "timestamp": "2026-02-25T19:19:25.088Z"
   },
@@ -576,6 +604,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 6,
+    "roundTimer": "0:00",
     "eventHash": "c84896fd0f044deef742b05ec9ca60e4",
     "timestamp": "2026-02-25T19:19:40.104Z"
   },
@@ -596,6 +625,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 6,
+    "roundTimer": "0:00",
     "eventHash": "7f0e44c5b82b3576c15138c2047e91c7",
     "timestamp": "2026-02-25T19:19:43.114Z"
   },
@@ -616,6 +646,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 6,
+    "roundTimer": "0:00",
     "eventHash": "f1bd6cf7d15e53b946094d9051588ac1",
     "timestamp": "2026-02-25T19:19:52.127Z"
   },
@@ -636,6 +667,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 6,
+    "roundTimer": "0:00",
     "eventHash": "a7da591c0a65e6887b6682cccfec2fdf",
     "timestamp": "2026-02-25T19:19:55.139Z"
   },
@@ -656,6 +688,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 7,
+    "roundTimer": "0:00",
     "eventHash": "45ce3182f794cbd7e3a38ee681de0829",
     "timestamp": "2026-02-25T19:20:01.154Z"
   },
@@ -676,6 +709,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 7,
+    "roundTimer": "0:00",
     "eventHash": "4524685fe99674e25abc5b6d7fa7df45",
     "timestamp": "2026-02-25T19:20:04.163Z"
   },
@@ -696,6 +730,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 7,
+    "roundTimer": "0:00",
     "eventHash": "5794e27640fdaf6d7b89f301e01d3063",
     "timestamp": "2026-02-25T19:20:19.195Z"
   },
@@ -716,6 +751,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 7,
+    "roundTimer": "0:00",
     "eventHash": "40856ddb1a678ad6c9fb2b4af0dedf09",
     "timestamp": "2026-02-25T19:20:31.222Z"
   },
@@ -736,6 +772,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 7,
+    "roundTimer": "0:00",
     "eventHash": "9464fc4b71a687cbdef4e3a4b021c656",
     "timestamp": "2026-02-25T19:20:31.230Z"
   },
@@ -756,6 +793,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 8,
+    "roundTimer": "0:00",
     "eventHash": "912302e1823bdb0efe9e785b3c0c0e25",
     "timestamp": "2026-02-25T19:20:31.238Z"
   },
@@ -776,6 +814,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 8,
+    "roundTimer": "0:00",
     "eventHash": "0a975ac1ca39f535628dc2cc2f2dc561",
     "timestamp": "2026-02-25T19:20:34.227Z"
   },
@@ -796,6 +835,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 8,
+    "roundTimer": "0:00",
     "eventHash": "984187392f8f69adc6a15844cb042085",
     "timestamp": "2026-02-25T19:20:34.235Z"
   },
@@ -816,6 +856,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 8,
+    "roundTimer": "0:00",
     "eventHash": "162761e46f4fae8f8f7585b9db5d1a4b",
     "timestamp": "2026-02-25T19:20:37.224Z"
   },
@@ -836,6 +877,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 8,
+    "roundTimer": "0:00",
     "eventHash": "a96a36750a2c21bc4b92f325a0a6a5bd",
     "timestamp": "2026-02-25T19:20:37.233Z"
   },
@@ -856,6 +898,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 9,
+    "roundTimer": "0:00",
     "eventHash": "7d39d115ffaf1d95d539cd3b55d48617",
     "timestamp": "2026-02-25T19:20:43.242Z"
   },
@@ -876,6 +919,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 9,
+    "roundTimer": "0:00",
     "eventHash": "1ea53adcb3304b930334316284e35dd3",
     "timestamp": "2026-02-25T19:20:49.250Z"
   },
@@ -896,6 +940,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 9,
+    "roundTimer": "0:00",
     "eventHash": "e8e837cf14af7b14cecc6c20bc8549f0",
     "timestamp": "2026-02-25T19:20:49.260Z"
   },
@@ -916,6 +961,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 30,
+    "roundTimer": "0:00",
     "eventHash": "d4d2354cfdbecb8c0e6ec9775a74ec4e",
     "timestamp": "2026-02-25T19:20:52.255Z"
   },
@@ -936,6 +982,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 9,
+    "roundTimer": "0:00",
     "eventHash": "e8cddde56e071063228d47eaa497b244",
     "timestamp": "2026-02-25T19:21:01.273Z"
   },
@@ -956,6 +1003,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 9,
+    "roundTimer": "0:00",
     "eventHash": "092f4e5c99ebc0058e32a284a6f813ff",
     "timestamp": "2026-02-25T19:21:04.285Z"
   },
@@ -976,6 +1024,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 10,
+    "roundTimer": "0:00",
     "eventHash": "509427d861372766f6d056c2f3a87213",
     "timestamp": "2026-02-25T19:21:16.312Z"
   },
@@ -996,6 +1045,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 10,
+    "roundTimer": "0:00",
     "eventHash": "3a997a386f1cf011b7a68dbf1f733d81",
     "timestamp": "2026-02-25T19:21:16.320Z"
   },
@@ -1016,6 +1066,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 10,
+    "roundTimer": "0:00",
     "eventHash": "c13100c41954932f50d6aa4872ef39ae",
     "timestamp": "2026-02-25T19:21:22.328Z"
   },
@@ -1036,6 +1087,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 10,
+    "roundTimer": "0:00",
     "eventHash": "c04762af637679acb0d7e7dc3f386f58",
     "timestamp": "2026-02-25T19:21:24.886Z"
   },
@@ -1056,6 +1108,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 10,
+    "roundTimer": "0:00",
     "eventHash": "3d07b83ebb84b5083c0ab6e32652d8bd",
     "timestamp": "2026-02-25T19:21:31.338Z"
   },
@@ -1076,6 +1129,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 11,
+    "roundTimer": "0:00",
     "eventHash": "4d63d27b7cfde04d60e60573a4a7409a",
     "timestamp": "2026-02-25T19:21:37.351Z"
   },
@@ -1096,6 +1150,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 11,
+    "roundTimer": "0:00",
     "eventHash": "ee4bd3a172bd2e0846d82fad9a54688b",
     "timestamp": "2026-02-25T19:21:40.352Z"
   },
@@ -1116,6 +1171,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 11,
+    "roundTimer": "0:00",
     "eventHash": "006d76ca1ea66ca0fdb5646e5ebc3817",
     "timestamp": "2026-02-25T19:21:52.376Z"
   },
@@ -1136,6 +1192,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 11,
+    "roundTimer": "0:00",
     "eventHash": "4335e60f54c69cb3e7f4b246c192c53a",
     "timestamp": "2026-02-25T19:22:01.389Z"
   },
@@ -1156,6 +1213,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 11,
+    "roundTimer": "0:00",
     "eventHash": "8dc452202f9106e07c61f64985cc2680",
     "timestamp": "2026-02-25T19:22:10.402Z"
   },
@@ -1176,6 +1234,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 12,
+    "roundTimer": "0:00",
     "eventHash": "65a947bece737d37c8107175ad9e301f",
     "timestamp": "2026-02-25T19:22:13.406Z"
   },
@@ -1196,6 +1255,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 12,
+    "roundTimer": "0:00",
     "eventHash": "07dbcbad4133712ad477de9b8d9e2a7a",
     "timestamp": "2026-02-25T19:22:19.421Z"
   },
@@ -1216,6 +1276,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 12,
+    "roundTimer": "0:00",
     "eventHash": "a88cdeb253af704eb830acff8837a2c6",
     "timestamp": "2026-02-25T19:22:22.435Z"
   },
@@ -1236,6 +1297,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 12,
+    "roundTimer": "0:00",
     "eventHash": "1d0b66edbe0fbf2dc65624691fd4042a",
     "timestamp": "2026-02-25T19:22:34.449Z"
   },
@@ -1256,6 +1318,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 12,
+    "roundTimer": "0:00",
     "eventHash": "2d1cfd0eb01381d7547d84092c440a62",
     "timestamp": "2026-02-25T19:22:40.449Z"
   },
@@ -1276,6 +1339,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 13,
+    "roundTimer": "0:00",
     "eventHash": "13e8f8e2f97ec86fcf04819936284682",
     "timestamp": "2026-02-25T19:22:40.458Z"
   },
@@ -1296,6 +1360,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 13,
+    "roundTimer": "0:00",
     "eventHash": "895e888ccd6894cd96cc586b63637375",
     "timestamp": "2026-02-25T19:23:34.535Z"
   },
@@ -1316,6 +1381,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 13,
+    "roundTimer": "0:00",
     "eventHash": "4574de592ed7d4c4fd0def1599995cf5",
     "timestamp": "2026-02-25T19:23:40.547Z"
   },
@@ -1336,6 +1402,7 @@
     "eventType": "bomb_plant",
     "mapNumber": 2,
     "roundNumber": 13,
+    "roundTimer": "0:00",
     "eventHash": "afbf392ee15814e66df0c086f71553e5",
     "timestamp": "2026-02-25T19:23:40.555Z"
   },
@@ -1356,6 +1423,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 13,
+    "roundTimer": "0:00",
     "eventHash": "f0825eb7d9ba6f8b35f9a18fe91eb4cb",
     "timestamp": "2026-02-25T19:23:43.549Z"
   },
@@ -1376,6 +1444,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 14,
+    "roundTimer": "0:00",
     "eventHash": "09e12e4d708df18031db968122cb7930",
     "timestamp": "2026-02-25T19:23:52.591Z"
   },
@@ -1396,6 +1465,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 14,
+    "roundTimer": "0:00",
     "eventHash": "08dfae4568035c50137c83cd07a4b282",
     "timestamp": "2026-02-25T19:23:52.605Z"
   },
@@ -1416,6 +1486,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 14,
+    "roundTimer": "0:00",
     "eventHash": "6afc3acb4a90c00d450413e669db4897",
     "timestamp": "2026-02-25T19:23:55.561Z"
   },
@@ -1436,6 +1507,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 14,
+    "roundTimer": "0:00",
     "eventHash": "7ef5926737d0394c0c4db1533c9bb055",
     "timestamp": "2026-02-25T19:23:58.563Z"
   },
@@ -1456,6 +1528,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 15,
+    "roundTimer": "0:00",
     "eventHash": "a9b19e6381cc105dcda377531586195b",
     "timestamp": "2026-02-25T19:25:19.696Z"
   },
@@ -1476,6 +1549,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 15,
+    "roundTimer": "0:00",
     "eventHash": "7f151279a9286cd59bde175894dfe7f0",
     "timestamp": "2026-02-25T19:25:22.701Z"
   },
@@ -1496,6 +1570,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 15,
+    "roundTimer": "0:00",
     "eventHash": "c6b8cfe4bf05640d409472a2e92f793f",
     "timestamp": "2026-02-25T19:25:22.710Z"
   },
@@ -1516,6 +1591,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 15,
+    "roundTimer": "0:00",
     "eventHash": "c7b3a31833a7200f5aab2cb582af295b",
     "timestamp": "2026-02-25T19:25:25.714Z"
   },
@@ -1536,6 +1612,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 15,
+    "roundTimer": "0:00",
     "eventHash": "4fb5dceb77e757279358c3d392edcee7",
     "timestamp": "2026-02-25T19:25:25.723Z"
   },
@@ -1556,6 +1633,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 15,
+    "roundTimer": "0:00",
     "eventHash": "a4ca9437344c04778f9fc26339b7d579",
     "timestamp": "2026-02-25T19:25:25.732Z"
   },
@@ -1576,6 +1654,7 @@
     "eventType": "bomb_plant",
     "mapNumber": 2,
     "roundNumber": 15,
+    "roundTimer": "0:00",
     "eventHash": "0b5929afc8d6787837034cd40d1bb35e",
     "timestamp": "2026-02-25T19:25:31.726Z"
   },
@@ -1596,6 +1675,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 15,
+    "roundTimer": "0:00",
     "eventHash": "7ab24ffa23e661adbf22d970c4a05145",
     "timestamp": "2026-02-25T19:25:37.740Z"
   },
@@ -1616,6 +1696,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 15,
+    "roundTimer": "0:00",
     "eventHash": "23aacc45b1361d7e2cc528c8a335c36c",
     "timestamp": "2026-02-25T19:25:43.751Z"
   },
@@ -1636,6 +1717,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 16,
+    "roundTimer": "0:00",
     "eventHash": "aecdcaa9d592cdcc0075830b0b3fd1c0",
     "timestamp": "2026-02-25T19:26:34.845Z"
   },
@@ -1656,6 +1738,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 16,
+    "roundTimer": "0:00",
     "eventHash": "6418bbc5b3a0f67904e598d1ba289912",
     "timestamp": "2026-02-25T19:26:46.873Z"
   },
@@ -1676,6 +1759,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 16,
+    "roundTimer": "0:00",
     "eventHash": "ec6110ebbc1ccccdc0a9c348a56a273d",
     "timestamp": "2026-02-25T19:26:49.879Z"
   },
@@ -1696,6 +1780,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 16,
+    "roundTimer": "0:00",
     "eventHash": "1c0b198c67c99dddb0a7ff78fb3d057e",
     "timestamp": "2026-02-25T19:26:52.876Z"
   },
@@ -1716,6 +1801,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 16,
+    "roundTimer": "0:00",
     "eventHash": "3913a6e80ef0450f3a4de402d6b5247b",
     "timestamp": "2026-02-25T19:26:55.880Z"
   },
@@ -1736,6 +1822,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 17,
+    "roundTimer": "0:00",
     "eventHash": "4245f5743321e6ccf760d789b529f17f",
     "timestamp": "2026-02-25T19:28:07.969Z"
   },
@@ -1756,6 +1843,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 17,
+    "roundTimer": "0:00",
     "eventHash": "116a55795b083f7939aee664230c52ee",
     "timestamp": "2026-02-25T19:28:07.978Z"
   },
@@ -1776,6 +1864,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 17,
+    "roundTimer": "0:00",
     "eventHash": "c17bed09e89a5b9252412f06b6b44a61",
     "timestamp": "2026-02-25T19:28:07.987Z"
   },
@@ -1796,6 +1885,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 17,
+    "roundTimer": "0:00",
     "eventHash": "df90891b3ec1ebffd855f54f4e897e34",
     "timestamp": "2026-02-25T19:28:10.979Z"
   },
@@ -1816,6 +1906,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 17,
+    "roundTimer": "0:00",
     "eventHash": "e29a34735e9d7bc312a9fe69fba1af72",
     "timestamp": "2026-02-25T19:28:10.999Z"
   },
@@ -1836,6 +1927,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 17,
+    "roundTimer": "0:00",
     "eventHash": "adb69c25bcec8716964b54238136c779",
     "timestamp": "2026-02-25T19:28:41.035Z"
   },
@@ -1856,6 +1948,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 17,
+    "roundTimer": "0:00",
     "eventHash": "dccc77fbc909cf08bd4ef76354ac8e5a",
     "timestamp": "2026-02-25T19:29:02.089Z"
   },
@@ -1875,7 +1968,8 @@
     "isSuicide": false,
     "eventType": "round_end",
     "mapNumber": 2,
-    "roundNumber": 17,
+    "roundNumber": 4,
+    "roundTimer": "0:00",
     "eventHash": "1c158858d615ae44c66d3aa2576b8350",
     "timestamp": "2026-02-25T19:29:26.147Z"
   },
@@ -1896,6 +1990,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 17,
+    "roundTimer": "0:00",
     "eventHash": "2ec5122ec6cec955a75911784538470a",
     "timestamp": "2026-02-25T19:29:26.155Z"
   },
@@ -1916,6 +2011,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 18,
+    "roundTimer": "0:00",
     "eventHash": "4fc1f86db768ea919295cf801e427582",
     "timestamp": "2026-02-25T19:30:02.221Z"
   },
@@ -1936,6 +2032,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 18,
+    "roundTimer": "0:00",
     "eventHash": "03d10c513155f653af7bbd42836fc8a0",
     "timestamp": "2026-02-25T19:30:05.232Z"
   },
@@ -1956,6 +2053,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 18,
+    "roundTimer": "0:00",
     "eventHash": "d65b4748b121370ba2e20b452a4d7779",
     "timestamp": "2026-02-25T19:30:23.251Z"
   },
@@ -1976,6 +2074,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 18,
+    "roundTimer": "0:00",
     "eventHash": "3e835dcc75b1c3e3714a5b922c383cf0",
     "timestamp": "2026-02-25T19:31:08.337Z"
   },
@@ -1996,6 +2095,7 @@
     "eventType": "bomb_plant",
     "mapNumber": 2,
     "roundNumber": 18,
+    "roundTimer": "0:00",
     "eventHash": "a48ed4a6548970f2c09e3c05fbe2e385",
     "timestamp": "2026-02-25T19:31:17.355Z"
   },
@@ -2015,7 +2115,8 @@
     "isSuicide": false,
     "eventType": "round_end",
     "mapNumber": 2,
-    "roundNumber": 18,
+    "roundNumber": 5,
+    "roundTimer": "0:00",
     "eventHash": "248e6b2a143304f99439a255e89f7644",
     "timestamp": "2026-02-25T19:31:38.409Z"
   },
@@ -2036,6 +2137,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 18,
+    "roundTimer": "0:00",
     "eventHash": "9aa8bea88ec6fab6729c823f04fe4e07",
     "timestamp": "2026-02-25T19:31:38.418Z"
   },
@@ -2056,6 +2158,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 19,
+    "roundTimer": "0:00",
     "eventHash": "d5e77840e8b49a423e3b95ccfb2d887f",
     "timestamp": "2026-02-25T19:33:08.601Z"
   },
@@ -2076,6 +2179,7 @@
     "eventType": "bomb_plant",
     "mapNumber": 2,
     "roundNumber": 19,
+    "roundTimer": "0:00",
     "eventHash": "c44cc7e061995c046e344ba6eed5bbb3",
     "timestamp": "2026-02-25T19:33:08.611Z"
   },
@@ -2096,6 +2200,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 19,
+    "roundTimer": "0:00",
     "eventHash": "5c87068d4416328eb0935bb5a744d5b9",
     "timestamp": "2026-02-25T19:33:29.657Z"
   },
@@ -2116,6 +2221,7 @@
     "eventType": "round_end",
     "mapNumber": 2,
     "roundNumber": 19,
+    "roundTimer": "0:00",
     "eventHash": "4202ec22da03491354fe2fe1dc74a16a",
     "timestamp": "2026-02-25T19:33:47.685Z"
   },
@@ -2136,6 +2242,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 20,
+    "roundTimer": "0:00",
     "eventHash": "53a27d743a86bc26bbe4a9457600b9ed",
     "timestamp": "2026-02-25T19:36:05.975Z"
   },
@@ -2156,6 +2263,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 20,
+    "roundTimer": "0:00",
     "eventHash": "b9787d080586a834c6ed837865d3227d",
     "timestamp": "2026-02-25T19:36:08.988Z"
   },
@@ -2176,6 +2284,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 20,
+    "roundTimer": "0:00",
     "eventHash": "b2c44ef903bb51066356bd660a0e58d2",
     "timestamp": "2026-02-25T19:36:09.001Z"
   },
@@ -2195,7 +2304,8 @@
     "isSuicide": false,
     "eventType": "round_end",
     "mapNumber": 2,
-    "roundNumber": 20,
+    "roundNumber": 7,
+    "roundTimer": "0:00",
     "eventHash": "54f2f75034809bddf5e05d0b3a8b639a",
     "timestamp": "2026-02-25T19:36:11.990Z"
   },
@@ -2216,6 +2326,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 20,
+    "roundTimer": "0:00",
     "eventHash": "f6ed196e9fd801f9ebe64753ca6541ea",
     "timestamp": "2026-02-25T19:36:11.999Z"
   },
@@ -2236,6 +2347,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 21,
+    "roundTimer": "0:00",
     "eventHash": "b69d395d602921c0524d8fc11830fbaa",
     "timestamp": "2026-02-25T19:36:51.029Z"
   },
@@ -2256,6 +2368,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 21,
+    "roundTimer": "0:00",
     "eventHash": "2ae4cab621e9c5f9949fb7f283df753c",
     "timestamp": "2026-02-25T19:37:00.055Z"
   },
@@ -2276,6 +2389,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 21,
+    "roundTimer": "0:00",
     "eventHash": "92b58ab95a1ca9c0396544f8eec02c1e",
     "timestamp": "2026-02-25T19:37:09.063Z"
   },
@@ -2296,6 +2410,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 21,
+    "roundTimer": "0:00",
     "eventHash": "da9b857bde17bff61751bf91d00d0120",
     "timestamp": "2026-02-25T19:37:15.077Z"
   },
@@ -2316,6 +2431,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 21,
+    "roundTimer": "0:00",
     "eventHash": "32f9f9c6222051187b2ee3bac5a0d714",
     "timestamp": "2026-02-25T19:37:18.088Z"
   },
@@ -2336,6 +2452,7 @@
     "eventType": "bomb_plant",
     "mapNumber": 2,
     "roundNumber": 21,
+    "roundTimer": "0:00",
     "eventHash": "1b9e4b38b854dc574eea5e5d93e2c068",
     "timestamp": "2026-02-25T19:37:24.100Z"
   },
@@ -2356,6 +2473,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 21,
+    "roundTimer": "0:00",
     "eventHash": "29725b2cf5472148188ffc0091b96ad0",
     "timestamp": "2026-02-25T19:37:51.150Z"
   },
@@ -2376,6 +2494,7 @@
     "eventType": "round_end",
     "mapNumber": 2,
     "roundNumber": 21,
+    "roundTimer": "0:00",
     "eventHash": "e9a3eff85fe103d431eab7068f19f45d",
     "timestamp": "2026-02-25T19:37:54.162Z"
   },
@@ -2396,6 +2515,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 21,
+    "roundTimer": "0:00",
     "eventHash": "e4d9e7b33a95bc9c771b3f76f2064ced",
     "timestamp": "2026-02-25T19:37:54.190Z"
   },
@@ -2416,6 +2536,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 22,
+    "roundTimer": "0:00",
     "eventHash": "aad6ee3aa639f732a23557fc38d8cd5e",
     "timestamp": "2026-02-25T19:39:57.400Z"
   },
@@ -2436,6 +2557,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 22,
+    "roundTimer": "0:00",
     "eventHash": "c06ec725f36e481e46b5bacf89521930",
     "timestamp": "2026-02-25T19:40:00.412Z"
   },
@@ -2456,6 +2578,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 22,
+    "roundTimer": "0:00",
     "eventHash": "abe20060a9218b6130ddcb55d9a3abe9",
     "timestamp": "2026-02-25T19:40:06.430Z"
   },
@@ -2476,6 +2599,7 @@
     "eventType": "bomb_plant",
     "mapNumber": 2,
     "roundNumber": 22,
+    "roundTimer": "0:00",
     "eventHash": "7ead78c234e120f01e81a6952d06989f",
     "timestamp": "2026-02-25T19:40:06.439Z"
   },
@@ -2496,6 +2620,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 22,
+    "roundTimer": "0:00",
     "eventHash": "5726fe825300e67d0898e023bc36a1f3",
     "timestamp": "2026-02-25T19:40:18.462Z"
   },
@@ -2516,6 +2641,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 22,
+    "roundTimer": "0:00",
     "eventHash": "6a7a02844e576f7676af54d4c69d7df4",
     "timestamp": "2026-02-25T19:40:24.487Z"
   },
@@ -2536,6 +2662,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 22,
+    "roundTimer": "0:00",
     "eventHash": "e6806439d87bb1395b6ea3425dd11cb8",
     "timestamp": "2026-02-25T19:40:33.493Z"
   },
@@ -2556,6 +2683,7 @@
     "eventType": "round_end",
     "mapNumber": 2,
     "roundNumber": 22,
+    "roundTimer": "0:00",
     "eventHash": "82a791e4c3c664fa83e5675867022424",
     "timestamp": "2026-02-25T19:40:39.499Z"
   },
@@ -2576,6 +2704,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 23,
+    "roundTimer": "0:00",
     "eventHash": "88bf20397f8ea43042d7fb51599ae96c",
     "timestamp": "2026-02-25T19:41:30.607Z"
   },
@@ -2596,6 +2725,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 23,
+    "roundTimer": "0:00",
     "eventHash": "60a1fbb11bb28881b0b8df0810f0c09c",
     "timestamp": "2026-02-25T19:41:36.607Z"
   },
@@ -2616,6 +2746,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 23,
+    "roundTimer": "0:00",
     "eventHash": "dda04f6f7a371e116c23371d3f2e3d2e",
     "timestamp": "2026-02-25T19:41:36.617Z"
   },
@@ -2636,6 +2767,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 23,
+    "roundTimer": "0:00",
     "eventHash": "82feb68389453eb0b509dbb55c7f5f08",
     "timestamp": "2026-02-25T19:41:42.622Z"
   },
@@ -2656,6 +2788,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 23,
+    "roundTimer": "0:00",
     "eventHash": "790182497d15132d51914c06ddcc322f",
     "timestamp": "2026-02-25T19:42:24.705Z"
   },
@@ -2676,6 +2809,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 23,
+    "roundTimer": "0:00",
     "eventHash": "b39c7436c919757b350d7b00ad3d27b5",
     "timestamp": "2026-02-25T19:42:30.710Z"
   },
@@ -2696,6 +2830,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 23,
+    "roundTimer": "0:00",
     "eventHash": "914c329fc05de4eefdb890fa28bd5143",
     "timestamp": "2026-02-25T19:42:33.719Z"
   },
@@ -2716,6 +2851,7 @@
     "eventType": "bomb_plant",
     "mapNumber": 2,
     "roundNumber": 23,
+    "roundTimer": "0:00",
     "eventHash": "0e6d39f3ffa3f7ba1526bdcc8036a69c",
     "timestamp": "2026-02-25T19:42:39.727Z"
   },
@@ -2736,6 +2872,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 23,
+    "roundTimer": "0:00",
     "eventHash": "28d108e3b68f2678cd388fa29c24e845",
     "timestamp": "2026-02-25T19:42:54.748Z"
   },
@@ -2756,6 +2893,7 @@
     "eventType": "round_end",
     "mapNumber": 2,
     "roundNumber": 23,
+    "roundTimer": "0:00",
     "eventHash": "707d3bb82ec87623a9135db15fa8e5cd",
     "timestamp": "2026-02-25T19:42:57.760Z"
   },
@@ -2776,6 +2914,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 23,
+    "roundTimer": "0:00",
     "eventHash": "01cc683fbf3bf3357b25d8d46646e75e",
     "timestamp": "2026-02-25T19:42:57.768Z"
   },
@@ -2796,6 +2935,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 24,
+    "roundTimer": "0:00",
     "eventHash": "9d9b9c6e2ecc4880cbe1552bc84c4be7",
     "timestamp": "2026-02-25T19:43:51.858Z"
   },
@@ -2816,6 +2956,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 24,
+    "roundTimer": "0:00",
     "eventHash": "cfebb808d493f3cba4a77dd27819cae0",
     "timestamp": "2026-02-25T19:43:54.867Z"
   },
@@ -2836,6 +2977,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 24,
+    "roundTimer": "0:00",
     "eventHash": "5af2b3a0a95c1b2c38cc5a0136e2a904",
     "timestamp": "2026-02-25T19:44:03.889Z"
   },
@@ -2856,6 +2998,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 24,
+    "roundTimer": "0:00",
     "eventHash": "1fbfebe441dda4c0bc5b4b0324343fff",
     "timestamp": "2026-02-25T19:44:45.982Z"
   },
@@ -2876,6 +3019,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 24,
+    "roundTimer": "0:00",
     "eventHash": "b9fe2d0f5e8da267415f41876177474d",
     "timestamp": "2026-02-25T19:44:48.990Z"
   },
@@ -2896,6 +3040,7 @@
     "eventType": "round_end",
     "mapNumber": 2,
     "roundNumber": 24,
+    "roundTimer": "0:00",
     "eventHash": "4181a2fd18bb05d75bc78107d663e0e1",
     "timestamp": "2026-02-25T19:44:51.997Z"
   },
@@ -2916,6 +3061,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 24,
+    "roundTimer": "0:00",
     "eventHash": "ddc08ae2b6779b1ed3c183b07723749b",
     "timestamp": "2026-02-25T19:44:52.039Z"
   },
@@ -2936,6 +3082,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 25,
+    "roundTimer": "0:00",
     "eventHash": "9f21e0791142a1e43e827a802057a69b",
     "timestamp": "2026-02-25T19:45:37.071Z"
   },
@@ -2956,6 +3103,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 25,
+    "roundTimer": "0:00",
     "eventHash": "53238571f8f0d9cd844196950e746d97",
     "timestamp": "2026-02-25T19:45:40.071Z"
   },
@@ -2976,6 +3124,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 25,
+    "roundTimer": "0:00",
     "eventHash": "d4d81a78f6f86b3957a00445691cb3d6",
     "timestamp": "2026-02-25T19:45:40.080Z"
   },
@@ -2996,6 +3145,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 25,
+    "roundTimer": "0:00",
     "eventHash": "488dd60b9336e2e71f8aaf01b42c621f",
     "timestamp": "2026-02-25T19:45:43.072Z"
   },
@@ -3016,6 +3166,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 25,
+    "roundTimer": "0:00",
     "eventHash": "6b56f2d58ac080cf2962efda8e3dc8fa",
     "timestamp": "2026-02-25T19:45:43.080Z"
   },
@@ -3036,6 +3187,7 @@
     "eventType": "round_end",
     "mapNumber": 2,
     "roundNumber": 25,
+    "roundTimer": "0:00",
     "eventHash": "ba3c105a7ba67b05b46eb82cd22837c5",
     "timestamp": "2026-02-25T19:45:46.078Z"
   },
@@ -3056,6 +3208,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 25,
+    "roundTimer": "0:00",
     "eventHash": "0e2134792b7bfabebc3ed8269641ee82",
     "timestamp": "2026-02-25T19:45:46.087Z"
   },
@@ -3076,6 +3229,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 26,
+    "roundTimer": "0:00",
     "eventHash": "397c042e675c1d8f58f6cc05188a5317",
     "timestamp": "2026-02-25T19:52:01.798Z"
   },
@@ -3096,6 +3250,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 26,
+    "roundTimer": "0:00",
     "eventHash": "4040c6769983e5c5002a3e7609b3e715",
     "timestamp": "2026-02-25T19:52:25.847Z"
   },
@@ -3116,6 +3271,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 26,
+    "roundTimer": "0:00",
     "eventHash": "a22b98cc248de1260f5af8578ed12796",
     "timestamp": "2026-02-25T19:52:28.845Z"
   },
@@ -3136,6 +3292,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 26,
+    "roundTimer": "0:00",
     "eventHash": "ad456b0d54b88541d0dcdba3c0c8dbf6",
     "timestamp": "2026-02-25T19:52:28.853Z"
   },
@@ -3156,6 +3313,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 26,
+    "roundTimer": "0:00",
     "eventHash": "37cb26c9ba4bd0badd26922ca1254306",
     "timestamp": "2026-02-25T19:52:28.859Z"
   },
@@ -3175,7 +3333,8 @@
     "isSuicide": false,
     "eventType": "round_end",
     "mapNumber": 2,
-    "roundNumber": 26,
+    "roundNumber": 13,
+    "roundTimer": "0:00",
     "eventHash": "d7ea785c63b5ec3ab1a319ae4020a225",
     "timestamp": "2026-02-25T19:52:31.852Z"
   },
@@ -3196,6 +3355,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 26,
+    "roundTimer": "0:00",
     "eventHash": "f6d6f22c042799d9005f4913cedbc7ba",
     "timestamp": "2026-02-25T19:52:31.860Z"
   },
@@ -3216,6 +3376,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 27,
+    "roundTimer": "0:00",
     "eventHash": "2b43435fd04f706cfcb43d28d2014aa5",
     "timestamp": "2026-02-25T19:53:35.041Z"
   },
@@ -3236,6 +3397,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 27,
+    "roundTimer": "0:00",
     "eventHash": "b013f60351ac5aad8569f52e0e6c1091",
     "timestamp": "2026-02-25T19:53:35.049Z"
   },
@@ -3256,6 +3418,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 27,
+    "roundTimer": "0:00",
     "eventHash": "b8d9a1d72ec9cb11591380d04b5ec3a9",
     "timestamp": "2026-02-25T19:53:35.058Z"
   },
@@ -3275,7 +3438,8 @@
     "isSuicide": false,
     "eventType": "round_end",
     "mapNumber": 2,
-    "roundNumber": 27,
+    "roundNumber": 14,
+    "roundTimer": "0:00",
     "eventHash": "ddf014dd0d2b4f466bca723f75cecb67",
     "timestamp": "2026-02-25T19:53:38.028Z"
   },
@@ -3296,6 +3460,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 27,
+    "roundTimer": "0:00",
     "eventHash": "ff50f6e891f6a15204f682769ea1ddbe",
     "timestamp": "2026-02-25T19:53:38.037Z"
   },
@@ -3316,6 +3481,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 27,
+    "roundTimer": "0:00",
     "eventHash": "32bff3ad0e0b8fb424dae5ebb1332610",
     "timestamp": "2026-02-25T19:53:38.045Z"
   },
@@ -3336,6 +3502,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 30,
+    "roundTimer": "0:00",
     "eventHash": "24a21836dcd64f25bd6a179533aa3c17",
     "timestamp": "2026-02-25T19:54:41.122Z"
   },
@@ -3356,6 +3523,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 28,
+    "roundTimer": "0:00",
     "eventHash": "a11e3ecf800496da481b838b1465aa06",
     "timestamp": "2026-02-25T19:54:41.130Z"
   },
@@ -3376,6 +3544,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 28,
+    "roundTimer": "0:00",
     "eventHash": "4e0b89389cf14385094bbf727325c5f2",
     "timestamp": "2026-02-25T19:54:53.148Z"
   },
@@ -3396,6 +3565,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 28,
+    "roundTimer": "0:00",
     "eventHash": "c9340e10d0c51704524b3416ed118f57",
     "timestamp": "2026-02-25T19:54:59.163Z"
   },
@@ -3416,6 +3586,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 28,
+    "roundTimer": "0:00",
     "eventHash": "1386b27a9b7d84670cec6ef28e8f5e87",
     "timestamp": "2026-02-25T19:55:20.209Z"
   },
@@ -3436,6 +3607,7 @@
     "eventType": "round_end",
     "mapNumber": 2,
     "roundNumber": 15,
+    "roundTimer": "0:00",
     "eventHash": "d5ea3187f082f954e7a1d233440809da",
     "timestamp": "2026-02-25T19:55:23.209Z"
   },
@@ -3456,6 +3628,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 28,
+    "roundTimer": "0:00",
     "eventHash": "611b0c27f3a970a3dfd4513ca5a2db1e",
     "timestamp": "2026-02-25T19:55:23.218Z"
   },
@@ -3476,6 +3649,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 29,
+    "roundTimer": "0:00",
     "eventHash": "1e63c0896eabc89e69bc4a265f43991a",
     "timestamp": "2026-02-25T19:56:08.286Z"
   },
@@ -3496,6 +3670,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 29,
+    "roundTimer": "0:00",
     "eventHash": "4a6315eb6442d2cb204e6f159707c12d",
     "timestamp": "2026-02-25T19:56:20.324Z"
   },
@@ -3516,6 +3691,7 @@
     "eventType": "bomb_plant",
     "mapNumber": 2,
     "roundNumber": 29,
+    "roundTimer": "0:00",
     "eventHash": "90e6f0ed4223ca722e2ada7677b5af39",
     "timestamp": "2026-02-25T19:56:29.357Z"
   },
@@ -3536,6 +3712,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 29,
+    "roundTimer": "0:00",
     "eventHash": "080c19117ed010df8c17186b208d275a",
     "timestamp": "2026-02-25T19:56:59.410Z"
   },
@@ -3556,6 +3733,7 @@
     "eventType": "round_end",
     "mapNumber": 2,
     "roundNumber": 29,
+    "roundTimer": "0:00",
     "eventHash": "53d59a69c19e9042bc43ff82a8be9c34",
     "timestamp": "2026-02-25T19:57:11.423Z"
   },
@@ -3576,6 +3754,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 30,
+    "roundTimer": "0:00",
     "eventHash": "4ef73b41a4b479325c0e27412b61f0de",
     "timestamp": "2026-02-25T19:58:20.577Z"
   },
@@ -3596,6 +3775,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 30,
+    "roundTimer": "0:00",
     "eventHash": "190137560499f80e14d29c6cb1178d36",
     "timestamp": "2026-02-25T19:58:23.582Z"
   },
@@ -3616,6 +3796,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 30,
+    "roundTimer": "0:00",
     "eventHash": "5cc2a172803b49c7a6d636d1374035e9",
     "timestamp": "2026-02-25T19:58:23.589Z"
   },
@@ -3636,6 +3817,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 30,
+    "roundTimer": "0:00",
     "eventHash": "5e7ae28356c8745f09af7abd7ece0909",
     "timestamp": "2026-02-25T19:58:50.641Z"
   },
@@ -3656,6 +3838,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 30,
+    "roundTimer": "0:00",
     "eventHash": "9914ea58106c8989779d8b6d5b1295d8",
     "timestamp": "2026-02-25T19:58:53.637Z"
   },
@@ -3676,6 +3859,7 @@
     "eventType": "bomb_plant",
     "mapNumber": 2,
     "roundNumber": 30,
+    "roundTimer": "0:00",
     "eventHash": "95f6ce5b4864334f7926da4a14556b19",
     "timestamp": "2026-02-25T19:59:02.654Z"
   },
@@ -3696,6 +3880,7 @@
     "eventType": "round_end",
     "mapNumber": 2,
     "roundNumber": 30,
+    "roundTimer": "0:00",
     "eventHash": "0e54b5d57826a74224305581f5f0e6c3",
     "timestamp": "2026-02-25T19:59:54.300Z"
   },
@@ -3716,6 +3901,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 30,
+    "roundTimer": "0:00",
     "eventHash": "c6889ca719d20ae32e2d34d7177c492f",
     "timestamp": "2026-02-25T19:59:54.308Z"
   },
@@ -3736,6 +3922,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 30,
+    "roundTimer": "0:00",
     "eventHash": "eac57552ef3f911f91d6568107b1d806",
     "timestamp": "2026-02-25T19:59:54.322Z"
   },
@@ -3756,6 +3943,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 31,
+    "roundTimer": "0:00",
     "eventHash": "13102917c4d87b914f805e75d15f0927",
     "timestamp": "2026-02-25T20:01:39.514Z"
   },
@@ -3776,6 +3964,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 31,
+    "roundTimer": "0:00",
     "eventHash": "d7d792f9669dfbcca4fbe5a03a0e0eb8",
     "timestamp": "2026-02-25T20:01:42.525Z"
   },
@@ -3796,6 +3985,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 31,
+    "roundTimer": "0:00",
     "eventHash": "0d08864e4d589feea07dfab01381bc0c",
     "timestamp": "2026-02-25T20:01:42.533Z"
   },
@@ -3816,6 +4006,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 31,
+    "roundTimer": "0:00",
     "eventHash": "ba06f73b1846ca05e674670ff170c220",
     "timestamp": "2026-02-25T20:01:45.537Z"
   },
@@ -3836,6 +4027,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 31,
+    "roundTimer": "0:00",
     "eventHash": "5a352fcf48865c2c87c63ad4dd433462",
     "timestamp": "2026-02-25T20:01:45.550Z"
   },
@@ -3856,6 +4048,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 31,
+    "roundTimer": "0:00",
     "eventHash": "309086884e37ea622f8607b593f0594f",
     "timestamp": "2026-02-25T20:01:51.560Z"
   },
@@ -3876,6 +4069,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 31,
+    "roundTimer": "0:00",
     "eventHash": "def8a0d7da00c1822ee17a3397d75330",
     "timestamp": "2026-02-25T20:01:54.591Z"
   },
@@ -3896,6 +4090,7 @@
     "eventType": "round_end",
     "mapNumber": 2,
     "roundNumber": 31,
+    "roundTimer": "0:00",
     "eventHash": "1c2c193a26300a6f4033db5e5e70331e",
     "timestamp": "2026-02-25T20:01:57.579Z"
   },
@@ -3916,6 +4111,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 31,
+    "roundTimer": "0:00",
     "eventHash": "52783c2af22546054afebcf0654db17a",
     "timestamp": "2026-02-25T20:01:57.588Z"
   },
@@ -3936,6 +4132,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 32,
+    "roundTimer": "0:00",
     "eventHash": "679a470efa1a07488e02831d1d517bb1",
     "timestamp": "2026-02-25T20:02:36.674Z"
   },
@@ -3956,6 +4153,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 32,
+    "roundTimer": "0:00",
     "eventHash": "bab3c6fad0fa0d55fc00c15d9f8d0f63",
     "timestamp": "2026-02-25T20:03:15.769Z"
   },
@@ -3976,6 +4174,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 32,
+    "roundTimer": "0:00",
     "eventHash": "7beb36079b4cf79bdf2db8f32f10322a",
     "timestamp": "2026-02-25T20:03:15.776Z"
   },
@@ -3996,6 +4195,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 32,
+    "roundTimer": "0:00",
     "eventHash": "4165f6f459b938fd8d653a3672a83689",
     "timestamp": "2026-02-25T20:03:21.788Z"
   },
@@ -4016,6 +4216,7 @@
     "eventType": "bomb_plant",
     "mapNumber": 2,
     "roundNumber": 32,
+    "roundTimer": "0:00",
     "eventHash": "1f85c8ca64e90aa013f73b7cd5efd6fa",
     "timestamp": "2026-02-25T20:03:45.854Z"
   },
@@ -4036,6 +4237,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 32,
+    "roundTimer": "0:00",
     "eventHash": "5d68b0775630c6f02d215f3fa07ec594",
     "timestamp": "2026-02-25T20:04:03.890Z"
   },
@@ -4056,6 +4258,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 32,
+    "roundTimer": "0:00",
     "eventHash": "7d4b5a345df5bf75e0d124bd5b9c0991",
     "timestamp": "2026-02-25T20:04:03.899Z"
   },
@@ -4076,6 +4279,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 32,
+    "roundTimer": "0:00",
     "eventHash": "284d7833e7b21dc99d13ba8de42058b5",
     "timestamp": "2026-02-25T20:04:06.903Z"
   },
@@ -4096,6 +4300,7 @@
     "eventType": "round_end",
     "mapNumber": 2,
     "roundNumber": 32,
+    "roundTimer": "0:00",
     "eventHash": "205eee5c72a0ac526949b1217c3a8f19",
     "timestamp": "2026-02-25T20:04:12.914Z"
   },
@@ -4116,6 +4321,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 33,
+    "roundTimer": "0:00",
     "eventHash": "4343266263c2bd19c3efa277b7d695f2",
     "timestamp": "2026-02-25T20:05:49.152Z"
   },
@@ -4136,6 +4342,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 33,
+    "roundTimer": "0:00",
     "eventHash": "139a25ab013e385e408e884c169c5942",
     "timestamp": "2026-02-25T20:05:55.168Z"
   },
@@ -4156,6 +4363,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 33,
+    "roundTimer": "0:00",
     "eventHash": "53ad87d5ac997ae196df8dc6644aa849",
     "timestamp": "2026-02-25T20:05:55.176Z"
   },
@@ -4176,6 +4384,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 33,
+    "roundTimer": "0:00",
     "eventHash": "153e9f4bede797494f2552c4522e87da",
     "timestamp": "2026-02-25T20:06:16.208Z"
   },
@@ -4196,6 +4405,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 33,
+    "roundTimer": "0:00",
     "eventHash": "1240d0c8cc6a357d0f945ac4f789dad4",
     "timestamp": "2026-02-25T20:06:16.216Z"
   },
@@ -4216,6 +4426,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 33,
+    "roundTimer": "0:00",
     "eventHash": "7a1ad5162f06c73e7a88fd4ad785b99d",
     "timestamp": "2026-02-25T20:06:19.211Z"
   },
@@ -4236,6 +4447,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 33,
+    "roundTimer": "0:00",
     "eventHash": "6a710b4ea1a6c7ee24860f4d795345f2",
     "timestamp": "2026-02-25T20:06:19.223Z"
   },
@@ -4256,6 +4468,7 @@
     "eventType": "bomb_plant",
     "mapNumber": 2,
     "roundNumber": 33,
+    "roundTimer": "0:00",
     "eventHash": "e3b78eff0e4045256b1dc4580e62cac8",
     "timestamp": "2026-02-25T20:06:22.223Z"
   },
@@ -4276,6 +4489,7 @@
     "eventType": "round_end",
     "mapNumber": 2,
     "roundNumber": 33,
+    "roundTimer": "0:00",
     "eventHash": "edf4d8f95ef27c266b7d54610e26483b",
     "timestamp": "2026-02-25T20:06:28.237Z"
   },
@@ -4296,6 +4510,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 33,
+    "roundTimer": "0:00",
     "eventHash": "059e0420d9fbe71928f9dd70ab8ee1ab",
     "timestamp": "2026-02-25T20:06:28.246Z"
   },
@@ -4316,6 +4531,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 34,
+    "roundTimer": "0:00",
     "eventHash": "44f73a8e61405ba1f4d6234d4d148499",
     "timestamp": "2026-02-25T20:07:43.432Z"
   },
@@ -4336,6 +4552,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 34,
+    "roundTimer": "0:00",
     "eventHash": "ea5236b45c33fed2bccb8635c198fdcd",
     "timestamp": "2026-02-25T20:07:43.440Z"
   },
@@ -4356,6 +4573,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 34,
+    "roundTimer": "0:00",
     "eventHash": "acb8498425f194c960cc2627d8f6c8ab",
     "timestamp": "2026-02-25T20:07:43.448Z"
   },
@@ -4376,6 +4594,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 34,
+    "roundTimer": "0:00",
     "eventHash": "63b6624619bbb760f81127820d9c2554",
     "timestamp": "2026-02-25T20:07:43.456Z"
   },
@@ -4396,6 +4615,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 34,
+    "roundTimer": "0:00",
     "eventHash": "fd87625c68f82f4f5572b87bf433d3e0",
     "timestamp": "2026-02-25T20:07:46.441Z"
   },
@@ -4416,6 +4636,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 34,
+    "roundTimer": "0:00",
     "eventHash": "2e2ab2f3365df22a1fd291ab6f32f271",
     "timestamp": "2026-02-25T20:07:49.441Z"
   },
@@ -4436,6 +4657,7 @@
     "eventType": "bomb_plant",
     "mapNumber": 2,
     "roundNumber": 34,
+    "roundTimer": "0:00",
     "eventHash": "94a96e4761e05df89c8441ecaccb0538",
     "timestamp": "2026-02-25T20:07:55.478Z"
   },
@@ -4456,6 +4678,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 34,
+    "roundTimer": "0:00",
     "eventHash": "56418f1bf544d76e4f69dbfcddab0430",
     "timestamp": "2026-02-25T20:08:16.511Z"
   },
@@ -4476,6 +4699,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 34,
+    "roundTimer": "0:00",
     "eventHash": "4b5b952be117bfa05c5a20bb073d8a51",
     "timestamp": "2026-02-25T20:08:22.532Z"
   },
@@ -4496,6 +4720,7 @@
     "eventType": "kill",
     "mapNumber": 2,
     "roundNumber": 34,
+    "roundTimer": "0:00",
     "eventHash": "89bf0dbc848e4c8a5a273872325636b1",
     "timestamp": "2026-02-25T20:08:25.550Z"
   },
@@ -4516,6 +4741,7 @@
     "eventType": "round_end",
     "mapNumber": 2,
     "roundNumber": 34,
+    "roundTimer": "0:00",
     "eventHash": "0d2dbd93ed93568a782523930af36503",
     "timestamp": "2026-02-25T20:08:31.558Z"
   }

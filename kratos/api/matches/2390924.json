@@ -2,18 +2,18 @@
   "id": "2390924",
   "team1": "ENCE Academy",
   "team2": "CSDIILIT",
-  "status": "Live",
+  "status": "Finished",
   "url": "https://www.hltv.org/matches/2390924/ence-academy-vs-csdiilit-cct-season-3-europe-series-17-closed-qualifier",
   "createdAt": "2026-02-26T10:12:04.444Z",
-  "updatedAt": "2026-02-26T10:21:10.364Z",
+  "updatedAt": "2026-02-26T10:57:12.638Z",
   "maps": 2,
   "currentMap": 3,
   "mapScores": [
     {
       "map": 2,
-      "score1": 1,
-      "score2": 7,
-      "mapWinner": null
+      "score1": 13,
+      "score2": 10,
+      "mapWinner": "team1"
     },
     {
       "map": 3,
@@ -22,6 +22,6 @@
       "mapWinner": null
     }
   ],
-  "seriesScore1": 0,
+  "seriesScore1": 1,
   "seriesScore2": 0
 }

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "0fbe45eb-9d69-4e59-be7d-656ba557b199",
+    "matchId": "2390844",
+    "logText": "L1haNg EmiliaQAQ",
+    "killerName": "L1haNg",
+    "victimName": "EmiliaQAQ",
+    "assistName": null,
+    "weapon": "glock",
+    "isHeadshot": true,
+    "isWallbang": false,
+    "isThroughSmoke": false,
+    "isBlindKill": false,
+    "isNoScope": false,
+    "isSuicide": false,
+    "eventType": "kill",
+    "mapNumber": 1,
+    "roundNumber": 1,
+    "roundTimer": "0:03",
+    "eventHash": "261309a4f167d52b2f93b75f38d1bacb",
+    "timestamp": "2026-02-26T11:28:43.038Z"
+  }
+]
