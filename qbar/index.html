@@ -250,23 +250,44 @@
             flex-shrink: 0;
         }
 
-        .queue-item .qi-serve-btn {
-            background: var(--green-dim);
-            border: 1px solid rgba(52, 211, 153, 0.25);
+        .queue-item .qi-serve-btn,
+        .queue-item .qi-delete-btn,
+        .history-item .hi-delete-btn {
             border-radius: 6px;
             padding: 6px 12px;
             font-family: 'Outfit', sans-serif;
             font-size: 0.75rem;
             font-weight: 600;
-            color: var(--green);
             cursor: pointer;
             transition: all 0.2s;
             white-space: nowrap;
+            border: 1px solid;
+        }
+
+        .queue-item .qi-serve-btn {
+            background: var(--green-dim);
+            border-color: rgba(52, 211, 153, 0.25);
+            color: var(--green);
         }
 
         .queue-item .qi-serve-btn:hover {
             background: rgba(52, 211, 153, 0.25);
             border-color: var(--green);
+        }
+
+        .queue-item .qi-delete-btn,
+        .history-item .hi-delete-btn {
+            background: rgba(239, 68, 68, 0.08);
+            border-color: rgba(239, 68, 68, 0.2);
+            color: var(--danger);
+            font-size: 0.7rem;
+            padding: 5px 8px;
+        }
+
+        .queue-item .qi-delete-btn:hover,
+        .history-item .hi-delete-btn:hover {
+            background: rgba(239, 68, 68, 0.2);
+            border-color: var(--danger);
         }
 
         /* Drink color accents */
@@ -315,8 +336,14 @@
             padding: 8px 12px;
             margin-bottom: 4px;
             background: rgba(255, 255, 255, 0.015);
+            border: 1px solid transparent;
             border-radius: var(--radius-sm);
             opacity: 0.6;
+            transition: opacity 0.2s;
+        }
+
+        .history-item:hover {
+            opacity: 0.85;
         }
 
         .history-item .drink-icon {
@@ -426,9 +453,73 @@
         /* ========== AUDIO DING ========== */
         /* We'll use Web Audio API for new-order notification */
 
+        /* ========== TABLE FILTER ========== */
+        .filter-bar {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 16px 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-label {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .filter-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 20px;
+            padding: 5px 13px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(240, 168, 48, 0.3);
+        }
+
+        .filter-btn.active {
+            background: var(--amber-glow);
+            border-color: var(--amber);
+            color: var(--amber);
+            font-weight: 700;
+        }
+
+        /* ========== DELETE ANIMATION ========== */
+        @keyframes deleteSlide {
+            0% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+
+            100% {
+                opacity: 0;
+                transform: translateX(-60px);
+            }
+        }
+
+        .queue-item.deleting,
+        .history-item.deleting {
+            animation: deleteSlide 0.3s ease forwards;
+        }
+
         /* ========== RESPONSIVE ========== */
         @media (max-width: 768px) {
             .stats-row {
+                justify-content: center;
+            }
+
+            .filter-bar {
                 justify-content: center;
             }
         }
@@ -456,6 +547,11 @@
 
     <div class="stats-bar" style="margin-top:14px; margin-bottom:14px;">
         <div class="stats-row" id="statsRow"></div>
+    </div>
+
+    <div class="filter-bar" id="filterBar">
+        <span class="filter-label">Filter table:</span>
+        <button class="filter-btn active" data-table="all">All Tables</button>
     </div>
 
     <div class="layout">
@@ -524,6 +620,52 @@
             aperol: { name: "Aperol Spritz", emoji: "🧡", css: "aperol", price: 7 }
         };
 
+        const TABLES = [
+            { id: 1, name: "De Sjansen" },
+            { id: 2, name: "Bier Baronen" },
+            { id: 3, name: "Kwis Mansen" },
+            { id: 4, name: "Hemelbestormers" },
+            { id: 5, name: "Limburgse Leeuwen" },
+            { id: 6, name: "De Proosters" },
+            { id: 7, name: "Sjpas Mansen" },
+            { id: 8, name: "Hansen Op De Bok" },
+            { id: 9, name: "Stampij Makers" },
+            { id: 10, name: "Kansen Pakkers" },
+            { id: 11, name: "Dorps Gekkies" },
+            { id: 12, name: "Boerenflansen" },
+            { id: 13, name: "De Kansen" }
+        ];
+
+        let activeFilter = 'all';
+
+        // =====================================================
+        // BUILD TABLE FILTER BUTTONS
+        // =====================================================
+        (function buildFilterButtons() {
+            const bar = document.getElementById('filterBar');
+            TABLES.forEach(t => {
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+                btn.dataset.table = t.id;
+                btn.textContent = `#${t.id}`;
+                btn.title = t.name;
+                btn.addEventListener('click', () => setFilter(String(t.id)));
+                bar.appendChild(btn);
+            });
+            document.querySelector('.filter-btn[data-table="all"]').addEventListener('click', () => setFilter('all'));
+        })();
+
+        function setFilter(tableId) {
+            activeFilter = tableId;
+            document.querySelectorAll('.filter-btn').forEach(b => {
+                b.classList.toggle('active', b.dataset.table === tableId);
+            });
+            // Re-render with current data
+            if (cachedAllOrders) {
+                processOrders(cachedAllOrders);
+            }
+        }
+
         // =====================================================
         // AUDIO NOTIFICATION (simple beep via Web Audio)
         // =====================================================
@@ -550,27 +692,38 @@
         // LISTEN TO ALL ORDERS
         // =====================================================
         const ordersRef = db.ref('orders').orderByChild('timestamp');
+        let cachedAllOrders = null;
 
         ordersRef.on('value', snapshot => {
             const allOrders = [];
             snapshot.forEach(child => {
                 allOrders.push({ id: child.key, ...child.val() });
             });
+            cachedAllOrders = allOrders;
+            processOrders(allOrders);
+        });
 
-            const pending = allOrders.filter(o => o.status === 'pending').sort((a, b) => a.timestamp - b.timestamp);
-            const served = allOrders.filter(o => o.status === 'served').sort((a, b) => (b.servedAt || b.timestamp) - (a.servedAt || a.timestamp));
+        function processOrders(allOrders) {
+            // Apply table filter
+            const filtered = activeFilter === 'all'
+                ? allOrders
+                : allOrders.filter(o => String(o.tableId) === activeFilter);
 
-            // Ding on new order
-            if (pending.length > lastOrderCount && lastOrderCount > 0) {
+            const pending = filtered.filter(o => o.status === 'pending').sort((a, b) => a.timestamp - b.timestamp);
+            const served = filtered.filter(o => o.status === 'served').sort((a, b) => (b.servedAt || b.timestamp) - (a.servedAt || a.timestamp));
+
+            // Ding on new order (use unfiltered pending count)
+            const allPending = allOrders.filter(o => o.status === 'pending');
+            if (allPending.length > lastOrderCount && lastOrderCount > 0) {
                 playDing();
             }
-            lastOrderCount = pending.length;
+            lastOrderCount = allPending.length;
 
             renderQueue(pending);
             renderHistory(served);
-            renderStats(allOrders);
-            updateBadge(pending.length);
-        });
+            renderStats(filtered);
+            updateBadge(allPending.length);
+        }
 
         // =====================================================
         // RENDER QUEUE
@@ -599,13 +752,18 @@
                         <div class="qi-table">Table #${order.tableId} — ${order.teamName}</div>
                     </div>
                     <span class="qi-time">${timeAgo}</span>
-                    <button class="qi-serve-btn" data-id="${order.id}">✓ Serve</button>
+                    <button class="qi-serve-btn">✓ Serve</button>
+                    <button class="qi-delete-btn">🗑</button>
                 `;
 
                 const btn = el.querySelector('.qi-serve-btn');
                 btn.addEventListener('click', (e) => {
                     e.stopPropagation();
                     serveOrder(order.id, el);
+                });
+                el.querySelector('.qi-delete-btn').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    deleteOrder(order.id, el);
                 });
                 el.addEventListener('click', () => {
                     serveOrder(order.id, el);
@@ -628,6 +786,18 @@
                     servedAt: firebase.database.ServerValue.TIMESTAMP
                 });
             }, 300);
+        }
+
+        // =====================================================
+        // DELETE AN ORDER (mistake correction)
+        // =====================================================
+        function deleteOrder(orderId, element) {
+            if (element) {
+                element.classList.add('deleting');
+            }
+            setTimeout(() => {
+                db.ref(`orders/${orderId}`).remove();
+            }, 280);
         }
 
         // =====================================================
@@ -658,7 +828,12 @@
                     </div>
                     <span class="hi-time">${time}</span>
                     <span class="hi-check">✓</span>
+                    <button class="hi-delete-btn">🗑</button>
                 `;
+                el.querySelector('.hi-delete-btn').addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    deleteOrder(order.id, el);
+                });
                 body.appendChild(el);
             });
         }
