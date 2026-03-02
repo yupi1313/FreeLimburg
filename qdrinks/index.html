@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeLimburg Quiz Drinks — Order Here!</title>
+    <meta name="description" content="Order drinks for your quiz table at FreeLimburg.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        /* ========== RESET & BASE ========== */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-dark: #0c0e1a;
+            --bg-card: rgba(255, 255, 255, 0.04);
+            --bg-card-hover: rgba(255, 255, 255, 0.07);
+            --border-glass: rgba(255, 255, 255, 0.08);
+            --text-primary: #f0f0f5;
+            --text-secondary: #9a9ab0;
+            --text-muted: #5e5e78;
+            --amber: #f0a830;
+            --amber-glow: rgba(240, 168, 48, 0.25);
+            --green: #34d399;
+            --green-dim: rgba(52, 211, 153, 0.15);
+            --red-wine: #c0392b;
+            --white-wine: #f7dc6f;
+            --gin: #3498db;
+            --aperol: #e67e22;
+            --beer: #f0a830;
+            --radius: 14px;
+            --radius-sm: 8px;
+            --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* ========== ANIMATED BACKGROUND ========== */
+        .bg-gradient {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse 60% 50% at 20% 10%, rgba(240, 168, 48, 0.08), transparent),
+                radial-gradient(ellipse 50% 60% at 80% 80%, rgba(52, 211, 153, 0.05), transparent),
+                var(--bg-dark);
+        }
+
+        /* ========== HEADER ========== */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(12, 14, 26, 0.8);
+            border-bottom: 1px solid var(--border-glass);
+            padding: 14px 20px;
+        }
+
+        .header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header h1 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--amber), #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header .subtitle {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            font-weight: 400;
+        }
+
+        .connection-status {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--text-muted);
+            transition: background 0.3s;
+        }
+
+        .status-dot.connected {
+            background: var(--green);
+            box-shadow: 0 0 8px rgba(52, 211, 153, 0.5);
+        }
+
+        /* ========== TABLE SELECT ========== */
+        .table-selector {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 16px;
+        }
+
+        .table-selector label {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .table-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+            gap: 8px;
+        }
+
+        .table-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-sm);
+            padding: 10px 8px;
+            color: var(--text-primary);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+        }
+
+        .table-btn:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(240, 168, 48, 0.3);
+        }
+
+        .table-btn.active {
+            background: var(--amber-glow);
+            border-color: var(--amber);
+            color: var(--amber);
+            font-weight: 700;
+        }
+
+        .table-btn .tnum {
+            font-size: 1.1rem;
+            font-weight: 700;
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .table-btn .tname {
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .table-btn.active .tname {
+            color: var(--amber);
+        }
+
+        /* ========== MAIN CONTENT ========== */
+        .main-area {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 16px 100px;
+            display: none;
+        }
+
+        .main-area.visible {
+            display: block;
+        }
+
+        .choose-prompt {
+            max-width: 900px;
+            margin: 80px auto;
+            text-align: center;
+            padding: 0 16px;
+        }
+
+        .choose-prompt .icon {
+            font-size: 3rem;
+            margin-bottom: 12px;
+        }
+
+        .choose-prompt p {
+            font-size: 1rem;
+            color: var(--text-secondary);
+        }
+
+        /* ========== DRINK ORDERING ========== */
+        .section-label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 14px;
+        }
+
+        .drink-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .drink-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius);
+            padding: 16px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+            user-select: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .drink-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: var(--radius);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .drink-card:hover {
+            transform: translateY(-2px);
+            border-color: rgba(255, 255, 255, 0.15);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .drink-card:active {
+            transform: scale(0.96);
+        }
+
+        .drink-card.beer {
+            --drink-color: var(--beer);
+        }
+
+        .drink-card.beer::before {
+            background: radial-gradient(circle at center, rgba(240, 168, 48, 0.1), transparent);
+        }
+
+        .drink-card.red-wine {
+            --drink-color: var(--red-wine);
+        }
+
+        .drink-card.red-wine::before {
+            background: radial-gradient(circle at center, rgba(192, 57, 43, 0.1), transparent);
+        }
+
+        .drink-card.white-wine {
+            --drink-color: var(--white-wine);
+        }
+
+        .drink-card.white-wine::before {
+            background: radial-gradient(circle at center, rgba(247, 220, 111, 0.08), transparent);
+        }
+
+        .drink-card.gin-tonic {
+            --drink-color: var(--gin);
+        }
+
+        .drink-card.gin-tonic::before {
+            background: radial-gradient(circle at center, rgba(52, 152, 219, 0.1), transparent);
+        }
+
+        .drink-card.aperol {
+            --drink-color: var(--aperol);
+        }
+
+        .drink-card.aperol::before {
+            background: radial-gradient(circle at center, rgba(230, 126, 34, 0.1), transparent);
+        }
+
+        .drink-card:hover::before {
+            opacity: 1;
+        }
+
+        .drink-emoji {
+            font-size: 2rem;
+            margin-bottom: 6px;
+        }
+
+        .drink-name {
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: var(--text-primary);
+        }
+
+        .drink-price {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--drink-color);
+        }
+
+        /* ========== ORDER RIPPLE ========== */
+        @keyframes orderPulse {
+            0% {
+                box-shadow: 0 0 0 0 var(--drink-color);
+            }
+
+            70% {
+                box-shadow: 0 0 0 12px transparent;
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 transparent;
+            }
+        }
+
+        .drink-card.pulse {
+            animation: orderPulse 0.5s ease;
+        }
+
+        /* ========== PENDING ORDERS ========== */
+        .pending-section,
+        .served-section {
+            margin-bottom: 28px;
+        }
+
+        .pending-list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .pending-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-sm);
+            padding: 10px 14px;
+        }
+
+        .pending-drink-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pending-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+
+        .pending-dot.beer {
+            background: var(--beer);
+        }
+
+        .pending-dot.red-wine {
+            background: var(--red-wine);
+        }
+
+        .pending-dot.white-wine {
+            background: var(--white-wine);
+        }
+
+        .pending-dot.gin-tonic {
+            background: var(--gin);
+        }
+
+        .pending-dot.aperol {
+            background: var(--aperol);
+        }
+
+        .pending-drink-name {
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .pending-count {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--amber);
+            min-width: 28px;
+            text-align: center;
+        }
+
+        .pending-empty {
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            font-style: italic;
+            padding: 12px 0;
+        }
+
+        /* ========== SERVED SUMMARY ========== */
+        .served-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 8px;
+        }
+
+        .served-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--green-dim);
+            border: 1px solid rgba(52, 211, 153, 0.15);
+            border-radius: var(--radius-sm);
+            padding: 8px 12px;
+        }
+
+        .served-item .s-emoji {
+            font-size: 1.1rem;
+        }
+
+        .served-item .s-name {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            flex: 1;
+        }
+
+        .served-item .s-count {
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--green);
+        }
+
+        /* ========== TOTALS ========== */
+        .total-bar {
+            background: linear-gradient(135deg, rgba(240, 168, 48, 0.12), rgba(240, 168, 48, 0.04));
+            border: 1px solid rgba(240, 168, 48, 0.2);
+            border-radius: var(--radius);
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .total-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .total-amount {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--amber);
+        }
+
+        /* ========== TOAST ========== */
+        .toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(80px);
+            background: rgba(52, 211, 153, 0.95);
+            color: #0c0e1a;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            opacity: 0;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            z-index: 200;
+            pointer-events: none;
+        }
+
+        .toast.show {
+            opacity: 1;
+            transform: translateX(-50%) translateY(0);
+        }
+
+        /* ========== RESPONSIVE ========== */
+        @media (max-width: 600px) {
+            .drink-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 8px;
+            }
+
+            .drink-card {
+                padding: 12px 8px;
+            }
+
+            .drink-emoji {
+                font-size: 1.6rem;
+            }
+
+            .drink-name {
+                font-size: 0.75rem;
+            }
+
+            .table-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 380px) {
+            .drink-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+
+    <header class="header">
+        <div class="header-inner">
+            <div>
+                <h1>🍻 FreeLimburg Drinks</h1>
+                <div class="subtitle">Tap a drink to order for your table</div>
+            </div>
+            <div class="connection-status">
+                <div class="status-dot" id="statusDot"></div>
+                <span id="statusText">Connecting…</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="table-selector">
+        <label>Choose your table:</label>
+        <div class="table-grid" id="tableGrid"></div>
+    </section>
+
+    <div class="choose-prompt" id="choosePrompt">
+        <div class="icon">👆</div>
+        <p>Select your table above to start ordering</p>
+    </div>
+
+    <main class="main-area" id="mainArea">
+        <div class="section-label">Order a drink</div>
+        <div class="drink-grid" id="drinkGrid"></div>
+
+        <div class="pending-section">
+            <div class="section-label">⏳ Ordered — waiting to be served</div>
+            <div class="pending-list" id="pendingList">
+                <div class="pending-empty">No pending orders</div>
+            </div>
+        </div>
+
+        <div class="served-section">
+            <div class="section-label">✅ Already served</div>
+            <div class="served-grid" id="servedGrid"></div>
+        </div>
+
+        <div class="total-bar">
+            <div class="total-label">Total spend</div>
+            <div class="total-amount" id="totalAmount">€0</div>
+        </div>
+    </main>
+
+    <div class="toast" id="toast"></div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-database-compat.js"></script>
+
+    <script>
+        // =====================================================
+        // 🔧  FIREBASE CONFIG — Replace with your own project
+        // =====================================================
+        const firebaseConfig = {
+            apiKey: "AIzaSyDuiJsy00_w3FudEv2U8HniO04JuyUVzxo",
+            authDomain: "freelimburg-quiz.firebaseapp.com",
+            databaseURL: "https://freelimburg-quiz-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "freelimburg-quiz",
+            storageBucket: "freelimburg-quiz.firebasestorage.app",
+            messagingSenderId: "199443003943",
+            appId: "1:199443003943:web:d2e3c5bc01fb8186486c02"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
+
+        // =====================================================
+        // DATA
+        // =====================================================
+        const TABLES = [
+            { id: 1, name: "De Sjansen" },
+            { id: 2, name: "Bier Baronen" },
+            { id: 3, name: "Kwis Mansen" },
+            { id: 4, name: "Hemelbestormers" },
+            { id: 5, name: "Limburgse Leeuwen" },
+            { id: 6, name: "De Proosters" },
+            { id: 7, name: "Sjpas Mansen" },
+            { id: 8, name: "Hansen Op De Bok" },
+            { id: 9, name: "Stampij Makers" },
+            { id: 10, name: "Kansen Pakkers" },
+            { id: 11, name: "Dorps Gekkies" },
+            { id: 12, name: "Boerenflansen" },
+            { id: 13, name: "De Kansen" }
+        ];
+
+        const DRINKS = [
+            { key: "beer", name: "Beer", price: 2, emoji: "🍺", css: "beer" },
+            { key: "red_wine", name: "Red Wine", price: 3, emoji: "🍷", css: "red-wine" },
+            { key: "white_wine", name: "White Wine", price: 3, emoji: "🥂", css: "white-wine" },
+            { key: "gin_tonic", name: "Gin & Tonic", price: 6, emoji: "🍸", css: "gin-tonic" },
+            { key: "aperol", name: "Aperol Spritz", price: 7, emoji: "🧡", css: "aperol" }
+        ];
+
+        let selectedTable = null;
+
+        // =====================================================
+        // RENDER TABLE SELECTOR
+        // =====================================================
+        const tableGridEl = document.getElementById('tableGrid');
+        TABLES.forEach(t => {
+            const btn = document.createElement('button');
+            btn.className = 'table-btn';
+            btn.dataset.id = t.id;
+            btn.innerHTML = `<span class="tnum">#${t.id}</span><span class="tname">${t.name}</span>`;
+            btn.addEventListener('click', () => selectTable(t.id));
+            tableGridEl.appendChild(btn);
+        });
+
+        function selectTable(id) {
+            selectedTable = id;
+            document.querySelectorAll('.table-btn').forEach(b => b.classList.toggle('active', +b.dataset.id === id));
+            document.getElementById('choosePrompt').style.display = 'none';
+            document.getElementById('mainArea').classList.add('visible');
+            listenToOrders();
+        }
+
+        // =====================================================
+        // RENDER DRINK BUTTONS
+        // =====================================================
+        const drinkGridEl = document.getElementById('drinkGrid');
+        DRINKS.forEach(d => {
+            const card = document.createElement('div');
+            card.className = `drink-card ${d.css}`;
+            card.innerHTML = `
+                <div class="drink-emoji">${d.emoji}</div>
+                <div class="drink-name">${d.name}</div>
+                <div class="drink-price">€${d.price}</div>
+            `;
+            card.addEventListener('click', () => orderDrink(d, card));
+            drinkGridEl.appendChild(card);
+        });
+
+        // =====================================================
+        // ORDER A DRINK
+        // =====================================================
+        function orderDrink(drink, cardEl) {
+            if (!selectedTable) return;
+
+            const table = TABLES.find(t => t.id === selectedTable);
+            const order = {
+                tableId: selectedTable,
+                teamName: table.name,
+                drink: drink.key,
+                drinkName: drink.name,
+                drinkEmoji: drink.emoji,
+                price: drink.price,
+                timestamp: firebase.database.ServerValue.TIMESTAMP,
+                status: "pending"
+            };
+
+            db.ref('orders').push(order);
+
+            // Pulse animation
+            cardEl.classList.remove('pulse');
+            void cardEl.offsetWidth;
+            cardEl.classList.add('pulse');
+
+            showToast(`${drink.emoji} ${drink.name} ordered!`);
+        }
+
+        // =====================================================
+        // LISTEN TO ORDERS FOR SELECTED TABLE
+        // =====================================================
+        let ordersRef = null;
+
+        function listenToOrders() {
+            if (ordersRef) ordersRef.off();
+
+            ordersRef = db.ref('orders').orderByChild('tableId').equalTo(selectedTable);
+            ordersRef.on('value', snapshot => {
+                const orders = [];
+                snapshot.forEach(child => {
+                    orders.push({ id: child.key, ...child.val() });
+                });
+                renderPending(orders.filter(o => o.status === 'pending'));
+                renderServed(orders.filter(o => o.status === 'served'));
+                renderTotal(orders);
+            });
+        }
+
+        // =====================================================
+        // RENDER PENDING
+        // =====================================================
+        function renderPending(pendingOrders) {
+            const el = document.getElementById('pendingList');
+
+            if (pendingOrders.length === 0) {
+                el.innerHTML = '<div class="pending-empty">No pending orders — all served! 🎉</div>';
+                return;
+            }
+
+            // Group by drink
+            const grouped = {};
+            DRINKS.forEach(d => grouped[d.key] = 0);
+            pendingOrders.forEach(o => {
+                grouped[o.drink] = (grouped[o.drink] || 0) + 1;
+            });
+
+            el.innerHTML = '';
+            DRINKS.forEach(d => {
+                if (grouped[d.key] > 0) {
+                    el.innerHTML += `
+                        <div class="pending-row">
+                            <div class="pending-drink-info">
+                                <div class="pending-dot ${d.css}"></div>
+                                <span class="pending-drink-name">${d.emoji} ${d.name}</span>
+                            </div>
+                            <span class="pending-count">×${grouped[d.key]}</span>
+                        </div>`;
+                }
+            });
+        }
+
+        // =====================================================
+        // RENDER SERVED
+        // =====================================================
+        function renderServed(servedOrders) {
+            const el = document.getElementById('servedGrid');
+
+            if (servedOrders.length === 0) {
+                el.innerHTML = '';
+                return;
+            }
+
+            const grouped = {};
+            DRINKS.forEach(d => grouped[d.key] = 0);
+            servedOrders.forEach(o => {
+                grouped[o.drink] = (grouped[o.drink] || 0) + 1;
+            });
+
+            el.innerHTML = '';
+            DRINKS.forEach(d => {
+                if (grouped[d.key] > 0) {
+                    el.innerHTML += `
+                        <div class="served-item">
+                            <span class="s-emoji">${d.emoji}</span>
+                            <span class="s-name">${d.name}</span>
+                            <span class="s-count">×${grouped[d.key]}</span>
+                        </div>`;
+                }
+            });
+        }
+
+        // =====================================================
+        // RENDER TOTAL
+        // =====================================================
+        function renderTotal(allOrders) {
+            const total = allOrders.reduce((sum, o) => sum + (o.price || 0), 0);
+            document.getElementById('totalAmount').textContent = `€${total}`;
+        }
+
+        // =====================================================
+        // TOAST
+        // =====================================================
+        function showToast(msg) {
+            const el = document.getElementById('toast');
+            el.textContent = msg;
+            el.classList.add('show');
+            setTimeout(() => el.classList.remove('show'), 1800);
+        }
+
+        // =====================================================
+        // CONNECTION STATUS
+        // =====================================================
+        db.ref('.info/connected').on('value', snap => {
+            const dot = document.getElementById('statusDot');
+            const txt = document.getElementById('statusText');
+            if (snap.val() === true) {
+                dot.classList.add('connected');
+                txt.textContent = 'Live';
+            } else {
+                dot.classList.remove('connected');
+                txt.textContent = 'Offline';
+            }
+        });
+    </script>
+</body>
+
+</html>
