@@ -7,22 +7,22 @@ let section = 'home';
 // ── Static Content ──────────────────────────────────────
 // Real news from rdy.gg CS2
 const NEWS = [
-    { tag: 'Tournament', title: 'NIP and Liquid lose on opening day of ESL Pro League', desc: 'NIP can\'t be serious, man. Both teams stumble in their opening matches of the prestigious league.', author: 'Elliott Griffiths', url: 'https://rdy.gg/en/cs2/news/nip-and-liquid-lose-pro-league' },
-    { tag: 'News', title: 'BLAST announce massive changes to 2027 circuit', desc: 'BLAST have announced ground-breaking changes to their tournament structure and finances.', author: 'Elliott Griffiths', url: 'https://rdy.gg/en/cs2/news/blast-announce-massive-changes-2027-circuit' },
-    { tag: 'Tournament', title: 'The lowdown on every team in Stage One — ESL Pro League', desc: 'While it\'s a shame that such a prestigious event is online for the first two stages, it\'s always a good time at ESL Pro League.', author: 'Elliott Griffiths', url: 'https://rdy.gg/en/cs2/news/lowdown-on-every-team-esl-pro-league' },
-    { tag: 'News', title: 'New York Attorney General sues Valve over CS2 loot boxes', desc: 'New York sues Valve, alleging CS2 and Dota 2 loot boxes constitute illegal gambling.', author: 'Andreea "Div" Esanu', url: 'https://rdy.gg/en/cs2/news/new-york-sues-valve-loot-boxes' },
-    { tag: 'News', title: '3DMAX swap bodyy for misutaaa', desc: '3DMAX have replaced bodyy with misutaaa after a sketchy patch of form.', author: 'Elliott Griffiths', url: 'https://rdy.gg/en/cs2/news/3dmax-swap-bodyy-for-misutaaa' },
-    { tag: 'Opinion', title: 'MOUZ\' failed plot and four more things we learnt from PGL Cluj-Napoca', desc: 'Another Vitality win, but there\'s more bubbling beneath the surface after PGL Cluj-Napoca.', author: 'Elliott Griffiths', url: 'https://rdy.gg/en/cs2/news/mouz-failed-plot-things-we-learnt-cluj-napoca' },
-    { tag: 'Tournament', title: 'Vitality collect yet another trophy with win in Cluj-Napoca', desc: 'This is definitely the best team of all time.', author: 'Elliott Griffiths', url: 'https://rdy.gg/en/cs2/news/vitality-collect-another-trophy-cluj-napoca' },
-    { tag: 'News', title: 'Get rdy: Competitive guide for February 27th — March 4th', desc: 'Get rdy with me — the weekend and upcoming weekly planner for competitive matches.', author: 'Cristy "Pandora" Ramadani', url: 'https://rdy.gg/en/cs2/news/get-rdy-competitive-guide-for-february-27th-march-4th' },
+    { tag: 'Tournament', title: 'NIP and Liquid lose on opening day of ESL Pro League', desc: 'NIP can\'t be serious, man. Both teams stumble in their opening matches of the prestigious league.', author: 'Elliott Griffiths', url: 'https://rdy.gg/en/cs2/news/nip-and-liquid-lose-pro-league', img: 'img/news1.png' },
+    { tag: 'News', title: 'BLAST announce massive changes to 2027 circuit', desc: 'BLAST have announced ground-breaking changes to their tournament structure and finances.', author: 'Elliott Griffiths', url: 'https://rdy.gg/en/cs2/news/blast-announce-massive-changes-2027-circuit', img: 'img/news2.png' },
+    { tag: 'Tournament', title: 'The lowdown on every team in Stage One — ESL Pro League', desc: 'While it\'s a shame that such a prestigious event is online for the first two stages, it\'s always a good time at ESL Pro League.', author: 'Elliott Griffiths', url: 'https://rdy.gg/en/cs2/news/lowdown-on-every-team-esl-pro-league', img: 'img/news1.png' },
+    { tag: 'News', title: 'New York Attorney General sues Valve over CS2 loot boxes', desc: 'New York sues Valve, alleging CS2 and Dota 2 loot boxes constitute illegal gambling.', author: 'Andreea "Div" Esanu', url: 'https://rdy.gg/en/cs2/news/new-york-sues-valve-loot-boxes', img: 'img/news3.png' },
+    { tag: 'News', title: '3DMAX swap bodyy for misutaaa', desc: '3DMAX have replaced bodyy with misutaaa after a sketchy patch of form.', author: 'Elliott Griffiths', url: 'https://rdy.gg/en/cs2/news/3dmax-swap-bodyy-for-misutaaa', img: 'img/news2.png' },
+    { tag: 'Opinion', title: 'MOUZ\' failed plot and four more things we learnt from PGL Cluj-Napoca', desc: 'Another Vitality win, but there\'s more bubbling beneath the surface after PGL Cluj-Napoca.', author: 'Elliott Griffiths', url: 'https://rdy.gg/en/cs2/news/mouz-failed-plot-things-we-learnt-cluj-napoca', img: 'img/news3.png' },
+    { tag: 'Tournament', title: 'Vitality collect yet another trophy with win in Cluj-Napoca', desc: 'This is definitely the best team of all time.', author: 'Elliott Griffiths', url: 'https://rdy.gg/en/cs2/news/vitality-collect-another-trophy-cluj-napoca', img: 'img/news1.png' },
+    { tag: 'News', title: 'Get rdy: Competitive guide for February 27th — March 4th', desc: 'Get rdy with me — the weekend and upcoming weekly planner for competitive matches.', author: 'Cristy "Pandora" Ramadani', url: 'https://rdy.gg/en/cs2/news/get-rdy-competitive-guide-for-february-27th-march-4th', img: 'img/news2.png' },
 ];
 
-// CS2 video highlights (real YouTube links)
+// CS2 video highlights
 const VIDEOS = [
-    { title: 'Best of ESL Pro League S21 — Highlights', channel: 'ESL Counter-Strike', thumb: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg', url: 'https://www.youtube.com/results?search_query=ESL+Pro+League+CS2+highlights+2025' },
-    { title: 'ZywOo vs s1mple — Who\'s the GOAT in 2025?', channel: 'HLTV.org', thumb: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg', url: 'https://www.youtube.com/results?search_query=zywoo+vs+s1mple+CS2+2025' },
-    { title: 'PGL Cluj-Napoca Grand Final Highlights', channel: 'PGL CS2', thumb: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg', url: 'https://www.youtube.com/results?search_query=PGL+Cluj+Napoca+CS2+grand+final' },
-    { title: 'Top 20 Plays of the Month — February 2025', channel: 'HLTV.org', thumb: 'https://img.youtube.com/vi/dQw4w9WgXcQ/mqdefault.jpg', url: 'https://www.youtube.com/results?search_query=CS2+top+plays+February+2025' },
+    { title: 'Best of ESL Pro League S21 — Highlights', channel: 'ESL Counter-Strike', thumb: 'img/thumb1.png', url: 'https://www.youtube.com/results?search_query=ESL+Pro+League+CS2+highlights+2025' },
+    { title: 'ZywOo vs s1mple — Who\'s the GOAT in 2025?', channel: 'HLTV.org', thumb: 'img/thumb2.png', url: 'https://www.youtube.com/results?search_query=zywoo+vs+s1mple+CS2+2025' },
+    { title: 'PGL Cluj-Napoca Grand Final Highlights', channel: 'PGL CS2', thumb: 'img/thumb3.png', url: 'https://www.youtube.com/results?search_query=PGL+Cluj+Napoca+CS2+grand+final' },
+    { title: 'Top 20 Plays of the Month — February 2025', channel: 'HLTV.org', thumb: 'img/thumb4.png', url: 'https://www.youtube.com/results?search_query=CS2+top+plays+February+2025' },
 ];
 
 // ── Init ────────────────────────────────────────────────
@@ -118,10 +118,13 @@ function secBlock(title, moreText, moreFn, content) {
 function newsGrid(items) {
     return `<div class="news-grid">${items.map(n => `
         <a class="news-card" href="${n.url}" target="_blank" rel="noopener">
-            <span class="news-card__tag">${esc(n.tag)}</span>
-            <div class="news-card__title">${esc(n.title)}</div>
-            <div class="news-card__desc">${esc(n.desc)}</div>
-            <div class="news-card__author">${esc(n.author)}</div>
+            ${n.img ? `<div class="news-card__img"><img src="${n.img}" alt=""></div>` : ''}
+            <div class="news-card__body">
+                <span class="news-card__tag">${esc(n.tag)}</span>
+                <div class="news-card__title">${esc(n.title)}</div>
+                <div class="news-card__desc">${esc(n.desc)}</div>
+                <div class="news-card__author">${esc(n.author)}</div>
+            </div>
         </a>
     `).join('')}</div>`;
 }
@@ -130,6 +133,7 @@ function videoGrid(items) {
     return `<div class="video-grid">${items.map(v => `
         <a class="video-card" href="${v.url}" target="_blank" rel="noopener">
             <div class="video-card__thumb">
+                <img src="${v.thumb}" alt="">
                 <div class="video-card__play">▶</div>
             </div>
             <div class="video-card__info">
@@ -140,20 +144,35 @@ function videoGrid(items) {
     `).join('')}</div>`;
 }
 
+// Calculate series score from map data (a map is won at 13+ rounds)
+function calcSeries(mapScores) {
+    let s1 = 0, s2 = 0;
+    for (const ms of mapScores) {
+        if (ms.score1 >= 13 && ms.score1 > ms.score2) s1++;
+        else if (ms.score2 >= 13 && ms.score2 > ms.score1) s2++;
+    }
+    return { s1, s2 };
+}
+
+function mapWinner(ms) {
+    if (ms.score1 >= 13 && ms.score1 > ms.score2) return 'team1';
+    if (ms.score2 >= 13 && ms.score2 > ms.score1) return 'team2';
+    return null;
+}
+
 function matchList(items) {
     return `<div class="match-list">${items.map(m => {
         const isLive = m.status === 'Live';
         const mapScores = m.mapScores || [];
-        const s1 = m.seriesScore1 ?? 0;
-        const s2 = m.seriesScore2 ?? 0;
+        const { s1, s2 } = calcSeries(mapScores);
         const hasScore = mapScores.some(ms => ms.score1 > 0 || ms.score2 > 0);
 
-        // Generate simple odds based on score differential (simulated)
         const odds = generateOdds(m);
 
-        const maps = mapScores.map(ms => {
-            const w = ms.mapWinner === 'team1' ? ' mr-map--w1' : ms.mapWinner === 'team2' ? ' mr-map--w2' : '';
-            return `<span class="mr-map${w}">M${ms.map}: ${ms.score1}-${ms.score2}</span>`;
+        const maps = mapScores.filter(ms => ms.score1 > 0 || ms.score2 > 0).map(ms => {
+            const w = mapWinner(ms);
+            const wc = w === 'team1' ? ' mr-map--w1' : w === 'team2' ? ' mr-map--w2' : '';
+            return `<span class="mr-map${wc}">M${ms.map}: ${ms.score1}-${ms.score2}</span>`;
         }).join('');
 
         return `
@@ -164,13 +183,13 @@ function matchList(items) {
                 </span>
             </div>
             <div class="mr-teams">
-                <span class="mr-team">${esc(m.team1 || 'TBD')}</span>
+                <span class="mr-team">${teamAva(m.team1)}${esc(m.team1 || 'TBD')}</span>
                 <div class="mr-score">
                     <span>${hasScore ? s1 : ''}</span>
                     <span class="mr-score__sep">${hasScore ? ':' : 'vs'}</span>
                     <span>${hasScore ? s2 : ''}</span>
                 </div>
-                <span class="mr-team">${esc(m.team2 || 'TBD')}</span>
+                <span class="mr-team">${esc(m.team2 || 'TBD')}${teamAva(m.team2)}</span>
             </div>
             <div class="mr-maps">${maps}</div>
             <div class="mr-odds">
@@ -230,13 +249,14 @@ async function openMatch(id) {
     const maxRnd = events.reduce((mx, e) => Math.max(mx, e.roundNumber || 0), 0);
     const hsRate = kills.length ? Math.round(hs.length / kills.length * 100) : 0;
     const mapScores = m.mapScores || [];
-    const s1 = m.seriesScore1 ?? 0, s2 = m.seriesScore2 ?? 0;
+    const { s1, s2 } = calcSeries(mapScores);
     const hasScore = mapScores.some(ms => ms.score1 > 0 || ms.score2 > 0);
     const isLive = m.status === 'Live';
 
-    const maps = mapScores.map(ms => {
-        const w = ms.mapWinner === 'team1' ? ' mr-map--w1' : ms.mapWinner === 'team2' ? ' mr-map--w2' : '';
-        return `<span class="mr-map${w}">M${ms.map}: ${ms.score1}-${ms.score2}</span>`;
+    const maps = mapScores.filter(ms => ms.score1 > 0 || ms.score2 > 0).map(ms => {
+        const w = mapWinner(ms);
+        const wc = w === 'team1' ? ' mr-map--w1' : w === 'team2' ? ' mr-map--w2' : '';
+        return `<span class="mr-map${wc}">M${ms.map}: ${ms.score1}-${ms.score2}</span>`;
     }).join('');
 
     const tc = {};
@@ -318,6 +338,16 @@ function evRows(events) {
 function fmtType(t) {
     return { kill: 'Kill', suicide: 'Suicide', bomb_plant: 'Plant', bomb_defuse: 'Defuse', round_start: 'Start', round_end: 'End' }[t] || t;
 }
+
+const AVA_COLORS = ['#3b82f6', '#ef4444', '#22c55e', '#f59e0b', '#a855f7', '#06b6d4', '#ec4899', '#f97316', '#10b981', '#6366f1'];
+function teamAva(name) {
+    if (!name) return '';
+    const initial = name.charAt(0).toUpperCase();
+    const hash = name.split('').reduce((h, c) => h + c.charCodeAt(0), 0);
+    const color = AVA_COLORS[hash % AVA_COLORS.length];
+    return `<span class="team-ava" style="background:${color}22;color:${color}">${initial}</span>`;
+}
+
 function esc(s) {
     return s ? s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;') : '';
 }
