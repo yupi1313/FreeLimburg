@@ -29,7 +29,39 @@
         </div>
     </header>
 
-    <main id="app"></main>
+    <div class="layout">
+        <main id="app"></main>
+        <aside class="sidebar">
+            <div class="expert-card">
+                <div class="expert-card__img">
+                    <img src="img/expert.jpg" alt="CS2 Expert">
+                </div>
+                <div class="expert-card__body">
+                    <div class="expert-card__badge">Esport Expert</div>
+                    <div class="expert-card__name">Max "Kratos" Versteeg</div>
+                    <div class="expert-card__title">CS2 Analyst & Commentator</div>
+                    <p class="expert-card__bio">Professional esports analyst covering CS2 competitive scene. Providing
+                        in-depth match breakdowns, player stats, and tournament insights.</p>
+                    <div class="expert-card__stats">
+                        <div class="expert-stat">
+                            <span class="expert-stat__val">500+</span>
+                            <span class="expert-stat__lbl">Matches Analyzed</span>
+                        </div>
+                        <div class="expert-stat">
+                            <span class="expert-stat__val">4yr</span>
+                            <span class="expert-stat__lbl">Experience</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-section__title">Expert Pick</div>
+                <div class="expert-pick" id="expert-pick">
+                    <div class="empty" style="padding:12px">Loading...</div>
+                </div>
+            </div>
+        </aside>
+    </div>
 
     <footer class="footer">
         <div class="footer-inner">

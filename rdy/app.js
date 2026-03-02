@@ -35,7 +35,44 @@ document.addEventListener('DOMContentLoaded', async () => {
         if (r.ok) matches = await r.json();
     } catch (e) { console.warn('Load failed:', e); }
     render();
+    renderExpertPick();
 });
+
+function renderExpertPick() {
+    const el = document.getElementById('expert-pick');
+    if (!el) return;
+    const live = matches.filter(m => m.status === 'Live');
+    if (live.length === 0) {
+        el.innerHTML = '<div class="empty" style="padding:8px;font-size:11px">No live matches to analyze</div>';
+        return;
+    }
+    // Pick the match with the most map action
+    const best = live.reduce((best, m) => {
+        const mapScores = m.mapScores || [];
+        const totalRounds = mapScores.reduce((t, ms) => t + (ms.score1 || 0) + (ms.score2 || 0), 0);
+        return totalRounds > (best._rounds || 0) ? { ...m, _rounds: totalRounds } : best;
+    }, { _rounds: 0 });
+
+    if (!best.team1) {
+        el.innerHTML = '<div class="empty" style="padding:8px;font-size:11px">Analyzing matches...</div>';
+        return;
+    }
+
+    const mapScores = best.mapScores || [];
+    let t1r = 0, t2r = 0;
+    mapScores.forEach(ms => { t1r += ms.score1 || 0; t2r += ms.score2 || 0; });
+    const fav = t1r >= t2r ? best.team1 : best.team2;
+
+    el.innerHTML = `
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:8px">
+            ${teamAva(best.team1)}<span style="font-weight:700;font-size:12px">${esc(best.team1)}</span>
+            <span style="color:var(--text3);font-size:11px">vs</span>
+            <span style="font-weight:700;font-size:12px">${esc(best.team2)}</span>${teamAva(best.team2)}
+        </div>
+        <div style="font-size:11px;color:var(--accent);font-weight:600">⚡ Expert favors ${esc(fav)}</div>
+        <div style="font-size:10px;color:var(--text3);margin-top:4px">Based on ${best._rounds} rounds played</div>
+    `;
+}
 
 function go(s) {
     section = s;
