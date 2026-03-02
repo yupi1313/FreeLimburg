@@ -1,0 +1,27 @@
+{
+  "id": "2390073",
+  "team1": "SINNERS",
+  "team2": "WHITEBIRD",
+  "status": "Live",
+  "url": "https://www.hltv.org/matches/2390073/sinners-vs-whitebird-cct-season-3-europe-series-16",
+  "createdAt": "2026-02-27T15:13:31.917Z",
+  "updatedAt": "2026-02-27T15:28:37.162Z",
+  "maps": 2,
+  "currentMap": 3,
+  "mapScores": [
+    {
+      "map": 2,
+      "score1": 4,
+      "score2": 2,
+      "mapWinner": null
+    },
+    {
+      "map": 3,
+      "score1": 0,
+      "score2": 0,
+      "mapWinner": null
+    }
+  ],
+  "seriesScore1": 0,
+  "seriesScore2": 0
+}

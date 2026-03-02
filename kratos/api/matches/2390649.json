@@ -4,24 +4,18 @@
   "team2": "Lazer Cats",
   "status": "Live",
   "url": "https://www.hltv.org/matches/2390649/phantom-vs-lazer-cats-jb-pro-league-season-2",
-  "createdAt": "2026-02-26T10:11:58.177Z",
-  "updatedAt": "2026-02-26T11:29:00.296Z",
-  "maps": 2,
+  "createdAt": "2026-02-26T11:45:26.049Z",
+  "updatedAt": "2026-02-26T12:09:34.258Z",
+  "maps": 1,
   "currentMap": 3,
   "mapScores": [
     {
-      "map": 2,
-      "score1": 16,
-      "score2": 13,
-      "mapWinner": "team1"
-    },
-    {
       "map": 3,
-      "score1": 16,
-      "score2": 13,
-      "mapWinner": "team1"
+      "score1": 12,
+      "score2": 9,
+      "mapWinner": null
     }
   ],
-  "seriesScore1": 2,
+  "seriesScore1": 0,
   "seriesScore2": 0
 }

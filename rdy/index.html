@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDY — CS2 Live Matches & Results</title>
+    <meta name="description"
+        content="Track live CS2 matches, scores, kill logs, and match results in real-time. Powered by HLTV data.">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Ambient background -->
+    <div class="ambient-bg"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header__inner">
+            <a class="header__logo" href="/rdy/">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">RDY</span>
+                <span class="logo-badge">CS2</span>
+            </a>
+            <nav class="header__nav" id="nav-tabs">
+                <button class="nav-tab active" data-view="overview">Overview</button>
+                <button class="nav-tab" data-view="matches">Live Matches</button>
+                <button class="nav-tab" data-view="results">Results</button>
+            </nav>
+            <div class="header__meta">
+                <span class="pulse-dot"></span>
+                <span class="meta-text" id="live-count">Loading...</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Overview View (default) -->
+        <div id="view-overview" class="view active">
+            <!-- Hero Stats Bar -->
+            <div class="hero-stats" id="hero-stats">
+                <div class="hero-stat">
+                    <div class="hero-stat__value" id="stat-live">—</div>
+                    <div class="hero-stat__label">Live Matches</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat__value" id="stat-total-kills">—</div>
+                    <div class="hero-stat__label">Total Kills</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat__value" id="stat-hs-rate">—</div>
+                    <div class="hero-stat__label">HS Rate</div>
+                </div>
+                <div class="hero-stat">
+                    <div class="hero-stat__value" id="stat-rounds">—</div>
+                    <div class="hero-stat__label">Rounds Played</div>
+                </div>
+            </div>
+
+            <!-- Live Section -->
+            <section class="section">
+                <div class="section__header">
+                    <h2 class="section__title"><span class="pulse-dot"></span> Live Matches</h2>
+                    <button class="section__link" onclick="switchView('matches')">View all →</button>
+                </div>
+                <div class="match-grid" id="live-grid">
+                    <div class="loading-state">
+                        <div class="spinner"></div>
+                        <p>Searching for live matches...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Results Section -->
+            <section class="section">
+                <div class="section__header">
+                    <h2 class="section__title">Recent Results</h2>
+                    <button class="section__link" onclick="switchView('results')">View all →</button>
+                </div>
+                <div class="match-grid" id="results-grid">
+                    <div class="loading-state">
+                        <div class="spinner"></div>
+                        <p>Loading results...</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Weapon Stats -->
+            <section class="section">
+                <div class="section__header">
+                    <h2 class="section__title">Top Weapons</h2>
+                </div>
+                <div class="stats-grid" id="weapon-stats">
+                    <div class="loading-state">
+                        <div class="spinner"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Matches View -->
+        <div id="view-matches" class="view">
+            <section class="section">
+                <div class="section__header">
+                    <h2 class="section__title"><span class="pulse-dot"></span> All Live Matches</h2>
+                </div>
+                <div class="match-grid match-grid--full" id="all-live-grid"></div>
+            </section>
+        </div>
+
+        <!-- Results View -->
+        <div id="view-results" class="view">
+            <section class="section">
+                <div class="section__header">
+                    <h2 class="section__title">All Results</h2>
+                </div>
+                <div class="match-grid match-grid--full" id="all-results-grid"></div>
+            </section>
+        </div>
+
+        <!-- Match Detail Modal -->
+        <div id="match-detail" class="detail-overlay">
+            <div class="detail-panel" id="detail-panel"></div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <span class="footer__brand">⚡ RDY — CS2 Match Tracker</span>
+            <span class="footer__info">Data scraped from HLTV • Built with Kratos</span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

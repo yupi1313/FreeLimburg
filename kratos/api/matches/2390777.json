@@ -1,0 +1,27 @@
+{
+  "id": "2390777",
+  "team1": "ENCE",
+  "team2": "Eternal Fire",
+  "status": "Live",
+  "url": "https://www.hltv.org/matches/2390777/ence-vs-eternal-fire-digital-crusade-draculan-season-5",
+  "createdAt": "2026-02-27T15:13:54.198Z",
+  "updatedAt": "2026-02-27T15:28:27.372Z",
+  "maps": 2,
+  "currentMap": 3,
+  "mapScores": [
+    {
+      "map": 2,
+      "score1": 11,
+      "score2": 10,
+      "mapWinner": null
+    },
+    {
+      "map": 3,
+      "score1": 0,
+      "score2": 0,
+      "mapWinner": null
+    }
+  ],
+  "seriesScore1": 0,
+  "seriesScore2": 0
+}

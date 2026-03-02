@@ -1,18 +1,18 @@
 {
-  "id": "2390844",
-  "team1": "Rare Atom",
-  "team2": "Lynn Vision",
+  "id": "2390766",
+  "team1": "Eternal Fire",
+  "team2": "MANA",
   "status": "Live",
-  "url": "https://www.hltv.org/matches/2390844/rare-atom-vs-lynn-vision-pgl-bucharest-2026-east-asia-closed-qualifier",
-  "createdAt": "2026-02-26T11:45:02.167Z",
-  "updatedAt": "2026-02-26T12:09:37.991Z",
+  "url": "https://www.hltv.org/matches/2390766/eternal-fire-vs-mana-digital-crusade-draculan-season-5",
+  "createdAt": "2026-02-26T11:46:59.760Z",
+  "updatedAt": "2026-02-26T12:09:35.395Z",
   "maps": 3,
   "currentMap": 3,
   "mapScores": [
     {
       "map": 1,
-      "score1": 1,
-      "score2": 11,
+      "score1": 5,
+      "score2": 4,
       "mapWinner": null
     },
     {

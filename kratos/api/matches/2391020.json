@@ -1,0 +1,27 @@
+{
+  "id": "2391020",
+  "team1": "NRG",
+  "team2": "Monte",
+  "status": "Live",
+  "url": "https://www.hltv.org/matches/2391020/nrg-vs-monte-esl-pro-league-season-23-stage-1",
+  "createdAt": "2026-03-02T12:34:54.668Z",
+  "updatedAt": "2026-03-02T12:37:27.712Z",
+  "maps": 2,
+  "currentMap": 3,
+  "mapScores": [
+    {
+      "map": 2,
+      "score1": 8,
+      "score2": 8,
+      "mapWinner": null
+    },
+    {
+      "map": 3,
+      "score1": 0,
+      "score2": 0,
+      "mapWinner": null
+    }
+  ],
+  "seriesScore1": 0,
+  "seriesScore2": 0
+}
