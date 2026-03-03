@@ -907,6 +907,16 @@
 
             db.ref().update(updates);
 
+            // Write to audit log
+            const summary = DRINKS.filter(d => cart[d.key]).map(d => `${cart[d.key]}× ${d.name}`).join(', ');
+            db.ref('logs').push({
+                action: 'order',
+                tableId: selectedTable,
+                teamName: table.name,
+                message: `${summary}`,
+                timestamp: firebase.database.ServerValue.TIMESTAMP
+            });
+
             // Clear cart
             Object.keys(cart).forEach(k => delete cart[k]);
             renderCart();

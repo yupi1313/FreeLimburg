@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeLimburg Quiz — Activity Log</title>
+    <meta name="description" content="Permanent audit log of all drink orders and bar actions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-dark: #08090f;
+            --bg-card: rgba(255, 255, 255, 0.04);
+            --bg-card-hover: rgba(255, 255, 255, 0.07);
+            --border-glass: rgba(255, 255, 255, 0.07);
+            --text-primary: #f0f0f5;
+            --text-secondary: #9a9ab0;
+            --text-muted: #5e5e78;
+            --amber: #f0a830;
+            --amber-glow: rgba(240, 168, 48, 0.2);
+            --green: #34d399;
+            --danger: #ef4444;
+            --radius: 14px;
+            --radius-sm: 8px;
+        }
+
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--bg-dark);
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+
+        .bg-gradient {
+            position: fixed;
+            inset: 0;
+            z-index: -1;
+            background:
+                radial-gradient(ellipse 50% 40% at 10% 0%, rgba(240, 168, 48, 0.05), transparent),
+                radial-gradient(ellipse 50% 50% at 90% 90%, rgba(52, 152, 219, 0.03), transparent),
+                var(--bg-dark);
+        }
+
+        /* Header */
+        .header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            background: rgba(8, 9, 15, 0.85);
+            border-bottom: 1px solid var(--border-glass);
+            padding: 14px 20px;
+        }
+
+        .header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header h1 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--amber), #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header .subtitle {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+        }
+
+        .connection-status {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--text-muted);
+            transition: background 0.3s;
+        }
+
+        .status-dot.connected {
+            background: var(--green);
+            box-shadow: 0 0 8px rgba(52, 211, 153, 0.5);
+        }
+
+        .log-count-badge {
+            background: var(--amber-glow);
+            border: 1px solid rgba(240, 168, 48, 0.3);
+            border-radius: 20px;
+            padding: 4px 14px;
+            font-size: 0.82rem;
+            font-weight: 700;
+            color: var(--amber);
+        }
+
+        /* Filter bar */
+        .filter-bar {
+            max-width: 900px;
+            margin: 14px auto 0;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .filter-label {
+            font-size: 0.78rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .filter-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 20px;
+            padding: 5px 13px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.73rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .filter-btn:hover {
+            background: var(--bg-card-hover);
+            border-color: rgba(240, 168, 48, 0.3);
+        }
+
+        .filter-btn.active {
+            background: var(--amber-glow);
+            border-color: var(--amber);
+            color: var(--amber);
+            font-weight: 700;
+        }
+
+        /* Type filter */
+        .type-filters {
+            max-width: 900px;
+            margin: 10px auto;
+            padding: 0 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .type-btn {
+            composes: filter-btn;
+        }
+
+        .type-btn.active-order {
+            background: rgba(52, 211, 153, 0.12);
+            border-color: var(--green);
+            color: var(--green);
+            font-weight: 700;
+        }
+
+        .type-btn.active-served {
+            background: rgba(52, 152, 219, 0.12);
+            border-color: #3498db;
+            color: #3498db;
+            font-weight: 700;
+        }
+
+        .type-btn.active-deleted {
+            background: rgba(239, 68, 68, 0.12);
+            border-color: var(--danger);
+            color: var(--danger);
+            font-weight: 700;
+        }
+
+        .type-btn.active-cleared {
+            background: rgba(239, 68, 68, 0.12);
+            border-color: var(--danger);
+            color: var(--danger);
+            font-weight: 700;
+        }
+
+        /* Log list */
+        .log-area {
+            max-width: 900px;
+            margin: 14px auto;
+            padding: 0 16px 60px;
+        }
+
+        .log-entry {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 12px 14px;
+            margin-bottom: 4px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-sm);
+            transition: background 0.15s;
+        }
+
+        .log-entry:hover {
+            background: var(--bg-card-hover);
+        }
+
+        .log-type-badge {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 3px 8px;
+            border-radius: 4px;
+            flex-shrink: 0;
+            min-width: 62px;
+            text-align: center;
+        }
+
+        .log-type-badge.order {
+            background: rgba(52, 211, 153, 0.15);
+            color: var(--green);
+        }
+
+        .log-type-badge.served {
+            background: rgba(52, 152, 219, 0.15);
+            color: #3498db;
+        }
+
+        .log-type-badge.deleted {
+            background: rgba(239, 68, 68, 0.12);
+            color: var(--danger);
+        }
+
+        .log-type-badge.cleared {
+            background: rgba(239, 68, 68, 0.2);
+            color: var(--danger);
+        }
+
+        .log-info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .log-message {
+            font-size: 0.84rem;
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        .log-meta {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .log-time {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            flex-shrink: 0;
+            white-space: nowrap;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 60px 16px;
+            color: var(--text-muted);
+        }
+
+        .empty-state .es-icon {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .empty-state p {
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+
+            .filter-bar,
+            .type-filters {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+
+    <header class="header">
+        <div class="header-inner">
+            <div>
+                <h1>📋 Activity Log</h1>
+                <div class="subtitle">Permanent audit trail — never deleted</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:14px;">
+                <span class="log-count-badge" id="logCountBadge">0 entries</span>
+                <div class="connection-status">
+                    <div class="status-dot" id="statusDot"></div>
+                    <span id="statusText">Connecting…</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="filter-bar" id="tableFilterBar">
+        <span class="filter-label">Table:</span>
+        <button class="filter-btn active" data-table="all">All</button>
+    </div>
+
+    <div class="type-filters" id="typeFilterBar">
+        <span class="filter-label">Action:</span>
+        <button class="filter-btn active" data-type="all">All</button>
+        <button class="filter-btn" data-type="order">🛒 Ordered</button>
+        <button class="filter-btn" data-type="served">✅ Served</button>
+        <button class="filter-btn" data-type="deleted">🗑 Deleted</button>
+        <button class="filter-btn" data-type="cleared">💥 Cleared</button>
+    </div>
+
+    <div class="log-area" id="logArea">
+        <div class="empty-state">
+            <div class="es-icon">📋</div>
+            <p>No log entries yet</p>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-database-compat.js"></script>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDuiJsy00_w3FudEv2U8HniO04JuyUVzxo",
+            authDomain: "freelimburg-quiz.firebaseapp.com",
+            databaseURL: "https://freelimburg-quiz-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "freelimburg-quiz",
+            storageBucket: "freelimburg-quiz.firebasestorage.app",
+            messagingSenderId: "199443003943",
+            appId: "1:199443003943:web:d2e3c5bc01fb8186486c02"
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
+
+        // Tables for filter
+        const TABLES = [
+            { id: 1, name: "De Sjansen" }, { id: 2, name: "Bier Baronen" },
+            { id: 3, name: "Kwis Mansen" }, { id: 4, name: "Hemelbestormers" },
+            { id: 5, name: "Limburgse Leeuwen" }, { id: 6, name: "De Proosters" },
+            { id: 7, name: "Sjpas Mansen" }, { id: 8, name: "Hansen Op De Bok" },
+            { id: 9, name: "Stampij Makers" }, { id: 10, name: "Kansen Pakkers" },
+            { id: 11, name: "Dorps Gekkies" }, { id: 12, name: "Boerenflansen" },
+            { id: 13, name: "De Kansen" }
+        ];
+
+        let activeTableFilter = 'all';
+        let activeTypeFilter = 'all';
+        let cachedLogs = [];
+
+        // Build table filter buttons
+        const tableBar = document.getElementById('tableFilterBar');
+        TABLES.forEach(t => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn';
+            btn.dataset.table = String(t.id);
+            btn.textContent = `#${t.id}`;
+            btn.title = t.name;
+            btn.addEventListener('click', () => setTableFilter(String(t.id)));
+            tableBar.appendChild(btn);
+        });
+        document.querySelector('.filter-btn[data-table="all"]').addEventListener('click', () => setTableFilter('all'));
+
+        // Type filter buttons
+        document.querySelectorAll('#typeFilterBar .filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => setTypeFilter(btn.dataset.type));
+        });
+
+        function setTableFilter(val) {
+            activeTableFilter = val;
+            document.querySelectorAll('#tableFilterBar .filter-btn').forEach(b =>
+                b.classList.toggle('active', b.dataset.table === val));
+            renderLogs();
+        }
+
+        function setTypeFilter(val) {
+            activeTypeFilter = val;
+            document.querySelectorAll('#typeFilterBar .filter-btn').forEach(b =>
+                b.classList.toggle('active', b.dataset.type === val));
+            renderLogs();
+        }
+
+        // Listen to logs
+        db.ref('logs').orderByChild('timestamp').on('value', snapshot => {
+            cachedLogs = [];
+            snapshot.forEach(child => {
+                cachedLogs.push({ id: child.key, ...child.val() });
+            });
+            cachedLogs.reverse(); // newest first
+            renderLogs();
+        });
+
+        function renderLogs() {
+            const area = document.getElementById('logArea');
+            const badge = document.getElementById('logCountBadge');
+
+            let filtered = cachedLogs;
+            if (activeTableFilter !== 'all') {
+                filtered = filtered.filter(l =>
+                    l.tableId !== undefined && String(l.tableId) === activeTableFilter);
+            }
+            if (activeTypeFilter !== 'all') {
+                filtered = filtered.filter(l => l.action === activeTypeFilter);
+            }
+
+            badge.textContent = `${filtered.length} entr${filtered.length !== 1 ? 'ies' : 'y'}`;
+
+            if (filtered.length === 0) {
+                area.innerHTML = `<div class="empty-state"><div class="es-icon">📋</div><p>No matching log entries</p></div>`;
+                return;
+            }
+
+            area.innerHTML = '';
+            filtered.forEach(log => {
+                const el = document.createElement('div');
+                el.className = 'log-entry';
+
+                const badgeClass = log.action || 'order';
+                const badgeLabel = {
+                    order: 'Order', served: 'Served', deleted: 'Deleted', cleared: 'Cleared'
+                }[badgeClass] || badgeClass;
+
+                const time = log.timestamp ? formatDateTime(log.timestamp) : '';
+                const msg = log.message || '';
+                const meta = [];
+                if (log.tableId) meta.push(`Table #${log.tableId}`);
+                if (log.teamName) meta.push(log.teamName);
+
+                el.innerHTML = `
+                    <span class="log-type-badge ${badgeClass}">${badgeLabel}</span>
+                    <div class="log-info">
+                        <div class="log-message">${msg}</div>
+                        ${meta.length ? `<div class="log-meta">${meta.join(' — ')}</div>` : ''}
+                    </div>
+                    <span class="log-time">${time}</span>
+                `;
+                area.appendChild(el);
+            });
+        }
+
+        function formatDateTime(ts) {
+            const d = new Date(ts);
+            return d.toLocaleString([], {
+                month: 'short', day: 'numeric',
+                hour: '2-digit', minute: '2-digit', second: '2-digit'
+            });
+        }
+
+        // Connection status
+        db.ref('.info/connected').on('value', snap => {
+            const dot = document.getElementById('statusDot');
+            const txt = document.getElementById('statusText');
+            if (snap.val() === true) { dot.classList.add('connected'); txt.textContent = 'Live'; }
+            else { dot.classList.remove('connected'); txt.textContent = 'Offline'; }
+        });
+    </script>
+</body>
+
+</html>

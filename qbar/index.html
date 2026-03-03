@@ -777,27 +777,52 @@
         // SERVE AN ORDER
         // =====================================================
         function serveOrder(orderId, element) {
-            if (element) {
-                element.classList.add('serving');
-            }
-            setTimeout(() => {
-                db.ref(`orders/${orderId}`).update({
-                    status: 'served',
-                    servedAt: firebase.database.ServerValue.TIMESTAMP
-                });
-            }, 300);
+            // Get order info before serving for the log
+            db.ref(`orders/${orderId}`).once('value', snap => {
+                const order = snap.val();
+                if (!order) return;
+                const meta = DRINK_META[order.drink] || { name: order.drink };
+
+                if (element) element.classList.add('serving');
+                setTimeout(() => {
+                    db.ref(`orders/${orderId}`).update({
+                        status: 'served',
+                        servedAt: firebase.database.ServerValue.TIMESTAMP
+                    });
+                    db.ref('logs').push({
+                        action: 'served',
+                        tableId: order.tableId,
+                        teamName: order.teamName,
+                        message: `${meta.name} served`,
+                        timestamp: firebase.database.ServerValue.TIMESTAMP
+                    });
+                }, 300);
+            });
         }
 
         // =====================================================
         // DELETE AN ORDER (mistake correction)
         // =====================================================
         function deleteOrder(orderId, element) {
-            if (element) {
-                element.classList.add('deleting');
-            }
-            setTimeout(() => {
-                db.ref(`orders/${orderId}`).remove();
-            }, 280);
+            // Get order info before deleting for the log
+            db.ref(`orders/${orderId}`).once('value', snap => {
+                const order = snap.val();
+                if (!order) return;
+                const meta = DRINK_META[order.drink] || { name: order.drink };
+                const statusLabel = order.status === 'served' ? 'served' : 'pending';
+
+                if (element) element.classList.add('deleting');
+                setTimeout(() => {
+                    db.ref(`orders/${orderId}`).remove();
+                    db.ref('logs').push({
+                        action: 'deleted',
+                        tableId: order.tableId,
+                        teamName: order.teamName,
+                        message: `${meta.name} (${statusLabel}) deleted`,
+                        timestamp: firebase.database.ServerValue.TIMESTAMP
+                    });
+                }, 280);
+            });
         }
 
         // =====================================================
@@ -895,9 +920,19 @@
         // CLEAR ALL ORDERS
         // =====================================================
         document.getElementById('clearAllBtn').addEventListener('click', () => {
-            if (confirm('⚠️ This will delete ALL orders (pending + history). Are you sure?')) {
-                db.ref('orders').remove();
+            const pw = prompt('⚠️ This will delete ALL orders. Enter password to confirm:');
+            if (pw !== '13') {
+                if (pw !== null) alert('Wrong password.');
+                return;
             }
+            // Log before clearing
+            const count = cachedAllOrders ? cachedAllOrders.length : 0;
+            db.ref('logs').push({
+                action: 'cleared',
+                message: `All orders cleared (${count} orders removed)`,
+                timestamp: firebase.database.ServerValue.TIMESTAMP
+            });
+            db.ref('orders').remove();
         });
 
         // =====================================================
