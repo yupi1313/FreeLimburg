@@ -230,7 +230,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
             gap: 10px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         .drink-card {
@@ -344,6 +344,147 @@
 
         .drink-card.pulse {
             animation: orderPulse 0.5s ease;
+        }
+
+        /* ========== CART ========== */
+        .cart-section {
+            margin-bottom: 24px;
+            display: none;
+        }
+
+        .cart-section.has-items {
+            display: block;
+        }
+
+        .cart-box {
+            background: rgba(240, 168, 48, 0.06);
+            border: 1px solid rgba(240, 168, 48, 0.2);
+            border-radius: var(--radius);
+            padding: 14px;
+        }
+
+        .cart-items {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+
+        .cart-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius-sm);
+            padding: 8px 12px;
+        }
+
+        .cart-drink-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+        }
+
+        .cart-drink-name {
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .cart-drink-price {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .cart-controls {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .cart-qty-btn {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            border: 1px solid var(--border-glass);
+            background: var(--bg-card);
+            color: var(--text-primary);
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.15s;
+            font-family: 'Outfit', sans-serif;
+        }
+
+        .cart-qty-btn:hover {
+            background: var(--bg-card-hover);
+            border-color: var(--amber);
+            color: var(--amber);
+        }
+
+        .cart-qty {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--amber);
+            min-width: 22px;
+            text-align: center;
+        }
+
+        .cart-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cart-total {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .cart-total .ct-amount {
+            font-weight: 700;
+            color: var(--amber);
+        }
+
+        .cart-order-btn {
+            background: linear-gradient(135deg, var(--amber), #e69500);
+            border: none;
+            border-radius: var(--radius-sm);
+            padding: 10px 28px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #0c0e1a;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .cart-order-btn:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 16px rgba(240, 168, 48, 0.3);
+        }
+
+        .cart-order-btn:active {
+            transform: scale(0.97);
+        }
+
+        .cart-clear-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.75rem;
+            cursor: pointer;
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+
+        .cart-clear-btn:hover {
+            color: var(--text-secondary);
         }
 
         /* ========== PENDING ORDERS ========== */
@@ -559,8 +700,22 @@
     </div>
 
     <main class="main-area" id="mainArea">
-        <div class="section-label">Order a drink</div>
+        <div class="section-label">Tap a drink to add to cart</div>
         <div class="drink-grid" id="drinkGrid"></div>
+
+        <div class="cart-section" id="cartSection">
+            <div class="section-label">🛒 Your cart</div>
+            <div class="cart-box">
+                <div class="cart-items" id="cartItems"></div>
+                <div class="cart-footer">
+                    <div>
+                        <span class="cart-total">Subtotal: <span class="ct-amount" id="cartTotal">€0</span></span>
+                        <br><button class="cart-clear-btn" id="cartClearBtn">Clear cart</button>
+                    </div>
+                    <button class="cart-order-btn" id="cartOrderBtn">🍻 Place Order</button>
+                </div>
+            </div>
+        </div>
 
         <div class="pending-section">
             <div class="section-label">⏳ Ordered — waiting to be served</div>
@@ -665,37 +820,104 @@
                 <div class="drink-name">${d.name}</div>
                 <div class="drink-price">€${d.price}</div>
             `;
-            card.addEventListener('click', () => orderDrink(d, card));
+            card.addEventListener('click', () => addToCart(d, card));
             drinkGridEl.appendChild(card);
         });
 
         // =====================================================
-        // ORDER A DRINK
+        // CART
         // =====================================================
-        function orderDrink(drink, cardEl) {
+        const cart = {};  // { drinkKey: count }
+
+        function addToCart(drink, cardEl) {
             if (!selectedTable) return;
-
-            const table = TABLES.find(t => t.id === selectedTable);
-            const order = {
-                tableId: selectedTable,
-                teamName: table.name,
-                drink: drink.key,
-                drinkName: drink.name,
-                drinkEmoji: drink.emoji,
-                price: drink.price,
-                timestamp: firebase.database.ServerValue.TIMESTAMP,
-                status: "pending"
-            };
-
-            db.ref('orders').push(order);
+            cart[drink.key] = (cart[drink.key] || 0) + 1;
+            renderCart();
 
             // Pulse animation
             cardEl.classList.remove('pulse');
             void cardEl.offsetWidth;
             cardEl.classList.add('pulse');
 
-            showToast(`${drink.emoji} ${drink.name} ordered!`);
+            showToast(`${drink.emoji} ${drink.name} added to cart`);
         }
+
+        function removeFromCart(drinkKey) {
+            if (cart[drinkKey]) {
+                cart[drinkKey]--;
+                if (cart[drinkKey] <= 0) delete cart[drinkKey];
+            }
+            renderCart();
+        }
+
+        function renderCart() {
+            const section = document.getElementById('cartSection');
+            const itemsEl = document.getElementById('cartItems');
+            const totalEl = document.getElementById('cartTotal');
+            const hasItems = Object.keys(cart).length > 0;
+
+            section.classList.toggle('has-items', hasItems);
+            if (!hasItems) { itemsEl.innerHTML = ''; totalEl.textContent = '€0'; return; }
+
+            let total = 0;
+            itemsEl.innerHTML = '';
+            DRINKS.forEach(d => {
+                if (!cart[d.key]) return;
+                const qty = cart[d.key];
+                total += qty * d.price;
+                itemsEl.innerHTML += `
+                    <div class="cart-row">
+                        <div class="cart-drink-info">
+                            <span>${d.emoji}</span>
+                            <span class="cart-drink-name">${d.name}</span>
+                            <span class="cart-drink-price">€${d.price}</span>
+                        </div>
+                        <div class="cart-controls">
+                            <button class="cart-qty-btn" onclick="removeFromCart('${d.key}')">−</button>
+                            <span class="cart-qty">${qty}</span>
+                            <button class="cart-qty-btn" onclick="addToCart(DRINKS.find(x=>x.key==='${d.key}'))">+</button>
+                        </div>
+                    </div>`;
+            });
+            totalEl.textContent = `€${total}`;
+        }
+
+        // Submit cart to Firebase
+        document.getElementById('cartOrderBtn').addEventListener('click', () => {
+            if (!selectedTable || Object.keys(cart).length === 0) return;
+            const table = TABLES.find(t => t.id === selectedTable);
+            const updates = {};
+
+            DRINKS.forEach(d => {
+                const qty = cart[d.key] || 0;
+                for (let i = 0; i < qty; i++) {
+                    const key = db.ref('orders').push().key;
+                    updates[`orders/${key}`] = {
+                        tableId: selectedTable,
+                        teamName: table.name,
+                        drink: d.key,
+                        drinkName: d.name,
+                        drinkEmoji: d.emoji,
+                        price: d.price,
+                        timestamp: firebase.database.ServerValue.TIMESTAMP,
+                        status: 'pending'
+                    };
+                }
+            });
+
+            db.ref().update(updates);
+
+            // Clear cart
+            Object.keys(cart).forEach(k => delete cart[k]);
+            renderCart();
+            showToast('🍻 Order placed!');
+        });
+
+        // Clear cart button
+        document.getElementById('cartClearBtn').addEventListener('click', () => {
+            Object.keys(cart).forEach(k => delete cart[k]);
+            renderCart();
+        });
 
         // =====================================================
         // LISTEN TO ORDERS FOR SELECTED TABLE
