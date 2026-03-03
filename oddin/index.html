@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oddin.gg — End-to-End Esports Betting Ecosystem</title>
+    <meta name="description"
+        content="Oddin.gg provides a complete esports betting ecosystem — odds feed, risk management, iFrame solutions, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Ambient background effects -->
+    <div class="bg-grid"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+
+    <!-- Progress bar for slide navigation -->
+    <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <!-- Navigation dots -->
+    <nav class="slide-nav" id="slideNav">
+        <button class="nav-dot active" data-slide="0" aria-label="Slide 1"></button>
+        <button class="nav-dot" data-slide="1" aria-label="Slide 2"></button>
+        <button class="nav-dot" data-slide="2" aria-label="Slide 3"></button>
+        <button class="nav-dot" data-slide="3" aria-label="Slide 4"></button>
+        <button class="nav-dot" data-slide="4" aria-label="Slide 5"></button>
+        <button class="nav-dot" data-slide="5" aria-label="Slide 6"></button>
+        <button class="nav-dot" data-slide="6" aria-label="Slide 7"></button>
+        <button class="nav-dot" data-slide="7" aria-label="Slide 8"></button>
+    </nav>
+
+    <!-- Slide counter -->
+    <div class="slide-counter">
+        <span id="currentSlide">01</span>
+        <span class="divider">/</span>
+        <span id="totalSlides">08</span>
+    </div>
+
+    <!-- Slides Container -->
+    <div class="slides-container" id="slidesContainer">
+
+        <!-- SLIDE 1: Title / Hero -->
+        <section class="slide slide-active" id="slide-0">
+            <div class="slide-content hero-slide">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    ESPORTS BETTING SOLUTIONS
+                </div>
+                <h1 class="hero-title">
+                    End-to-End<br>
+                    <span class="gradient-text">Esports Betting</span><br>
+                    Ecosystem
+                </h1>
+                <p class="hero-subtitle">
+                    Powering the future of esports wagering with cutting-edge technology,
+                    AI-driven odds, and seamless integration.
+                </p>
+                <div class="hero-logo">
+                    <svg class="oddin-logo" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <text x="0" y="38" font-family="Space Grotesk" font-weight="700" font-size="40"
+                            fill="url(#logoGrad)">oddin.gg</text>
+                        <defs>
+                            <linearGradient id="logoGrad" x1="0" y1="0" x2="200" y2="0">
+                                <stop offset="0%" stop-color="#00E5A0" />
+                                <stop offset="100%" stop-color="#00B4D8" />
+                            </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="scroll-hint">
+                    <span>Scroll to explore</span>
+                    <div class="scroll-arrow">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M12 5v14M19 12l-7 7-7-7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-particles" id="particles"></div>
+        </section>
+
+        <!-- SLIDE 2: Ecosystem Overview -->
+        <section class="slide" id="slide-1">
+            <div class="slide-content">
+                <div class="slide-label">Overview</div>
+                <h2 class="slide-title">Esports Betting <span class="gradient-text">Ecosystem</span></h2>
+                <p class="slide-description">A fully integrated platform delivering everything operators need to launch
+                    and scale their esports betting offering.</p>
+                <div class="ecosystem-grid">
+                    <div class="eco-card">
+                        <div class="eco-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg>
+                        </div>
+                        <h3>Odds Feed</h3>
+                        <p>AI-powered pre-match & live odds across all major esports titles</p>
+                    </div>
+                    <div class="eco-card">
+                        <div class="eco-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path
+                                    d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <h3>Risk Management</h3>
+                        <p>Advanced liability management with real-time fraud detection</p>
+                    </div>
+                    <div class="eco-card">
+                        <div class="eco-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <rect x="2" y="3" width="20" height="14" rx="2" />
+                                <path d="M8 21h8M12 17v4" />
+                            </svg>
+                        </div>
+                        <h3>iFrame Solution</h3>
+                        <p>Plug-and-play betting widget with refined UI and quick setup</p>
+                    </div>
+                    <div class="eco-card">
+                        <div class="eco-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                <path d="M12 20V10M18 20V4M6 20v-4" />
+                            </svg>
+                        </div>
+                        <h3>Backoffice</h3>
+                        <p>Complete management platform with 30+ languages & 200+ currencies</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 3: Odds Feed -->
+        <section class="slide" id="slide-2">
+            <div class="slide-content">
+                <div class="slide-label">Product</div>
+                <h2 class="slide-title">Odds <span class="gradient-text">Feed</span></h2>
+                <div class="pipeline-layout">
+                    <div class="pipeline-flow">
+                        <div class="pipeline-step">
+                            <div class="step-number">01</div>
+                            <div class="step-content">
+                                <h4>Game Live Data</h4>
+                                <p>Real-time data harvesting from live esports matches</p>
+                            </div>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step">
+                            <div class="step-number">02</div>
+                            <div class="step-content">
+                                <h4>Predictive Models</h4>
+                                <p>AI-driven models for accurate odds generation</p>
+                            </div>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step">
+                            <div class="step-number">03</div>
+                            <div class="step-content">
+                                <h4>Risk Management</h4>
+                                <p>Automated exposure and liability controls</p>
+                            </div>
+                        </div>
+                        <div class="pipeline-arrow">→</div>
+                        <div class="pipeline-step">
+                            <div class="step-number">04</div>
+                            <div class="step-content">
+                                <h4>Trading & API</h4>
+                                <p>Betslip, trading iFrame, and full API delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pipeline-banner">
+                        <div class="banner-glow"></div>
+                        <span>HIGHLY SCALABLE — LOW LATENCY — FULLY AUTOMATED</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 4: Risk Management -->
+        <section class="slide" id="slide-3">
+            <div class="slide-content">
+                <div class="slide-label">Product</div>
+                <h2 class="slide-title">Risk <span class="gradient-text">Management</span></h2>
+                <div class="risk-layout">
+                    <div class="big-stat">
+                        <div class="stat-value">
+                            <span class="stat-number" data-target="91">0</span><span class="stat-percent">%</span>
+                        </div>
+                        <div class="stat-label">Overall Odds Efficiency</div>
+                        <div class="stat-year">2023</div>
+                    </div>
+                    <div class="risk-features">
+                        <div class="risk-item">
+                            <div class="risk-icon-circle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Billions Under Management</h4>
+                                <p>Billions of EUR managed with institutional-grade infrastructure</p>
+                            </div>
+                        </div>
+                        <div class="risk-item">
+                            <div class="risk-icon-circle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Advanced Liability Management</h4>
+                                <p>Sophisticated exposure controls and automated hedging</p>
+                            </div>
+                        </div>
+                        <div class="risk-item">
+                            <div class="risk-icon-circle">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="M12 6v6l4 2" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Real-Time Fraud Detection</h4>
+                                <p>Intelligent bettor profiling and anomaly detection</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 5: iFrame -->
+        <section class="slide" id="slide-4">
+            <div class="slide-content">
+                <div class="slide-label">Product</div>
+                <h2 class="slide-title">i<span class="gradient-text">Frame</span></h2>
+                <p class="slide-description">
+                    A fully hosted iFrame betting solution focused on Esports engagement,
+                    with a refined UI and quick integration process.
+                </p>
+                <div class="iframe-preview">
+                    <div class="browser-chrome">
+                        <div class="browser-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="browser-url">your-platform.com/esports</div>
+                    </div>
+                    <div class="browser-content">
+                        <div class="mock-sidebar">
+                            <div class="mock-game active">
+                                <span class="game-dot live"></span>
+                                CS2
+                            </div>
+                            <div class="mock-game">
+                                <span class="game-dot"></span>
+                                Dota 2
+                            </div>
+                            <div class="mock-game">
+                                <span class="game-dot"></span>
+                                LoL
+                            </div>
+                            <div class="mock-game">
+                                <span class="game-dot"></span>
+                                Valorant
+                            </div>
+                        </div>
+                        <div class="mock-main">
+                            <div class="mock-match">
+                                <div class="mock-teams">
+                                    <span>Team Alpha</span>
+                                    <span class="vs">VS</span>
+                                    <span>Team Beta</span>
+                                </div>
+                                <div class="mock-odds">
+                                    <div class="odd-btn">1.85</div>
+                                    <div class="odd-btn highlighted">2.10</div>
+                                </div>
+                                <div class="mock-live-tag">● LIVE</div>
+                            </div>
+                            <div class="mock-match">
+                                <div class="mock-teams">
+                                    <span>Team Gamma</span>
+                                    <span class="vs">VS</span>
+                                    <span>Team Delta</span>
+                                </div>
+                                <div class="mock-odds">
+                                    <div class="odd-btn">1.55</div>
+                                    <div class="odd-btn">2.45</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 6: Backoffice -->
+        <section class="slide" id="slide-5">
+            <div class="slide-content">
+                <div class="slide-label">Platform</div>
+                <h2 class="slide-title">Backoffice <span class="gradient-text">Settings</span></h2>
+                <p class="slide-description">
+                    Allows various settings by client outside of what the risk management offers.
+                </p>
+                <div class="backoffice-grid">
+                    <div class="bo-card">
+                        <div class="bo-icon">⚙️</div>
+                        <h4>Settings</h4>
+                        <p>Backoffice user access & Client statuses for B2B partners</p>
+                    </div>
+                    <div class="bo-card">
+                        <div class="bo-icon">🌍</div>
+                        <h4>Translations</h4>
+                        <p>Client-side section translations in <strong>30+ languages</strong></p>
+                    </div>
+                    <div class="bo-card">
+                        <div class="bo-icon">💱</div>
+                        <h4>Currencies</h4>
+                        <p>Over <strong>200 FIAT & cryptocurrencies</strong> already supported</p>
+                    </div>
+                    <div class="bo-card">
+                        <div class="bo-icon">📋</div>
+                        <h4>Logs</h4>
+                        <p>Developer & user activity tracking and audit trails</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 7: Technical Integration -->
+        <section class="slide" id="slide-6">
+            <div class="slide-content">
+                <div class="slide-label">Integration</div>
+                <h2 class="slide-title">Technical <span class="gradient-text">Integration</span></h2>
+                <p class="slide-description">
+                    Easy and convenient to integrate. One developer is all it takes.
+                </p>
+                <div class="integration-tracks">
+                    <div class="track">
+                        <div class="track-header">
+                            <h3>iFrame</h3>
+                            <span class="track-time">2–4 Weeks</span>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-step done">
+                                <div class="step-marker"></div>
+                                <div class="step-info">
+                                    <span class="step-day">Day 1</span>
+                                    <span class="step-label">Contact Oddin.gg</span>
+                                </div>
+                            </div>
+                            <div class="timeline-connector"></div>
+                            <div class="timeline-step done">
+                                <div class="step-marker"></div>
+                                <div class="step-info">
+                                    <span class="step-day">Day 1–3</span>
+                                    <span class="step-label">Demo Walkthrough</span>
+                                </div>
+                            </div>
+                            <div class="timeline-connector"></div>
+                            <div class="timeline-step">
+                                <div class="step-marker"></div>
+                                <div class="step-info">
+                                    <span class="step-day">Day 4–6</span>
+                                    <span class="step-label">Terms & Conditions</span>
+                                </div>
+                            </div>
+                            <div class="timeline-connector"></div>
+                            <div class="timeline-step">
+                                <div class="step-marker"></div>
+                                <div class="step-info">
+                                    <span class="step-day">1–2 Weeks</span>
+                                    <span class="step-label">Integration</span>
+                                </div>
+                            </div>
+                            <div class="timeline-connector"></div>
+                            <div class="timeline-step final">
+                                <div class="step-marker">🚀</div>
+                                <div class="step-info">
+                                    <span class="step-day">2–4 Weeks</span>
+                                    <span class="step-label">Final Launch</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="track">
+                        <div class="track-header">
+                            <h3>Odds Feed</h3>
+                            <span class="track-time">4–6 Weeks</span>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-step done">
+                                <div class="step-marker"></div>
+                                <div class="step-info">
+                                    <span class="step-day">Day 1</span>
+                                    <span class="step-label">Contact Oddin.gg</span>
+                                </div>
+                            </div>
+                            <div class="timeline-connector"></div>
+                            <div class="timeline-step done">
+                                <div class="step-marker"></div>
+                                <div class="step-info">
+                                    <span class="step-day">Day 1–3</span>
+                                    <span class="step-label">Demo Walkthrough</span>
+                                </div>
+                            </div>
+                            <div class="timeline-connector"></div>
+                            <div class="timeline-step">
+                                <div class="step-marker"></div>
+                                <div class="step-info">
+                                    <span class="step-day">Day 4–6</span>
+                                    <span class="step-label">Terms & Conditions</span>
+                                </div>
+                            </div>
+                            <div class="timeline-connector"></div>
+                            <div class="timeline-step">
+                                <div class="step-marker"></div>
+                                <div class="step-info">
+                                    <span class="step-day">3–4 Weeks</span>
+                                    <span class="step-label">Integration</span>
+                                </div>
+                            </div>
+                            <div class="timeline-connector"></div>
+                            <div class="timeline-step final">
+                                <div class="step-marker">🚀</div>
+                                <div class="step-info">
+                                    <span class="step-day">4–6 Weeks</span>
+                                    <span class="step-label">Final Launch</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SLIDE 8: Contact / Thank You -->
+        <section class="slide" id="slide-7">
+            <div class="slide-content contact-slide">
+                <h2 class="slide-title">Let's <span class="gradient-text">Connect</span></h2>
+                <div class="contact-card">
+                    <div class="contact-avatar">AC</div>
+                    <div class="contact-info">
+                        <h3>Alexander Chernavin</h3>
+                        <p class="contact-role">Senior Business Development Manager</p>
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <a href="https://oddin.gg" target="_blank" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10" />
+                            <path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+                        </svg>
+                        <span>oddin.gg</span>
+                    </a>
+                    <a href="mailto:alex@oddin.gg" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <path d="M22 6l-10 7L2 6" />
+                        </svg>
+                        <span>alex@oddin.gg</span>
+                    </a>
+                    <a href="tel:+31653600696" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path
+                                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.12.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.58 2.81.7A2 2 0 0122 16.92z" />
+                        </svg>
+                        <span>+31 653 600 696</span>
+                    </a>
+                    <a href="mailto:partnerships@oddin.gg" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" />
+                        </svg>
+                        <span>partnerships@oddin.gg</span>
+                    </a>
+                </div>
+                <div class="thank-you">
+                    <span class="gradient-text">Thank You</span>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Keyboard hint -->
+    <div class="keyboard-hint" id="keyboardHint">
+        <span>Use ↑↓ arrows or scroll to navigate</span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
