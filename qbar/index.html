@@ -765,9 +765,6 @@
                     e.stopPropagation();
                     deleteOrder(order.id, el);
                 });
-                el.addEventListener('click', () => {
-                    serveOrder(order.id, el);
-                });
 
                 body.appendChild(el);
             });
