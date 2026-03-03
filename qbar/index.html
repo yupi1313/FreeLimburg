@@ -523,6 +523,81 @@
                 justify-content: center;
             }
         }
+
+        /* ========== EDIT TABLES ========== */
+        .edit-toggle-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: 20px;
+            padding: 5px 13px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 500;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s;
+            margin-left: auto;
+        }
+
+        .edit-toggle-btn:hover {
+            color: var(--amber);
+            border-color: rgba(240, 168, 48, 0.3);
+        }
+
+        .edit-panel {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 16px;
+            display: none;
+        }
+
+        .edit-panel.open {
+            display: block;
+        }
+
+        .edit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 6px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-glass);
+            border-radius: var(--radius);
+            padding: 12px;
+        }
+
+        .edit-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .edit-row label {
+            font-size: 0.78rem;
+            color: var(--amber);
+            font-weight: 700;
+            min-width: 28px;
+        }
+
+        .edit-row input {
+            flex: 1;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid var(--border-glass);
+            border-radius: 6px;
+            padding: 6px 10px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.8rem;
+            color: var(--text-primary);
+            outline: none;
+            transition: border-color 0.2s;
+        }
+
+        .edit-row input:focus {
+            border-color: var(--amber);
+        }
+
+        .edit-row input::placeholder {
+            color: var(--text-muted);
+        }
     </style>
 </head>
 
@@ -552,6 +627,10 @@
     <div class="filter-bar" id="filterBar">
         <span class="filter-label">Filter table:</span>
         <button class="filter-btn active" data-table="all">All Tables</button>
+    </div>
+
+    <div class="edit-panel" id="editPanel">
+        <div class="edit-grid" id="editGrid"></div>
     </div>
 
     <div class="layout">
@@ -636,10 +715,38 @@
             { id: 13, name: "De Kansen" }
         ];
 
+        // Custom table names from Firebase
+        const customTableNames = {};
+
+        function getTableName(id) {
+            if (customTableNames[id]) return customTableNames[id];
+            const t = TABLES.find(t => t.id === Number(id));
+            return t ? t.name : `Table ${id}`;
+        }
+
+        // Listen for table name changes
+        db.ref('tableNames').on('value', snap => {
+            const data = snap.val() || {};
+            Object.keys(customTableNames).forEach(k => delete customTableNames[k]);
+            Object.assign(customTableNames, data);
+            // Update filter button tooltips
+            document.querySelectorAll('.filter-btn[data-table]').forEach(b => {
+                const tid = b.dataset.table;
+                if (tid !== 'all') b.title = getTableName(tid);
+            });
+            // Re-render if we have data
+            if (cachedAllOrders) processOrders(cachedAllOrders);
+            // Update edit inputs
+            document.querySelectorAll('.edit-row input').forEach(inp => {
+                const tid = inp.dataset.tableId;
+                if (customTableNames[tid]) inp.value = customTableNames[tid];
+            });
+        });
+
         let activeFilter = 'all';
 
         // =====================================================
-        // BUILD TABLE FILTER BUTTONS
+        // BUILD TABLE FILTER BUTTONS + EDIT PANEL
         // =====================================================
         (function buildFilterButtons() {
             const bar = document.getElementById('filterBar');
@@ -653,6 +760,37 @@
                 bar.appendChild(btn);
             });
             document.querySelector('.filter-btn[data-table="all"]').addEventListener('click', () => setFilter('all'));
+
+            // Edit toggle button
+            const editBtn = document.createElement('button');
+            editBtn.className = 'edit-toggle-btn';
+            editBtn.textContent = '✏️ Edit Names';
+            editBtn.addEventListener('click', () => {
+                document.getElementById('editPanel').classList.toggle('open');
+            });
+            bar.appendChild(editBtn);
+
+            // Build edit grid
+            const editGrid = document.getElementById('editGrid');
+            TABLES.forEach(t => {
+                const row = document.createElement('div');
+                row.className = 'edit-row';
+                row.innerHTML = `<label>#${t.id}</label><input data-table-id="${t.id}" placeholder="${t.name}" value="${customTableNames[t.id] || t.name}">`;
+                const input = row.querySelector('input');
+                let debounce = null;
+                input.addEventListener('input', () => {
+                    clearTimeout(debounce);
+                    debounce = setTimeout(() => {
+                        const val = input.value.trim();
+                        if (val) {
+                            db.ref(`tableNames/${t.id}`).set(val);
+                        } else {
+                            db.ref(`tableNames/${t.id}`).remove();
+                        }
+                    }, 400);
+                });
+                editGrid.appendChild(row);
+            });
         })();
 
         function setFilter(tableId) {

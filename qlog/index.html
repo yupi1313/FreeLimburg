@@ -170,9 +170,7 @@
             flex-wrap: wrap;
         }
 
-        .type-btn {
-            composes: filter-btn;
-        }
+        .type-btn {}
 
         .type-btn.active-order {
             background: rgba(52, 211, 153, 0.12);
@@ -303,6 +301,31 @@
                 justify-content: center;
             }
         }
+
+        .clear-section {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 0 16px;
+            text-align: right;
+        }
+
+        .clear-log-btn {
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            border-radius: 8px;
+            padding: 8px 18px;
+            font-family: 'Outfit', sans-serif;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: #ef4444;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .clear-log-btn:hover {
+            background: rgba(239, 68, 68, 0.2);
+            border-color: #ef4444;
+        }
     </style>
 </head>
 
@@ -344,6 +367,10 @@
             <div class="es-icon">📋</div>
             <p>No log entries yet</p>
         </div>
+    </div>
+
+    <div class="clear-section">
+        <button class="clear-log-btn" id="clearLogBtn">🗑 Clear Log</button>
     </div>
 
     <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app-compat.js"></script>
@@ -481,6 +508,16 @@
             const txt = document.getElementById('statusText');
             if (snap.val() === true) { dot.classList.add('connected'); txt.textContent = 'Live'; }
             else { dot.classList.remove('connected'); txt.textContent = 'Offline'; }
+        });
+
+        // Clear log
+        document.getElementById('clearLogBtn').addEventListener('click', () => {
+            const pw = prompt('⚠️ This will permanently delete the entire activity log. Enter password to confirm:');
+            if (pw !== '18') {
+                if (pw !== null) alert('Wrong password.');
+                return;
+            }
+            db.ref('logs').remove();
         });
     </script>
 </body>

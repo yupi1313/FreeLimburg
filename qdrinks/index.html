@@ -800,6 +800,16 @@
             tableGridEl.appendChild(btn);
         });
 
+        // Sync custom table names from Firebase
+        db.ref('tableNames').on('value', snap => {
+            const custom = snap.val() || {};
+            document.querySelectorAll('.table-btn').forEach(btn => {
+                const id = btn.dataset.id;
+                const defaultName = TABLES.find(t => t.id === Number(id))?.name || '';
+                btn.querySelector('.tname').textContent = custom[id] || defaultName;
+            });
+        });
+
         function selectTable(id) {
             selectedTable = id;
             document.querySelectorAll('.table-btn').forEach(b => b.classList.toggle('active', +b.dataset.id === id));
