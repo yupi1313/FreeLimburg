@@ -1060,14 +1060,15 @@
                 if (pw !== null) alert('Wrong password.');
                 return;
             }
-            // Log before clearing
+            // Log before clearing — wait for log to save, then remove orders
             const count = cachedAllOrders ? cachedAllOrders.length : 0;
             db.ref('logs').push({
                 action: 'cleared',
                 message: `All orders cleared (${count} orders removed)`,
                 timestamp: firebase.database.ServerValue.TIMESTAMP
+            }).then(() => {
+                db.ref('orders').remove();
             });
-            db.ref('orders').remove();
         });
 
         // =====================================================
