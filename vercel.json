@@ -1,12 +1,19 @@
 {
-    "rewrites": [
+    "redirects": [
         {
             "source": "/orgchart",
-            "destination": "https://corwyn-orgchart.vercel.app"
+            "destination": "/orgchart/",
+            "statusCode": 308
+        }
+    ],
+    "rewrites": [
+        {
+            "source": "/orgchart/",
+            "destination": "https://corwyn-orgchart.vercel.app/"
         },
         {
-            "source": "/orgchart/:path*",
-            "destination": "https://corwyn-orgchart.vercel.app/:path*"
+            "source": "/orgchart/:path(.*)",
+            "destination": "https://corwyn-orgchart.vercel.app/:path"
         }
     ]
 }
