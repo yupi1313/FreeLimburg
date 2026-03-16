@@ -598,6 +598,28 @@
         .edit-row input::placeholder {
             color: var(--text-muted);
         }
+
+        .edit-section-title {
+            font-size: 0.72rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 10px 0 6px;
+            padding-left: 2px;
+        }
+        .edit-section-title:first-child { margin-top: 0; }
+
+        .edit-row input.price-input {
+            max-width: 70px;
+            flex: 0;
+            text-align: center;
+        }
+
+        .edit-row .drink-emoji-label {
+            font-size: 1rem;
+            min-width: 24px;
+        }
     </style>
 </head>
 
@@ -630,7 +652,10 @@
     </div>
 
     <div class="edit-panel" id="editPanel">
+        <div class="edit-section-title">Table Names</div>
         <div class="edit-grid" id="editGrid"></div>
+        <div class="edit-section-title" style="margin-top:14px;">Drink Prices (€)</div>
+        <div class="edit-grid" id="editPricesGrid"></div>
     </div>
 
     <div class="layout">
@@ -764,7 +789,7 @@
             // Edit toggle button
             const editBtn = document.createElement('button');
             editBtn.className = 'edit-toggle-btn';
-            editBtn.textContent = '✏️ Edit Names';
+            editBtn.textContent = '✏️ Settings';
             editBtn.addEventListener('click', () => {
                 document.getElementById('editPanel').classList.toggle('open');
             });
@@ -790,6 +815,49 @@
                     }, 400);
                 });
                 editGrid.appendChild(row);
+            });
+
+            // Build drink prices grid
+            const pricesGrid = document.getElementById('editPricesGrid');
+            const defaultDrinks = [
+                { key: 'beer', name: 'Beer', emoji: '🍺', defaultPrice: 2 },
+                { key: 'red_wine', name: 'Red Wine', emoji: '🍷', defaultPrice: 3 },
+                { key: 'white_wine', name: 'White Wine', emoji: '🥂', defaultPrice: 3 },
+                { key: 'gin_tonic', name: 'Gin & Tonic', emoji: '🍸', defaultPrice: 6 },
+                { key: 'aperol', name: 'Aperol Spritz', emoji: '🧡', defaultPrice: 7 }
+            ];
+            defaultDrinks.forEach(d => {
+                const row = document.createElement('div');
+                row.className = 'edit-row';
+                row.innerHTML = `<span class="drink-emoji-label">${d.emoji}</span><label style="min-width:90px">${d.name}</label><span style="color:var(--text-muted);font-size:0.8rem">€</span><input class="price-input" data-drink-key="${d.key}" type="number" min="0" step="0.5" value="${d.defaultPrice}">`;
+                const input = row.querySelector('input');
+                let debounce = null;
+                input.addEventListener('input', () => {
+                    clearTimeout(debounce);
+                    debounce = setTimeout(() => {
+                        const val = parseFloat(input.value);
+                        if (!isNaN(val) && val >= 0) {
+                            db.ref(`drinkPrices/${d.key}`).set(val);
+                        }
+                    }, 400);
+                });
+                pricesGrid.appendChild(row);
+            });
+
+            // Listen for price changes
+            db.ref('drinkPrices').on('value', snap => {
+                const prices = snap.val() || {};
+                // Update DRINK_META prices
+                Object.keys(prices).forEach(key => {
+                    if (DRINK_META[key]) DRINK_META[key].price = prices[key];
+                });
+                // Update price inputs
+                document.querySelectorAll('.price-input').forEach(inp => {
+                    const key = inp.dataset.drinkKey;
+                    if (prices[key] !== undefined) inp.value = prices[key];
+                });
+                // Re-render stats if we have data
+                if (cachedAllOrders) processOrders(cachedAllOrders);
             });
         })();
 
